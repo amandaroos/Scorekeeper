@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ScoreKeeperVersion4</string>
+
+    <!-- Label for name category in the editor [CHAR LIMIT=30] -->
+    <string name="category_name">Name</string>
+
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_player_name">Name</string>
+
+    <!-- Label for score category in the editor [CHAR LIMIT=30] -->
+    <string name="category_score">Score</string>
+
+    <!-- Number hint for score field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_player_score">0</string>
 </resources>
