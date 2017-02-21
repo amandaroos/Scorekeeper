@@ -15,9 +15,13 @@ import android.net.Uri;
 public class PlayerProvider extends ContentProvider {
 
 
+    //Database helper object
+    private PlayerDbHelper mDbHelper;
+
     @Override
     public boolean onCreate() {
-        return false;
+        mDbHelper = new PlayerDbHelper(getContext());
+        return true;
     }
 
     @Override
