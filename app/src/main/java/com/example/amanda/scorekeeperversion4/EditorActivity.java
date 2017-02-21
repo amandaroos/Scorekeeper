@@ -100,8 +100,8 @@ public class EditorActivity extends AppCompatActivity {
         //TODO if the name is not provided by the user, provide a default value, similar to code
         //above for default score
 
+        //For testing
         String valuesData = String.valueOf(values);
-
         Log.e("EditorActivity", valuesData);
 
 //        if (mCurrentPetUri != null) {
