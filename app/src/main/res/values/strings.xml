@@ -12,4 +12,10 @@
 
     <!-- Number hint for score field in the editor [CHAR LIMIT=30] -->
     <string name="hint_player_score">0</string>
+
+    <!-- Label for editor menu option to save player and leave editor [CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the current player [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
 </resources>
