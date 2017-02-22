@@ -30,6 +30,7 @@ public class PlayerProvider extends ContentProvider {
 
     // Static initializer. This is run the first time anything is called from this class.
     static {
+
         // The calls to addURI() go here, for all of the content URI patterns that the provider
         // should recognize. All paths added to the UriMatcher have a corresponding code to return
         // when a match is found.
