@@ -18,4 +18,7 @@
 
     <!-- Label for editor overflow menu option that deletes the current player [CHAR LIMIT=20] -->
     <string name="action_delete">Delete</string>
+
+    <!-- Default name for name field in the list view if name String is empty [CHAR LIMIT=30] -->
+    <string name="main_default_name">New Player</string>
 </resources>

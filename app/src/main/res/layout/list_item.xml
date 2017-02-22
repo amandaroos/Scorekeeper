@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:textAppearanceMedium"
-        android:textColor="#2B3D4D"
+        android:textColor="@color/editorColorPrimary"
         android:layout_weight="2"
         tools:text="Player Name"/>
 
@@ -25,6 +25,6 @@
         android:textAppearance="?android:textAppearanceLarge"
         android:layout_weight="1"
         android:textAlignment="center"
-        android:textColor="#AEB6BD"
+        android:textColor="@color/editorColorPrimaryDark"
         tools:text="123456"/>
 </LinearLayout>
