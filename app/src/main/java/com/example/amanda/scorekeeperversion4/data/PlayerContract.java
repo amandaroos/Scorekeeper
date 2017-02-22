@@ -24,13 +24,13 @@ public class PlayerContract implements BaseColumns {
      * content authority is the package name for the app, which is guaranteed to be unique on the
      * device.
      */
-    private static final String CONTENT_AUTHORITY = "com.example.android.scorekeeper";
+    public static final String CONTENT_AUTHORITY = "com.example.android.scorekeeper";
 
     /**
      * Use CONTENT_AUTHORITY to create the base of all URI's which apps will use to contact
      * the content provider.
      */
-    private static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
     /**
      * Possible path (appended to base content URI for possible URI's)
@@ -38,7 +38,7 @@ public class PlayerContract implements BaseColumns {
      * looking at player data. content://com.example.android.player/staff/ will fail,
      * as the ContentProvider hasn't been given any information on what to do with "staff".
      */
-    private static final String PATH_PLAYERS = "players";
+    public static final String PATH_PLAYERS = "players";
 
     /**
      * Inner class that defines constant values for the players database table.
