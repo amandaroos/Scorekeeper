@@ -21,4 +21,16 @@
 
     <!-- Default name for name field in the list view if name String is empty [CHAR LIMIT=30] -->
     <string name="main_default_name">New Player</string>
+
+    <!-- Toast message in editor when player has updated successfully [CHAR LIMIT=NONE]-->
+    <string name="editor_update_player_successful">Player updated.</string>
+
+    <!-- Toast message in editor when player has failed to be updated [CHAR LIMIT=NONE]-->
+    <string name="editor_update_player_failed">Error updating player</string>
+
+    <!-- Toast message in editor when player has inserted successfully [CHAR LIMIT=NONE]-->
+    <string name="editor_insert_player_successful">Player saved.</string>
+
+    <!-- Toast message in editor when player has failed to be inserted [CHAR LIMIT=NONE]-->
+    <string name="editor_insert_player_failed">Error with saving player</string>
 </resources>

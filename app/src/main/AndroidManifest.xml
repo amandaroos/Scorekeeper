@@ -25,6 +25,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+        <provider
+            android:name=".data.PlayerProvider"
+            android:authorities="com.example.amanda.scorekeeper"
+            android:exported="false" />
     </application>
 
 </manifest>

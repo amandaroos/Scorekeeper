@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, EditorActivity.class);
-                Log.e("Main Activity OnCreate", "intent created");
                 startActivity(intent);
             }
         });

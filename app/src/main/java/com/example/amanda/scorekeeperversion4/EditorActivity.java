@@ -28,6 +28,9 @@ public class EditorActivity extends AppCompatActivity {
      */
     private EditText mScoreEditText;
 
+    //Content URI for the existing player (null if it's a new player)
+    private Uri mCurrentPlayerUri;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,30 +107,30 @@ public class EditorActivity extends AppCompatActivity {
         String valuesData = String.valueOf(values);
         Log.e("EditorActivity", valuesData);
 
-//        if (mCurrentPetUri != null) {
-//            //pass the content resolver the updated pet information
-//            int rowsAffected = getContentResolver().update(mCurrentPetUri, values, null, null);
-//
-//            // Show a toast message depending on whether or not the update was successful.
-//            if (rowsAffected == 0) {
-//                // If no rows were affected, then there was an error with the update.
-//                Toast.makeText(this, getString(R.string.editor_update_pet_failed),
-//                        Toast.LENGTH_SHORT).show();
-//            } else {
-//                // Otherwise, the update was successful and we can display a toast.
-//                Toast.makeText(this, getString(R.string.editor_update_pet_successful),
-//                        Toast.LENGTH_SHORT).show();
-//            }
-//        } else {
-//            // Insert the new row using PetProvider
-//            Uri newUri = getContentResolver().insert(PetEntry.CONTENT_URI, values);
-//
-//            if (newUri != null) {
-//                Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_pet_successful), Toast.LENGTH_SHORT).show();
-//            } else {
-//                Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_pet_failed), Toast.LENGTH_SHORT).show();
-//            }
-//        }
+        if (mCurrentPlayerUri != null) {
+            //pass the content resolver the updated player information
+            int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
+
+            // Show a toast message depending on whether or not the update was successful.
+            if (rowsAffected == 0) {
+                // If no rows were affected, then there was an error with the update.
+                Toast.makeText(this, getString(R.string.editor_update_player_failed),
+                        Toast.LENGTH_SHORT).show();
+            } else {
+                // Otherwise, the update was successful and we can display a toast.
+                Toast.makeText(this, getString(R.string.editor_update_player_successful),
+                        Toast.LENGTH_SHORT).show();
+            }
+        } else {
+            // Insert the new row using PetProvider
+            Uri newUri = getContentResolver().insert(PlayerEntry.CONTENT_URI, values);
+
+            if (newUri != null) {
+                Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_successful), Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_failed), Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
 }
