@@ -100,9 +100,6 @@ public class EditorActivity extends AppCompatActivity {
         }
         values.put(PlayerEntry.COLUMN_PLAYER_SCORE, score);
 
-        //TODO if the name is not provided by the user, provide a default value, similar to code
-        //above for default score
-
         //For testing
         String valuesData = String.valueOf(values);
         Log.e("EditorActivity", valuesData);

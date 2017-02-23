@@ -33,4 +33,10 @@
 
     <!-- Toast message in editor when player has failed to be inserted [CHAR LIMIT=NONE]-->
     <string name="editor_insert_player_failed">Error with saving player</string>
+
+    <!-- Title text for the empty view, which describes the people image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">No players to show</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a player [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a player</string>
 </resources>
