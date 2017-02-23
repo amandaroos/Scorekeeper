@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2979FF</color>
-    <color name="colorPrimaryDark">#2962FF</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
 
     <!-- Accent color for UI controls like checkboxes and text fields -->
-    <color name="colorAccent">#FF9100</color>
+    <color name="colorAccent">#2196F3</color>
 
     <!-- Primary color for the editor -->
-    <color name="editorColorPrimary">#2D3640</color>
+    <color name="editorColorPrimary">#2196F3</color>
 
     <!-- Primary dark color for the editor -->
-    <color name="editorColorPrimaryDark">#394450</color>
+    <color name="editorColorPrimaryDark">#1976D2</color>
 
 </resources>
