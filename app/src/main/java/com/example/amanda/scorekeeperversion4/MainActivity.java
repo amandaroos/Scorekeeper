@@ -1,12 +1,17 @@
 package com.example.amanda.scorekeeperversion4;
 
+import android.content.ContentUris;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,5 +46,22 @@ public class MainActivity extends AppCompatActivity {
         //There is no pet data yet (until the loader finishes) so pass in null for the Cursor
         mCursorAdapter = new PlayerCursorAdapter(this, null);
         playerListView.setAdapter(mCursorAdapter);
+
+        //set click listeners on each list item
+        playerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent(MainActivity.this, EditorActivity.class);
+
+                //Append the id of the current pet to the content URI
+                Uri currentPlayerUri = ContentUris.withAppendedId(PlayerEntry.CONTENT_URI, id);
+
+                //Set the URI on the data field of the intent
+                intent.setData(currentPlayerUri);
+
+                startActivity(intent);
+            }
+        });
     }
 }
