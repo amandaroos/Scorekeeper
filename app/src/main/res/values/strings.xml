@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">ScoreKeeperVersion4</string>
 
+    <!-- Label for overflow menu option that deletes all player data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Players</string>
+
+    <!-- Toast message in main activity when all players deleted successfully [CHAR LIMIT=NONE]-->
+    <string name="main_delete_all_players_successful">All players deleted.</string>
+
+    <!-- Toast message in main activity when all players failed to be deleted [CHAR LIMIT=NONE]-->
+    <string name="main_delete_all_players_failed">Error with deleting all players.</string>
+
     <!-- Label for name category in the editor [CHAR LIMIT=30] -->
     <string name="category_name">Name</string>
 
@@ -33,6 +42,12 @@
 
     <!-- Toast message in editor when player has failed to be inserted [CHAR LIMIT=NONE]-->
     <string name="editor_insert_player_failed">Error with saving player</string>
+
+    <!-- Toast message in editor when player has been deleted [CHAR LIMIT=NONE]-->
+    <string name="editor_delete_player_successful">Player deleted.</string>
+
+    <!-- Toast message in editor when player has failed to be deleted [CHAR LIMIT=NONE]-->
+    <string name="editor_delete_player_failed">Error with deleting player</string>
 
     <!-- Title text for the empty view, which describes the people image [CHAR LIMIT=50] -->
     <string name="empty_view_title_text">No players to show</string>

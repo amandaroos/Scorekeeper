@@ -7,7 +7,6 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
-import android.support.annotation.Nullable;
 import android.util.Log;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
@@ -60,7 +59,6 @@ public class PlayerProvider extends ContentProvider {
         return true;
     }
 
-    @Nullable
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs,
                         String sortOrder) {
@@ -109,7 +107,6 @@ public class PlayerProvider extends ContentProvider {
         return cursor;
     }
 
-    @Nullable
     @Override
     public String getType(Uri uri) {
         final int match = sUriMatcher.match(uri);
@@ -123,7 +120,6 @@ public class PlayerProvider extends ContentProvider {
         }
     }
 
-    @Nullable
     @Override
     public Uri insert(Uri uri, ContentValues contentValues) {
         final int match = sUriMatcher.match(uri);
@@ -155,8 +151,6 @@ public class PlayerProvider extends ContentProvider {
 
         //Notify all listeners that the data has changed for the player content URI
         //uri: content://com.example.android.scorekeeper/players
-        //passing in null means that the CursorAdapter is notified and loader callbacks will
-        //be triggered
         getContext().getContentResolver().notifyChange(uri, null);
 
         // Once we know the ID of the new row in the table,
@@ -164,21 +158,16 @@ public class PlayerProvider extends ContentProvider {
         return ContentUris.withAppendedId(uri, newRowId);
     }
 
-    @Nullable
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
         // Get writable database
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
 
-        final int match = sUriMatcher.match(uri);
-
-//        //Notify all listeners that the data has changed for the player content URI
-//        //uri: content://com.example.android.scorekeeper/players
-//        getContext().getContentResolver().notifyChange(uri, null);
 
         // Track the number of rows that were deleted
         int rowsDeleted;
 
+        final int match = sUriMatcher.match(uri);
         switch (match) {
             case PLAYERS:
                 // Delete all rows that match the selection and selection args
@@ -195,17 +184,16 @@ public class PlayerProvider extends ContentProvider {
                 throw new IllegalArgumentException("Deletion is not supported for " + uri);
         }
 
-//        // If 1 or more rows were deleted, then notify all listeners that the data at the
-//        // given URI has changed
-//        if (rowsDeleted != 0) {
-//            getContext().getContentResolver().notifyChange(uri, null);
-//        }
+        // If 1 or more rows were deleted, then notify all listeners that the data at the
+        // given URI has changed
+        if (rowsDeleted != 0) {
+            getContext().getContentResolver().notifyChange(uri, null);
+        }
 
         // Return the number of rows deleted
         return rowsDeleted;
     }
 
-    @Nullable
     @Override
     public int update(Uri uri, ContentValues contentValues, String selection,
                       String[] selectionArgs) {

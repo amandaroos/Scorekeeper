@@ -73,10 +73,9 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             //This is a new player that is being added
             setTitle(getString(R.string.editor_activity_title_new_player    ));
 
-            //TODO when options menu exists
             // Invalidate the options menu, so the "Delete" menu option can be hidden.
             // (It doesn't make sense to delete a player that hasn't been created yet.)
-            //invalidateOptionsMenu();
+            invalidateOptionsMenu();
         }
 
         // Find all relevant views that we will need to read user input from
@@ -109,7 +108,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 return true;
             // Respond to a click on the "Delete" menu option
             case R.id.action_delete:
-                //TODO
+                deletePlayer();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -161,14 +160,42 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             if (newUri != null) {
                 Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_successful), Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_failed), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),
+                        getString(R.string.editor_insert_player_failed), Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    /**
+     * Perform the deletion of the player in the database.
+     */
+    private void deletePlayer() {
+
+        // Only perform the delete if this is an existing player.
+        if (mCurrentPlayerUri != null) {
+            // Call the ContentResolver to delete the player at the given content URI.
+            // Pass in null for the selection and selection args because the mCurrentPlayerUri
+            // content URI already identifies the pet that we want.
+            int rowsDeleted = getContentResolver().delete(mCurrentPlayerUri, null, null);
+
+            if (rowsDeleted == 0) {
+                // If no rows were affected, then there was an error with deleting the row
+                Toast.makeText(this, getString(R.string.editor_delete_player_failed),
+                        Toast.LENGTH_SHORT).show();
+            } else {
+                // Otherwise, the delete was successful and we can display a toast.
+                Toast.makeText(this, getString(R.string.editor_delete_player_successful),
+                        Toast.LENGTH_SHORT).show();
+
+                //Exit activity
+                finish();
             }
         }
     }
 
     //Create and return a loader that queries data for a single player
     @Override
-    public Loader onCreateLoader(int id, Bundle args) {
+    public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         Log.e("EditorActivity", "onCreateLoader() called");
         //Define a projection that specifies the columns from the table we care about
         String[] projection = {
