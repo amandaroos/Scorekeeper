@@ -7,6 +7,7 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
+import android.support.annotation.Nullable;
 import android.util.Log;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
@@ -59,6 +60,7 @@ public class PlayerProvider extends ContentProvider {
         return true;
     }
 
+    @Nullable
     @Override
     public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs,
                         String sortOrder) {
@@ -74,7 +76,7 @@ public class PlayerProvider extends ContentProvider {
             case PLAYERS:
                 // For the PLAYERS code, query the players table directly with the given
                 // projection, selection, selection arguments, and sort order. The cursor
-                // could contain multiple rows of the pets table.
+                // could contain multiple rows of the players table.
                 cursor = database.query(PlayerEntry.TABLE_NAME, projection, selection,
                         selectionArgs, null, null, sortOrder);
                 break;
@@ -99,14 +101,15 @@ public class PlayerProvider extends ContentProvider {
                 throw new IllegalArgumentException("Cannot query unknown URI " + uri);
         }
 
-//        //Set notification URI on the Cursor
-//        //so we know what content URI the Cursor was created for.
-//        //If the the data at this URI changes, then we know we need to update the Cursor.
-//        cursor.setNotificationUri(getContext().getContentResolver(), uri);
+        //Set notification URI on the Cursor
+        //so we know what content URI the Cursor was created for.
+        //If the the data at this URI changes, then we know we need to update the Cursor.
+        cursor.setNotificationUri(getContext().getContentResolver(), uri);
 
         return cursor;
     }
 
+    @Nullable
     @Override
     public String getType(Uri uri) {
         final int match = sUriMatcher.match(uri);
@@ -120,6 +123,7 @@ public class PlayerProvider extends ContentProvider {
         }
     }
 
+    @Nullable
     @Override
     public Uri insert(Uri uri, ContentValues contentValues) {
         final int match = sUriMatcher.match(uri);
@@ -137,13 +141,6 @@ public class PlayerProvider extends ContentProvider {
      */
     private Uri insertPlayer(Uri uri, ContentValues values) {
 
-        //TODO remove when default name is available
-        // Check that the name is not null
-        String name = values.getAsString(PlayerEntry.COLUMN_PLAYER_NAME);
-        if (name == null) {
-            throw new IllegalArgumentException("Player requires a name");
-        }
-
         //Get writable database
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
 
@@ -156,15 +153,18 @@ public class PlayerProvider extends ContentProvider {
             return null;
         }
 
-//        //Notify all listeners that the data has changed for the pet content URI
-//        //uri: content://com.example.android.pets/pets
-//        getContext().getContentResolver().notifyChange(uri, null);
+        //Notify all listeners that the data has changed for the player content URI
+        //uri: content://com.example.android.scorekeeper/players
+        //passing in null means that the CursorAdapter is notified and loader callbacks will
+        //be triggered
+        getContext().getContentResolver().notifyChange(uri, null);
 
         // Once we know the ID of the new row in the table,
         // return the new URI with the ID appended to the end of it
         return ContentUris.withAppendedId(uri, newRowId);
     }
 
+    @Nullable
     @Override
     public int delete(Uri uri, String selection, String[] selectionArgs) {
         // Get writable database
@@ -173,7 +173,7 @@ public class PlayerProvider extends ContentProvider {
         final int match = sUriMatcher.match(uri);
 
 //        //Notify all listeners that the data has changed for the player content URI
-//        //uri: content://com.example.android.pets/pets
+//        //uri: content://com.example.android.scorekeeper/players
 //        getContext().getContentResolver().notifyChange(uri, null);
 
         // Track the number of rows that were deleted
@@ -205,6 +205,7 @@ public class PlayerProvider extends ContentProvider {
         return rowsDeleted;
     }
 
+    @Nullable
     @Override
     public int update(Uri uri, ContentValues contentValues, String selection,
                       String[] selectionArgs) {
@@ -237,26 +238,18 @@ public class PlayerProvider extends ContentProvider {
             return 0;
         }
 
-        //TODO remove when default name is available
-        // If name column is present in ContentValues, check that the name is not null
-        if (values.containsKey(PlayerEntry.COLUMN_PLAYER_NAME)) {
-            String name = values.getAsString(PlayerEntry.COLUMN_PLAYER_NAME);
-            if (name == null) {
-                throw new IllegalArgumentException("Player requires a name");
-            }
-        }
-
         //Get writable database
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
 
         // Insert the new row, returning the primary key value of the new row
         int rowsUpdated = database.update(PlayerEntry.TABLE_NAME, values, selection, selectionArgs);
 
-//        //Notify all listeners that the data has changed for the pet content URI
-//        //given URI has changed
-//        if (rowsUpdated != 0) {
-//            getContext().getContentResolver().notifyChange(uri, null);
-//        }
+        //Notify all listeners that the data has changed for the player content URI
+        //given URI has changed
+        if (rowsUpdated != 0) {
+            getContext().getContentResolver().notifyChange(uri, null);
+            Log.e("PlayerProvider", ".notifyChange called");
+        }
 
         return rowsUpdated;
     }

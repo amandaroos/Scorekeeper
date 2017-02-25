@@ -12,6 +12,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -38,6 +40,18 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
     //Loader number
     public static final int PLAYER_LOADER = 0;
 
+    //boolean for checking if user changed any parts of the form
+    private boolean mPlayerHasChanged = false;
+
+    //check if changes were made
+    private View.OnTouchListener mTouchListener = new View.OnTouchListener() {
+        @Override
+        public boolean onTouch(View view, MotionEvent motionEvent) {
+            mPlayerHasChanged = true;
+            return false;
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,18 +70,22 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             //initialize Loader
             getLoaderManager().initLoader(PLAYER_LOADER, null, this);
         } else {
-            //This is a new pet that is being added
+            //This is a new player that is being added
             setTitle(getString(R.string.editor_activity_title_new_player    ));
 
             //TODO when options menu exists
             // Invalidate the options menu, so the "Delete" menu option can be hidden.
-            // (It doesn't make sense to delete a pet that hasn't been created yet.)
+            // (It doesn't make sense to delete a player that hasn't been created yet.)
             //invalidateOptionsMenu();
         }
 
         // Find all relevant views that we will need to read user input from
         mNameEditText = (EditText) findViewById(R.id.edit_player_name);
         mScoreEditText = (EditText) findViewById(R.id.edit_player_score);
+
+        //Set listeners that will track if the edit player form has changed
+        mNameEditText.setOnTouchListener(mTouchListener);
+        mScoreEditText.setOnTouchListener(mTouchListener);
     }
 
     @Override
@@ -84,8 +102,8 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         switch (item.getItemId()) {
             // Respond to a click on the "Save" menu option
             case R.id.action_save:
-                //Save pet to the database
-                savePet();
+                //Save player to the database
+                savePlayer();
                 //Exit activity
                 finish();
                 return true;
@@ -100,21 +118,12 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
     /**
      * Get user input from editor and save new player in database
      */
-    private void savePet() {
+    private void savePlayer() {
         //Get player data from user input
         //use trim to eliminate leading or trailing whitespace
         String nameString = mNameEditText.getText().toString().trim();
         String scoreString = mScoreEditText.getText().toString().trim();
 
-//        //Prevent crash when saving a blank editor
-//        //Check if this is supposed to be a new pet and check if all the fields are blank
-//        if (mCurrentPetUri == null &&
-//                TextUtils.isEmpty(nameString) && TextUtils.isEmpty(breedString) &&
-//                TextUtils.isEmpty(weightString) && mGender == PetEntry.GENDER_UNKNOWN) {
-//            // Since no fields were modified, we can return early without creating a new pet.
-//            // No need to create ContentValues and no need to do any ContentProvider operations.
-//            return;
-//        }
 
         // Create a new map of values, where column names are the keys,
         // and player attributes from the editor are the values
@@ -128,10 +137,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             score = Integer.parseInt(scoreString);
         }
         values.put(PlayerEntry.COLUMN_PLAYER_SCORE, score);
-
-        //For testing
-        String valuesData = String.valueOf(values);
-        Log.e("EditorActivity", valuesData);
 
         if (mCurrentPlayerUri != null) {
             //pass the content resolver the updated player information
@@ -148,7 +153,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                         Toast.LENGTH_SHORT).show();
             }
         } else {
-            // Insert the new row using PetProvider
+            // Insert the new row using PlayerProvider
             Uri newUri = getContentResolver().insert(PlayerEntry.CONTENT_URI, values);
 
             Log.e("Saving a Player", String.valueOf(newUri));
@@ -173,7 +178,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
 
         // This loader will execute the ContentProvider's query method on a background thread
         return new CursorLoader(this,   // Parent activity context
-                mCurrentPlayerUri,         // Query the content URI for the current pet
+                mCurrentPlayerUri,         // Query the content URI for the current player
                 projection,             // Columns to include in the resulting Cursor
                 null,                   // No selection clause
                 null,                   // No selection arguments
@@ -195,7 +200,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             //Read attributes from the Cursor for the current player
             String playerName = cursor.getString(nameColumnIndex);
             String playerScore = cursor.getString(scoreColumnIndex);
-            int petWeight = cursor.getInt(scoreColumnIndex);
 
             //Populate views with extracted data
             mNameEditText.setText(playerName);
