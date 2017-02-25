@@ -35,10 +35,35 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
     //Content URI for the existing player (null if it's a new player)
     private Uri mCurrentPlayerUri;
 
+    //Loader number
+    public static final int PLAYER_LOADER = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editor);
+
+        //Use getIntent() and getData()to get the URI associated with the intent
+        mCurrentPlayerUri = getIntent().getData();
+
+        //Set title of the EditorActivity.
+        //Set title to "Edit Player" if ListView item was selected
+        //Otherwise, change app bar to say "Add a Player"
+        if (mCurrentPlayerUri != null) {
+            //This is an existing player that is being edited
+            setTitle(R.string.editor_activity_title_edit_player);
+
+            //initialize Loader
+            getLoaderManager().initLoader(PLAYER_LOADER, null, this);
+        } else {
+            //This is a new pet that is being added
+            setTitle(getString(R.string.editor_activity_title_new_player    ));
+
+            //TODO when options menu exists
+            // Invalidate the options menu, so the "Delete" menu option can be hidden.
+            // (It doesn't make sense to delete a pet that hasn't been created yet.)
+            //invalidateOptionsMenu();
+        }
 
         // Find all relevant views that we will need to read user input from
         mNameEditText = (EditText) findViewById(R.id.edit_player_name);

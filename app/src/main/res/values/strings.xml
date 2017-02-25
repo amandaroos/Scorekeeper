@@ -39,4 +39,10 @@
 
     <!-- Subtitle text for the empty view that prompts the user to add a player [CHAR LIMIT=50] -->
     <string name="empty_view_subtitle_text">Get started by adding a player</string>
+
+    <!-- Title for the activity to add a new player [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new_player">Add a Player</string>
+
+    <!-- Title for the activity to edit a player [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit_player">Edit Player</string>
 </resources>
