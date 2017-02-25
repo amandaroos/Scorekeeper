@@ -71,11 +71,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             getLoaderManager().initLoader(PLAYER_LOADER, null, this);
         } else {
             //This is a new player that is being added
-            setTitle(getString(R.string.editor_activity_title_new_player    ));
-
-            // Invalidate the options menu, so the "Delete" menu option can be hidden.
-            // (It doesn't make sense to delete a player that hasn't been created yet.)
-            invalidateOptionsMenu();
+            setTitle(getString(R.string.editor_activity_title_new_player));
         }
 
         // Find all relevant views that we will need to read user input from
@@ -89,9 +85,21 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
         // Inflate the menu options from the res/menu/menu_editor.xml file.
         // This adds menu items to the app bar.
         getMenuInflater().inflate(R.menu.menu_editor, menu);
+
+        //Hide "Delete" item in options menu
+        MenuItem item = menu.findItem(R.id.action_delete);
+        item.setVisible(false);
+
+        if (mCurrentPlayerUri != null){
+            //Unhide "Delete" in options menu since this means we are editing
+            //an existing player that can be deleted
+            item.setVisible(true);
+        }
+
         return true;
     }
 
@@ -175,7 +183,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         if (mCurrentPlayerUri != null) {
             // Call the ContentResolver to delete the player at the given content URI.
             // Pass in null for the selection and selection args because the mCurrentPlayerUri
-            // content URI already identifies the pet that we want.
+            // content URI already identifies the player that we want.
             int rowsDeleted = getContentResolver().delete(mCurrentPlayerUri, null, null);
 
             if (rowsDeleted == 0) {
