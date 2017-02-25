@@ -1,7 +1,11 @@
 package com.example.amanda.scorekeeperversion4;
 
+import android.app.LoaderManager;
 import android.content.ContentUris;
+import android.content.CursorLoader;
 import android.content.Intent;
+import android.content.Loader;
+import android.database.Cursor;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +17,9 @@ import android.widget.ListView;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
+
+    public static final int PLAYER_LOADER = 0;
 
     //The adapter that knows how to create list item views given a cursor
     PlayerCursorAdapter mCursorAdapter;
@@ -45,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         mCursorAdapter = new PlayerCursorAdapter(this, null);
         playerListView.setAdapter(mCursorAdapter);
 
+        Log.e("MainActivity", "mCursorAdapter set on playerListView");
+
         //set click listeners on each list item
         playerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -61,5 +69,42 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //Initialize Loader
+        getLoaderManager().initLoader(PLAYER_LOADER, null, this);
+    }
+
+    @Override
+    public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
+        //Define a projection that specifies the columns from the table we care about
+        String[] projection = new String[] {
+                PlayerEntry._ID,
+                PlayerEntry.COLUMN_PLAYER_NAME,
+                PlayerEntry.COLUMN_PLAYER_SCORE
+        };
+        Log.e("onCreateLoader", "is this thing loading?");
+
+        //This loader will execute the ContentProvider's query method on a background thread
+        return new CursorLoader(this,
+                PlayerEntry.CONTENT_URI,
+                projection,
+                null,
+                null,
+                null);
+    }
+
+    @Override
+    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
+        // Swap the new cursor in.  (The framework will take care of closing the
+        // old cursor once we return.)
+        mCursorAdapter.swapCursor(data);
+    }
+
+    @Override
+    public void onLoaderReset(Loader<Cursor> loader) {
+        // This is called when the last Cursor provided to onLoadFinished()
+        // above is about to be closed.  We need to make sure we are no
+        // longer using it.
+        mCursorAdapter.swapCursor(null);
     }
 }

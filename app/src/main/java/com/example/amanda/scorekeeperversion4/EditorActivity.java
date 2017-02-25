@@ -1,8 +1,12 @@
 package com.example.amanda.scorekeeperversion4;
 
 import android.content.ContentValues;
+import android.content.CursorLoader;
+import android.content.Loader;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
@@ -16,7 +20,7 @@ import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 /**
  * Allows user to create a new player or edit an existing one.
  */
-public class EditorActivity extends AppCompatActivity {
+public class EditorActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>{
 
     /**
      * EditText field to enter the player's name
@@ -69,7 +73,7 @@ public class EditorActivity extends AppCompatActivity {
     }
 
     /**
-     * Get user input from editor and save new pet in database
+     * Get user input from editor and save new player in database
      */
     private void savePet() {
         //Get player data from user input
@@ -122,6 +126,8 @@ public class EditorActivity extends AppCompatActivity {
             // Insert the new row using PetProvider
             Uri newUri = getContentResolver().insert(PlayerEntry.CONTENT_URI, values);
 
+            Log.e("Saving a Player", String.valueOf(newUri));
+
             if (newUri != null) {
                 Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_successful), Toast.LENGTH_SHORT).show();
             } else {
@@ -130,4 +136,52 @@ public class EditorActivity extends AppCompatActivity {
         }
     }
 
+    //Create and return a loader that queries data for a single player
+    @Override
+    public Loader onCreateLoader(int id, Bundle args) {
+        Log.e("EditorActivity", "onCreateLoader() called");
+        //Define a projection that specifies the columns from the table we care about
+        String[] projection = {
+                PlayerEntry._ID,
+                PlayerEntry.COLUMN_PLAYER_NAME,
+                PlayerEntry.COLUMN_PLAYER_SCORE};
+
+        // This loader will execute the ContentProvider's query method on a background thread
+        return new CursorLoader(this,   // Parent activity context
+                mCurrentPlayerUri,         // Query the content URI for the current pet
+                projection,             // Columns to include in the resulting Cursor
+                null,                   // No selection clause
+                null,                   // No selection arguments
+                null);                  // Default sort order
+    }
+
+    //Update the editor fields with the data for the current player
+    @Override
+    public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
+        //Check to see if cursor is empty
+        if (cursor.getCount()>0) {
+            //need to set Cursor to 0th position
+            cursor.moveToFirst();
+
+            //Find the columns of player attributes we are interested in
+            int nameColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_NAME);
+            int scoreColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_SCORE);
+
+            //Read attributes from the Cursor for the current player
+            String playerName = cursor.getString(nameColumnIndex);
+            String playerScore = cursor.getString(scoreColumnIndex);
+            int petWeight = cursor.getInt(scoreColumnIndex);
+
+            //Populate views with extracted data
+            mNameEditText.setText(playerName);
+            mScoreEditText.setText(playerScore);
+        }
+    }
+
+    @Override
+    public void onLoaderReset(Loader loader) {
+        // If the loader is invalidated, clear out all the data from the input fields.
+        mNameEditText.setText("");
+        mScoreEditText.setText("");
+    }
 }

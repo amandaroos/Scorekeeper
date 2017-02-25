@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.support.v4.widget.CursorAdapter;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,6 +41,8 @@ public class PlayerCursorAdapter extends CursorAdapter {
      */
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
+
+        Log.e("PlayerCursorAdapter", "newView() called");
         // Return the list item view
         return LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
     }
@@ -60,6 +63,8 @@ public class PlayerCursorAdapter extends CursorAdapter {
         TextView nameTextView = (TextView) view. findViewById(R.id.name);
         TextView scoreTextView = (TextView) view.findViewById(R.id.score);
 
+        Log.e("PlayerCursorAdapter", "found TextViews");
+
         //Find the columns of player attributes we are interested in
         int nameColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_NAME);
         int scoreColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_SCORE);
@@ -68,10 +73,13 @@ public class PlayerCursorAdapter extends CursorAdapter {
         String playerName = cursor.getString(nameColumnIndex);
         String playerScore = cursor.getString(scoreColumnIndex);
 
+        Log.e("PlayerCursorAdapter", "Reading from cursor: " + playerName + ": " +playerScore);
+
         // If the player name is empty string or null, then use some default text
         // that says "New Player", so the TextView isn't blank.
         if (TextUtils.isEmpty(playerName)){
             playerName = context.getString(R.string.main_default_name);
+            Log.e("PlayerCursorAdapter", "player name when text view empty: "+playerName);
         }
 
         //Populate views with extracted daa
