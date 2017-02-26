@@ -59,10 +59,6 @@ public class PlayerCursorAdapter extends CursorAdapter {
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
 
-        ImageView changeScoreImageView = (ImageView) view.findViewById(R.id.change_score);
-        //changeScoreImageView.setOnClickListener();
-
-
         //find views to populate in inflated layout
         TextView nameTextView = (TextView) view. findViewById(R.id.name);
         TextView scoreTextView = (TextView) view.findViewById(R.id.score);

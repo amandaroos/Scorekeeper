@@ -16,7 +16,7 @@
     </style>
 
     <!-- Style for a category in the editor -->
-    <style name="CategoryStyle">
+    <style name="MainStyle">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_weight">1</item>
