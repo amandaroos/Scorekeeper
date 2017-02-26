@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
@@ -57,6 +58,11 @@ public class PlayerCursorAdapter extends CursorAdapter {
      */
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
+
+        ImageView changeScoreImageView = (ImageView) view.findViewById(R.id.change_score);
+        //changeScoreImageView.setOnClickListener();
+
+
         //find views to populate in inflated layout
         TextView nameTextView = (TextView) view. findViewById(R.id.name);
         TextView scoreTextView = (TextView) view.findViewById(R.id.score);
