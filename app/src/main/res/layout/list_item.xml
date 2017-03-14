@@ -19,12 +19,12 @@
         tools:text="Player Name"/>
 
 
-    <ImageView
-        android:id="@+id/edit_score"
+    <Button
+        android:id="@+id/edit_score_button"
         android:rotation="180"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:background="@drawable/ic_plus_minus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:src="@drawable/ic_plus_minus"
         android:layout_gravity="center"/>
 

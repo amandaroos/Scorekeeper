@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent intent = new Intent(MainActivity.this, EditScoreActivity.class);
+                Intent intent = new Intent(MainActivity.this, EditorActivity.class);
 
                 //Append the id of the current pet to the content URI
                 Uri currentPlayerUri = ContentUris.withAppendedId(PlayerEntry.CONTENT_URI, id);
