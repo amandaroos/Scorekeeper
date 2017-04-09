@@ -7,24 +7,7 @@
     android:padding="@dimen/activity_margin"
     tools:context=".EditorActivity">
 
-    <!-- Name category -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <!-- Label -->
-        <TextView
-            style="@style/CategoryStyle"
-            android:text="@string/category_name" />
-
-        <!-- Name field -->
-        <EditText
-            android:id="@+id/edit_player_name"
-            style="@style/EditorFieldStyle"
-            android:hint="@string/hint_player_name"
-            android:inputType="textCapWords" />
-    </LinearLayout>
 
     <!-- Score category -->
     <LinearLayout
@@ -44,4 +27,26 @@
             android:hint="@string/hint_player_score"
             android:inputType="number" />
     </LinearLayout>
+
+
+    <!-- Name category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Label -->
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/category_name" />
+
+        <!-- Name field -->
+        <EditText
+            android:id="@+id/edit_player_name"
+            style="@style/EditorFieldStyle"
+            android:hint="@string/hint_player_name"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+
 </LinearLayout>
+
