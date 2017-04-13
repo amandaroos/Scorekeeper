@@ -2,6 +2,7 @@ package com.example.amanda.scorekeeperversion4;
 
 import android.app.LoaderManager;
 import android.content.ContentUris;
+import android.content.ContentValues;
 import android.content.CursorLoader;
 import android.content.Intent;
 import android.content.Loader;
@@ -11,9 +12,13 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
@@ -22,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     public static final int PLAYER_LOADER = 0;
 
     //The adapter that knows how to create list item views given a cursor
-    PlayerCursorAdapter mCursorAdapter;
+    private PlayerCursorAdapter mCursorAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +39,23 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, EditorActivity.class);
-                startActivity(intent);
+
+                // Create a new map of values, where column names are the keys,
+                // and player attributes from the editor are the values
+                ContentValues values = new ContentValues();
+                values.put(PlayerEntry.COLUMN_PLAYER_NAME, "New Player");
+                values.put(PlayerEntry.COLUMN_PLAYER_SCORE, 0);
+
+                // Insert the new row using PlayerProvider
+                Uri newUri = getContentResolver().insert(PlayerEntry.CONTENT_URI, values);
+
+                Log.e("Saving a Player", String.valueOf(newUri));
+
+                if (newUri != null) {
+                    Toast.makeText(getApplicationContext(), "new player saved", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_failed), Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -50,6 +70,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         //There is no pet data yet (until the loader finishes) so pass in null for the Cursor
         mCursorAdapter = new PlayerCursorAdapter(this, null);
         playerListView.setAdapter(mCursorAdapter);
+
+        //set an empty footer view at the end of the list to avoid the fab covering information
+        TextView empty = new TextView(this);
+        empty.setHeight(100);
+        //The footer view cannot be selected
+        playerListView.addFooterView(empty, 0, false);
 
         Log.e("MainActivity", "mCursorAdapter set on playerListView");
 
@@ -72,6 +98,42 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         //Initialize Loader
         getLoaderManager().initLoader(PLAYER_LOADER, null, this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.action_delete_all_entries:
+                deleteAllPlayers();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void deleteAllPlayers() {
+        // Call the ContentResolver to delete the player at the given content URI.
+        // Pass in null for the selection and selection args because the mCurrentPlayerUri
+        // content URI already identifies the player that we want.
+        Log.e("Main", "This is the URI to delete: " + PlayerEntry.CONTENT_URI);
+        int rowsDeleted = getContentResolver().delete(PlayerEntry.CONTENT_URI, null, null);
+
+        if (rowsDeleted == 0) {
+            // If no rows were affected, then there was an error with deleting the row
+            Toast.makeText(this, "Error with deleting all players",
+                    Toast.LENGTH_SHORT).show();
+        } else {
+            // Otherwise, the delete was successful and we can display a toast.
+            Toast.makeText(this, "All players deleted",
+                    Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     @Override

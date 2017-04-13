@@ -4,7 +4,7 @@
     <color name="colorPrimaryDark">#1976D2</color>
 
     <!-- Accent color for UI controls like checkboxes and text fields -->
-    <color name="colorAccent">#2196F3</color>
+    <color name="colorAccent">#f3b123</color>
 
     <!-- Primary color for the editor -->
     <color name="editorColorPrimary">#2196F3</color>

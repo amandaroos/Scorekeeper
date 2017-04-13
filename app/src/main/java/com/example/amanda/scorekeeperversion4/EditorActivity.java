@@ -10,29 +10,32 @@ import android.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
+import org.w3c.dom.Text;
+
 /**
  * Allows user to create a new player or edit an existing one.
  */
-public class EditorActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>{
+public class EditorActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
-    /**
-     * EditText field to enter the player's name
-     */
-    private EditText mNameEditText;
-
-    /**
-     * EditText field to enter the player's score
-     */
     private EditText mScoreEditText;
+    private TextView mName;
+    private TextView mScore;
+
+    private final String LOG_TAG = EditorActivity.class.getSimpleName();
 
     //Content URI for the existing player (null if it's a new player)
     private Uri mCurrentPlayerUri;
@@ -60,32 +63,12 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         //Use getIntent() and getData()to get the URI associated with the intent
         mCurrentPlayerUri = getIntent().getData();
 
-        //Set title of the EditorActivity.
-        //Set title to "Edit Player" if ListView item was selected
-        //Otherwise, change app bar to say "Add a Player"
-        if (mCurrentPlayerUri != null) {
-            //This is an existing player that is being edited
-            setTitle(R.string.editor_activity_title_edit_player);
+        getLoaderManager().initLoader(PLAYER_LOADER, null, this);
 
-            //initialize Loader
-            getLoaderManager().initLoader(PLAYER_LOADER, null, this);
-        } else {
-            //This is a new player that is being added
-            setTitle(getString(R.string.editor_activity_title_new_player    ));
-
-            //TODO when options menu exists
-            // Invalidate the options menu, so the "Delete" menu option can be hidden.
-            // (It doesn't make sense to delete a player that hasn't been created yet.)
-            //invalidateOptionsMenu();
-        }
-
-        // Find all relevant views that we will need to read user input from
-        mNameEditText = (EditText) findViewById(R.id.edit_player_name);
-        mScoreEditText = (EditText) findViewById(R.id.edit_player_score);
-
-        //Set listeners that will track if the edit player form has changed
-        mNameEditText.setOnTouchListener(mTouchListener);
-        mScoreEditText.setOnTouchListener(mTouchListener);
+        // Find all relevant views
+        mName = (TextView) findViewById(R.id.edit_player_name);
+        mScore = (TextView) findViewById(R.id.edit_player_score);
+        mScoreEditText = (EditText) findViewById(R.id.score_input);
     }
 
     @Override
@@ -109,7 +92,10 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 return true;
             // Respond to a click on the "Delete" menu option
             case R.id.action_delete:
-                //TODO
+                //Delete player from the database
+                deletePlayer();
+                //Exit activity
+                finish();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -120,48 +106,59 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
      */
     private void savePlayer() {
         //Get player data from user input
-        //use trim to eliminate leading or trailing whitespace
-        String nameString = mNameEditText.getText().toString().trim();
         String scoreString = mScoreEditText.getText().toString().trim();
 
+        //Get player's current score
+        int currentScore = Integer.parseInt(mScore.getText().toString().trim());
 
-        // Create a new map of values, where column names are the keys,
-        // and player attributes from the editor are the values
+        // Create a new map of values, where column name is the key,
+        // and player score from the editor is the value
         ContentValues values = new ContentValues();
-        values.put(PlayerEntry.COLUMN_PLAYER_NAME, nameString);
 
         // If the score is not provided by the user, don't try to parse the string into an
         // integer value. Use 0 by default.
-        int score = 0;
+        int score = currentScore;
         if (!TextUtils.isEmpty(scoreString)) {
-            score = Integer.parseInt(scoreString);
+            score += Integer.parseInt(scoreString);
         }
+        else{
+            return;
+        }
+
         values.put(PlayerEntry.COLUMN_PLAYER_SCORE, score);
 
-        if (mCurrentPlayerUri != null) {
-            //pass the content resolver the updated player information
-            int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
+        //pass the content resolver the updated player information
+        int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
 
-            // Show a toast message depending on whether or not the update was successful.
-            if (rowsAffected == 0) {
-                // If no rows were affected, then there was an error with the update.
-                Toast.makeText(this, getString(R.string.editor_update_player_failed),
-                        Toast.LENGTH_SHORT).show();
-            } else {
-                // Otherwise, the update was successful and we can display a toast.
-                Toast.makeText(this, getString(R.string.editor_update_player_successful),
-                        Toast.LENGTH_SHORT).show();
-            }
+        // Show a toast message depending on whether or not the update was successful.
+        if (rowsAffected == 0) {
+            // If no rows were affected, then there was an error with the update.
+            Toast.makeText(this, getString(R.string.editor_update_player_failed),
+                    Toast.LENGTH_SHORT).show();
         } else {
-            // Insert the new row using PlayerProvider
-            Uri newUri = getContentResolver().insert(PlayerEntry.CONTENT_URI, values);
+            // Otherwise, the update was successful and we can display a toast.
+            Toast.makeText(this, getString(R.string.editor_update_player_successful),
+                    Toast.LENGTH_SHORT).show();
+        }
+    }
 
-            Log.e("Saving a Player", String.valueOf(newUri));
+    private void deletePlayer() {
 
-            if (newUri != null) {
-                Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_successful), Toast.LENGTH_SHORT).show();
+        // Only perform the delete if this is an existing player.
+        if (mCurrentPlayerUri != null) {
+            // Call the ContentResolver to delete the player at the given content URI.
+            // Pass in null for the selection and selection args because the mCurrentPlayerUri
+            // content URI already identifies the player that we want.
+            int rowsDeleted = getContentResolver().delete(mCurrentPlayerUri, null, null);
+
+            if (rowsDeleted == 0) {
+                // If no rows were affected, then there was an error with deleting the row
+                Toast.makeText(this, "player delete failed",
+                        Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_failed), Toast.LENGTH_SHORT).show();
+                // Otherwise, the delete was successful and we can display a toast.
+                Toast.makeText(this, "player deleted",
+                        Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -189,7 +186,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
         //Check to see if cursor is empty
-        if (cursor.getCount()>0) {
+        if (cursor.getCount() > 0) {
             //need to set Cursor to 0th position
             cursor.moveToFirst();
 
@@ -202,15 +199,16 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             String playerScore = cursor.getString(scoreColumnIndex);
 
             //Populate views with extracted data
-            mNameEditText.setText(playerName);
-            mScoreEditText.setText(playerScore);
+            mName.setText(playerName);
+            mScore.setText(playerScore);
+
+            //TODO finish activity when "done" is pressed on keyboard
         }
     }
 
     @Override
-    public void onLoaderReset(Loader loader) {
+    public void onLoaderReset(Loader<Cursor> loader) {
         // If the loader is invalidated, clear out all the data from the input fields.
-        mNameEditText.setText("");
         mScoreEditText.setText("");
     }
 }

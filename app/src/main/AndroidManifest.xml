@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_group_add"
+        android:icon="@drawable/scorekeeper_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -18,7 +18,9 @@
         <activity
             android:name=".EditorActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/EditorTheme">
+            android:windowSoftInputMode="stateVisible"
+            android:theme="@style/EditorTheme"
+            android:label="@string/editor_activity_title_edit_player">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

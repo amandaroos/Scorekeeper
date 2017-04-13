@@ -13,6 +13,9 @@
     <!-- Number hint for score field in the editor [CHAR LIMIT=30] -->
     <string name="hint_player_score">0</string>
 
+    <!-- Label for main activity menu option to delete all players [CHAR LIMIT=20] -->
+    <string name="action_delete_all_players">Delete All</string>
+
     <!-- Label for editor menu option to save player and leave editor [CHAR LIMIT=20] -->
     <string name="action_save">Save</string>
 
@@ -40,9 +43,8 @@
     <!-- Subtitle text for the empty view that prompts the user to add a player [CHAR LIMIT=50] -->
     <string name="empty_view_subtitle_text">Get started by adding a player</string>
 
-    <!-- Title for the activity to add a new player [CHAR LIMIT=20] -->
-    <string name="editor_activity_title_new_player">Add a Player</string>
-
-    <!-- Title for the activity to edit a player [CHAR LIMIT=20] -->
+    <!-- Title for the activity to edit a player's score [CHAR LIMIT=20] -->
     <string name="editor_activity_title_edit_player">Edit Player</string>
+
+
 </resources>
