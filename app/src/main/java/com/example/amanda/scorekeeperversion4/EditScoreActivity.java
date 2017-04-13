@@ -10,32 +10,26 @@ import android.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.WindowManager;
-import android.view.inputmethod.EditorInfo;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
-import org.w3c.dom.Text;
-
 /**
  * Allows user to create a new player or edit an existing one.
  */
-public class EditorActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
+public class EditScoreActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
     private EditText mScoreEditText;
     private TextView mName;
     private TextView mScore;
 
-    private final String LOG_TAG = EditorActivity.class.getSimpleName();
+    private final String LOG_TAG = EditScoreActivity.class.getSimpleName();
 
     //Content URI for the existing player (null if it's a new player)
     private Uri mCurrentPlayerUri;
@@ -130,7 +124,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         //pass the content resolver the updated player information
         int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
 
-        // Show a toast message depending on whether or not the update was successful.
+/*        // Show a toast message depending on whether or not the update was successful.
         if (rowsAffected == 0) {
             // If no rows were affected, then there was an error with the update.
             Toast.makeText(this, getString(R.string.editor_update_player_failed),
@@ -139,7 +133,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             // Otherwise, the update was successful and we can display a toast.
             Toast.makeText(this, getString(R.string.editor_update_player_successful),
                     Toast.LENGTH_SHORT).show();
-        }
+        }*/
     }
 
     private void deletePlayer() {
@@ -151,7 +145,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             // content URI already identifies the player that we want.
             int rowsDeleted = getContentResolver().delete(mCurrentPlayerUri, null, null);
 
-            if (rowsDeleted == 0) {
+/*            if (rowsDeleted == 0) {
                 // If no rows were affected, then there was an error with deleting the row
                 Toast.makeText(this, "player delete failed",
                         Toast.LENGTH_SHORT).show();
@@ -159,14 +153,13 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 // Otherwise, the delete was successful and we can display a toast.
                 Toast.makeText(this, "player deleted",
                         Toast.LENGTH_SHORT).show();
-            }
+            }*/
         }
     }
 
     //Create and return a loader that queries data for a single player
     @Override
     public Loader onCreateLoader(int id, Bundle args) {
-        Log.e("EditorActivity", "onCreateLoader() called");
         //Define a projection that specifies the columns from the table we care about
         String[] projection = {
                 PlayerEntry._ID,

@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Setup FAB to open EditorActivity
+        // Setup FAB to open EditScoreActivity
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,13 +49,11 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 // Insert the new row using PlayerProvider
                 Uri newUri = getContentResolver().insert(PlayerEntry.CONTENT_URI, values);
 
-                Log.e("Saving a Player", String.valueOf(newUri));
-
-                if (newUri != null) {
+/*                if (newUri != null) {
                     Toast.makeText(getApplicationContext(), "new player saved", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_failed), Toast.LENGTH_SHORT).show();
-                }
+                }*/
             }
         });
 
@@ -77,14 +75,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         //The footer view cannot be selected
         playerListView.addFooterView(empty, 0, false);
 
-        Log.e("MainActivity", "mCursorAdapter set on playerListView");
-
         //set click listeners on each list item
         playerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Intent intent = new Intent(MainActivity.this, EditorActivity.class);
+                Intent intent = new Intent(MainActivity.this, EditScoreActivity.class);
 
                 //Append the id of the current pet to the content URI
                 Uri currentPlayerUri = ContentUris.withAppendedId(PlayerEntry.CONTENT_URI, id);
@@ -121,10 +117,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Call the ContentResolver to delete the player at the given content URI.
         // Pass in null for the selection and selection args because the mCurrentPlayerUri
         // content URI already identifies the player that we want.
-        Log.e("Main", "This is the URI to delete: " + PlayerEntry.CONTENT_URI);
         int rowsDeleted = getContentResolver().delete(PlayerEntry.CONTENT_URI, null, null);
 
-        if (rowsDeleted == 0) {
+/*        if (rowsDeleted == 0) {
             // If no rows were affected, then there was an error with deleting the row
             Toast.makeText(this, "Error with deleting all players",
                     Toast.LENGTH_SHORT).show();
@@ -132,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             // Otherwise, the delete was successful and we can display a toast.
             Toast.makeText(this, "All players deleted",
                     Toast.LENGTH_SHORT).show();
-        }
+        }*/
 
     }
 
@@ -144,7 +139,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 PlayerEntry.COLUMN_PLAYER_NAME,
                 PlayerEntry.COLUMN_PLAYER_SCORE
         };
-        Log.e("onCreateLoader", "is this thing loading?");
 
         //This loader will execute the ContentProvider's query method on a background thread
         return new CursorLoader(this,

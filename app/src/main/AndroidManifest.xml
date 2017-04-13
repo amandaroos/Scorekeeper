@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EditorActivity"
+            android:name=".EditScoreActivity"
             android:parentActivityName=".MainActivity"
             android:windowSoftInputMode="stateVisible"
             android:theme="@style/EditorTheme"
