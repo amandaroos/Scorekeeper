@@ -1,47 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:padding="16dp">
 
 
     <EditText
+        android:id="@+id/score_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:hint="0"
+        android:imeOptions="flagNoExtractUi"
         android:inputType="numberSigned"
         android:textAlignment="center"
-        android:textSize="48sp"
-        android:id="@+id/score_input"
-        android:imeOptions="flagNoExtractUi"
-        android:hint="0" />
+        android:textSize="48sp" />
 
     <TextView
+        android:id="@+id/edit_player_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="16dp"
-        tools:text="existing score"
-        android:id="@+id/edit_player_score"
-        />
+        tools:text="existing score" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/avatar"/>
+        app:srcCompat="@drawable/avatar" />
+
     <TextView
+        android:id="@+id/player_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_player_name"
         android:layout_gravity="center"
-
-        tools:text="Player Name"
-        />
-
+        tools:text="Player Name" />
 
 
 </LinearLayout>

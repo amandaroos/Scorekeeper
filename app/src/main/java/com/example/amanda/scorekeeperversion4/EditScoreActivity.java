@@ -9,7 +9,6 @@ import android.os.Bundle;
 import android.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,12 +17,11 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
 /**
- * Allows user to create a new player or edit an existing one.
+ * Allows user to edit the player's score
  */
 public class EditScoreActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -33,7 +31,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
 
     private final String LOG_TAG = EditScoreActivity.class.getSimpleName();
 
-    //Content URI for the existing player (null if it's a new player)
+    //Content URI for the player
     private Uri mCurrentPlayerUri;
 
     //Loader number
@@ -54,7 +52,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_editor);
+        setContentView(R.layout.activity_edit_score);
 
         //Use getIntent() and getData()to get the URI associated with the intent
         mCurrentPlayerUri = getIntent().getData();
@@ -62,7 +60,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
         getLoaderManager().initLoader(PLAYER_LOADER, null, this);
 
         // Find all relevant views
-        mName = (TextView) findViewById(R.id.edit_player_name);
+        mName = (TextView) findViewById(R.id.player_name);
         mScore = (TextView) findViewById(R.id.edit_player_score);
         mScoreEditText = (EditText) findViewById(R.id.score_input);
     }
@@ -87,7 +85,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
                 finish();
                 return true;
             // Respond to a click on the "Delete" menu option
-            case R.id.action_delete:
+            case R.id.cab_delete:
                 //Delete player from the database
                 deletePlayer();
                 //Exit activity
@@ -98,7 +96,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
     }
 
     /**
-     * Get user input from editor and save new player in database
+     * Get user input from editor and save player score in database
      */
     private void savePlayer() {
         //Get player data from user input

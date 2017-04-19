@@ -13,7 +13,7 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/action_delete"
+        android:id="@+id/cab_delete"
         android:title="@string/action_delete"
         app:showAsAction="never" />
 </menu>

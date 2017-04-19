@@ -12,19 +12,22 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ActionMode;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
     public static final int PLAYER_LOADER = 0;
+
+    private ActionMode mActionMode;
 
     //The adapter that knows how to create list item views given a cursor
     private PlayerCursorAdapter mCursorAdapter;
@@ -92,9 +95,69 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             }
         });
 
+        //contextual action mode creates contextual action bar for selected list items
+        playerListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Log.e("MAin", "LongClickListener called");
+                if (mActionMode != null) {
+                    return false;
+                }
+
+                // Start the CAB using the ActionMode.Callback defined above
+                mActionMode = MainActivity.this.startActionMode(mActionModeCallback);
+                view.setSelected(true);
+                return true;
+            }
+        });
+
         //Initialize Loader
         getLoaderManager().initLoader(PLAYER_LOADER, null, this);
     }
+
+    private ActionMode.Callback mActionModeCallback = new ActionMode.Callback() {
+
+        // Called when the action mode is created; startActionMode() was called
+        @Override
+        public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+            // Inflate a menu resource providing context menu items
+            MenuInflater inflater = mode.getMenuInflater();
+            inflater.inflate(R.menu.context_menu, menu);
+            return true;
+        }
+
+        // Called each time the action mode is shown. Always called after onCreateActionMode, but
+        // may be called multiple times if the mode is invalidated.
+        @Override
+        public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
+            return false; // Return false if nothing is done
+        }
+
+        // Called when the user selects a contextual menu item
+        @Override
+        public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.cab_edit:
+                    //TODO open EDITNAMEACTIVITY
+                    mode.finish(); // Action picked, so close the CAB
+                    return true;
+                case R.id.cab_delete:
+                    //TODO delete the selected player(s)
+                    mode.finish(); // Action picked, so close the CAB
+                    return true;
+                default:
+                    return false;
+            }
+        }
+
+        // Called when the user exits the action mode
+        @Override
+        public void onDestroyActionMode(ActionMode mode) {
+            mActionMode = null;
+        }
+    };
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -1,8 +1,11 @@
 package com.example.amanda.scorekeeperversion4;
 
+import android.content.ContentUris;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.media.Image;
+import android.net.Uri;
 import android.support.v4.widget.CursorAdapter;
 import android.text.TextUtils;
 import android.util.Log;
@@ -83,11 +86,21 @@ public class PlayerCursorAdapter extends CursorAdapter {
         nameTextView.setText(playerName);
         scoreTextView.setText(playerScore);
 
-        moreActions.setOnClickListener(new View.OnClickListener() {
+/*        moreActions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                Intent intent = new Intent(MainActivity., EditScoreActivity.class);
+
+                //Append the id of the current pet to the content URI
+                Uri currentPlayerUri = ContentUris.withAppendedId(PlayerEntry.CONTENT_URI, id);
+
+                //Set the URI on the data field of the intent
+                intent.setData(currentPlayerUri);
+
+                startActivity(intent);
+
             }
-        });
+        });*/
     }
 }

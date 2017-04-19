@@ -28,7 +28,6 @@
             android:textAppearance="?android:textAppearanceSmall"
             android:layout_weight="2"
             tools:text="Player Name"/>
-
     </LinearLayout>
 
 
@@ -47,6 +46,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:id="@+id/more_actions"
-        app:srcCompat="@drawable/ic_more_vert"/>
+        app:srcCompat="@drawable/ic_more_vert" />
 
 </LinearLayout>
