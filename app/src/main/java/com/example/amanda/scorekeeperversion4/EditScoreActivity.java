@@ -10,10 +10,12 @@ import android.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -195,7 +197,19 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
             mName.setText(playerName);
             mScore.setText(playerScore);
 
-            //TODO finish activity when "done" is pressed on keyboard
+            //Save and finish EditScore activity when "done" is pressed on keyboard
+            mScoreEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    boolean handled = false;
+                    if (actionId == EditorInfo.IME_ACTION_DONE){
+                        savePlayer();
+                        finish();
+                        handled = true;
+                    }
+                    return handled;
+                }
+            });
         }
     }
 
