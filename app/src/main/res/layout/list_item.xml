@@ -15,10 +15,9 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             app:srcCompat="@drawable/avatar" />
-
 
         <TextView
             android:id="@+id/name"
@@ -42,5 +41,12 @@
         android:textAlignment="center"
         android:layout_gravity="center"
         tools:text="123456"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/more_actions"
+        app:srcCompat="@drawable/ic_more_vert"/>
 
 </LinearLayout>

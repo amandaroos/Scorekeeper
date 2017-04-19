@@ -2,12 +2,14 @@ package com.example.amanda.scorekeeperversion4;
 
 import android.content.Context;
 import android.database.Cursor;
+import android.media.Image;
 import android.support.v4.widget.CursorAdapter;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
@@ -61,6 +63,8 @@ public class PlayerCursorAdapter extends CursorAdapter {
         TextView nameTextView = (TextView) view. findViewById(R.id.name);
         TextView scoreTextView = (TextView) view.findViewById(R.id.score);
 
+        ImageView moreActions = (ImageView) view.findViewById(R.id.more_actions);
+
         //Find the columns of player attributes we are interested in
         int nameColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_NAME);
         int scoreColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_SCORE);
@@ -78,5 +82,12 @@ public class PlayerCursorAdapter extends CursorAdapter {
         //Populate views with extracted daa
         nameTextView.setText(playerName);
         scoreTextView.setText(playerScore);
+
+        moreActions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }

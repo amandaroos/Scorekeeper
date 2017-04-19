@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         //set an empty footer view at the end of the list to avoid the fab covering information
         TextView empty = new TextView(this);
-        empty.setHeight(100);
+        empty.setHeight(150);
         //The footer view cannot be selected
         playerListView.addFooterView(empty, 0, false);
 

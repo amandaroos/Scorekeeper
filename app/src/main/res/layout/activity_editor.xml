@@ -16,6 +16,7 @@
         android:textAlignment="center"
         android:textSize="48sp"
         android:id="@+id/score_input"
+        android:imeOptions="flagNoExtractUi"
         android:hint="0" />
 
     <TextView
