@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
@@ -80,14 +81,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
             // Respond to a click on the "Save" menu option
             case R.id.action_save:
                 //Save player to the database
-                savePlayer();
-                //Exit activity
-                finish();
-                return true;
-            // Respond to a click on the "Delete" menu option
-            case R.id.cab_delete:
-                //Delete player from the database
-                deletePlayer();
+                saveScore();
                 //Exit activity
                 finish();
                 return true;
@@ -98,7 +92,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
     /**
      * Get user input from editor and save player score in database
      */
-    private void savePlayer() {
+    private void saveScore() {
         //Get player data from user input
         String scoreString = mScoreEditText.getText().toString().trim();
 
@@ -112,12 +106,18 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
         // If the score is not provided by the user, don't try to parse the string into an
         // integer value. Use 0 by default.
         int score = currentScore;
-        if (!TextUtils.isEmpty(scoreString)) {
-            score += Integer.parseInt(scoreString);
-        }
-        else{
-            return;
-        }
+
+/*        if (Integer.parseInt(scoreString)) {
+            Toast.makeText(this, "Score is too high to save", Toast.LENGTH_SHORT).show();
+        } else {*/
+            if (!TextUtils.isEmpty(scoreString)) {
+
+                score += Integer.parseInt(scoreString);
+
+            } else {
+                return;
+            }
+
 
         values.put(PlayerEntry.COLUMN_PLAYER_SCORE, score);
 
@@ -200,8 +200,8 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     boolean handled = false;
-                    if (actionId == EditorInfo.IME_ACTION_DONE){
-                        savePlayer();
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        saveScore();
                         finish();
                         handled = true;
                     }

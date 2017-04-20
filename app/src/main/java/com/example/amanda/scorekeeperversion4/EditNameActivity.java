@@ -1,4 +1,4 @@
-package com.example.amanda.scorekeeperversion4.data;
+package com.example.amanda.scorekeeperversion4;
 
 import android.app.LoaderManager;
 import android.content.ContentValues;
@@ -9,14 +9,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.amanda.scorekeeperversion4.EditScoreActivity;
-import com.example.amanda.scorekeeperversion4.R;
+import com.example.amanda.scorekeeperversion4.data.PlayerContract;
 
 /**
  * Allows user to edit the player's name
@@ -47,12 +47,36 @@ public class EditNameActivity extends AppCompatActivity implements LoaderManager
 
         // Find all relevant views
         mScoreEditName = (EditText) findViewById(R.id.name_input);
+        mName = (TextView) findViewById(R.id.name_input);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu options from the res/menu/menu_editor.xml file.
+        // This adds menu items to the app bar.
+        getMenuInflater().inflate(R.menu.menu_editor, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // User clicked on a menu option in the app bar overflow menu
+        switch (item.getItemId()) {
+            // Respond to a click on the "Save" menu option
+            case R.id.action_save:
+                //Save player to the database
+                saveName();
+                //Exit activity
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     /**
      * Get user input from editor and save player name in database
      */
-    private void savePlayer() {
+    private void saveName() {
         //Get player data from user input
         String nameString = mScoreEditName.getText().toString().trim();
 
@@ -62,10 +86,10 @@ public class EditNameActivity extends AppCompatActivity implements LoaderManager
 
         values.put(PlayerContract.PlayerEntry.COLUMN_PLAYER_NAME, nameString);
 
-/*        //pass the content resolver the updated player information
+        //pass the content resolver the updated player information
         int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
 
-        // Show a toast message depending on whether or not the update was successful.
+/*        // Show a toast message depending on whether or not the update was successful.
         if (rowsAffected == 0) {
             // If no rows were affected, then there was an error with the update.
             Toast.makeText(this, getString(R.string.editor_update_player_failed),
@@ -109,16 +133,13 @@ public class EditNameActivity extends AppCompatActivity implements LoaderManager
             //Read name from the Cursor for the current player
             String playerName = cursor.getString(nameColumnIndex);
 
-            //Populate views with extracted data
-            mName.setText(playerName);
-
             //Save and finish EditScore activity when "done" is pressed on keyboard
             mScoreEditName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     boolean handled = false;
                     if (actionId == EditorInfo.IME_ACTION_DONE) {
-                        savePlayer();
+                        saveName();
                         finish();
                         handled = true;
                     }

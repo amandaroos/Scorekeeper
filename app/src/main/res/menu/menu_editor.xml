@@ -12,8 +12,4 @@
         android:icon="@drawable/ic_check"
         app:showAsAction="ifRoom" />
 
-    <item
-        android:id="@+id/cab_delete"
-        android:title="@string/action_delete"
-        app:showAsAction="never" />
 </menu>

@@ -107,10 +107,13 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
                 // Start the CAB using the ActionMode.Callback defined above
                 mActionMode = MainActivity.this.startActionMode(mActionModeCallback);
+                mActionMode.setTag(id);
                 view.setSelected(true);
                 return true;
             }
         });
+
+        playerListView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
         //Initialize Loader
         getLoaderManager().initLoader(PLAYER_LOADER, null, this);
@@ -137,13 +140,32 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Called when the user selects a contextual menu item
         @Override
         public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
+
+
+            long id = (long) mode.getTag();
+
+            //Append the id of the current pet to the content URI
+            Uri currentPlayerUri = ContentUris.withAppendedId(PlayerEntry.CONTENT_URI, id);
+
             switch (item.getItemId()) {
                 case R.id.cab_edit:
-                    //TODO open EDITNAMEACTIVITY
+
+                    Intent intent = new Intent(MainActivity.this, EditNameActivity.class);
+
+                    //Set the URI on the data field of the intent
+                    intent.setData(currentPlayerUri);
+
+                    startActivity(intent);
+
                     mode.finish(); // Action picked, so close the CAB
                     return true;
                 case R.id.cab_delete:
-                    //TODO delete the selected player(s)
+                    // Call the ContentResolver to delete the player at the given content URI.
+                    // Pass in null for the selection and selection args because the mCurrentPlayerUri
+                    // content URI already identifies the player that we want.
+                    int rowsDeleted = getContentResolver().delete(currentPlayerUri, null, null);
+
+
                     mode.finish(); // Action picked, so close the CAB
                     return true;
                 default:
@@ -174,6 +196,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void deletePlayer(Uri uri) {
+
+
+
     }
 
     public void deleteAllPlayers() {

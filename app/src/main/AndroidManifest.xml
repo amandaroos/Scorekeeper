@@ -20,7 +20,17 @@
             android:parentActivityName=".MainActivity"
             android:windowSoftInputMode="stateVisible"
             android:theme="@style/EditorTheme"
-            android:label="@string/editor_activity_title_edit_player">
+            android:label="Edit Score">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".EditNameActivity"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateVisible"
+            android:label="Edit Name">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

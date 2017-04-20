@@ -66,8 +66,6 @@ public class PlayerCursorAdapter extends CursorAdapter {
         TextView nameTextView = (TextView) view. findViewById(R.id.name);
         TextView scoreTextView = (TextView) view.findViewById(R.id.score);
 
-        ImageView moreActions = (ImageView) view.findViewById(R.id.more_actions);
-
         //Find the columns of player attributes we are interested in
         int nameColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_NAME);
         int scoreColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_SCORE);
@@ -86,21 +84,5 @@ public class PlayerCursorAdapter extends CursorAdapter {
         nameTextView.setText(playerName);
         scoreTextView.setText(playerScore);
 
-/*        moreActions.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity., EditScoreActivity.class);
-
-                //Append the id of the current pet to the content URI
-                Uri currentPlayerUri = ContentUris.withAppendedId(PlayerEntry.CONTENT_URI, id);
-
-                //Set the URI on the data field of the intent
-                intent.setData(currentPlayerUri);
-
-                startActivity(intent);
-
-            }
-        });*/
     }
 }
