@@ -24,8 +24,8 @@ import com.example.amanda.scorekeeperversion4.data.PlayerContract;
 
 public class EditNameActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
-    private EditText mScoreEditName;
-    private TextView mName;
+    private EditText mEditName;
+
 
     private final String LOG_TAG = EditNameActivity.class.getSimpleName();
 
@@ -46,8 +46,8 @@ public class EditNameActivity extends AppCompatActivity implements LoaderManager
         getLoaderManager().initLoader(PLAYER_LOADER, null, this);
 
         // Find all relevant views
-        mScoreEditName = (EditText) findViewById(R.id.name_input);
-        mName = (TextView) findViewById(R.id.name_input);
+        mEditName = (EditText) findViewById(R.id.name_input);
+
     }
 
     @Override
@@ -78,7 +78,7 @@ public class EditNameActivity extends AppCompatActivity implements LoaderManager
      */
     private void saveName() {
         //Get player data from user input
-        String nameString = mScoreEditName.getText().toString().trim();
+        String nameString = mEditName.getText().toString().trim();
 
         // Create a new map of values, where column name is the key,
         // and player name from the editor is the value
@@ -133,14 +133,13 @@ public class EditNameActivity extends AppCompatActivity implements LoaderManager
             //Read name from the Cursor for the current player
             String playerName = cursor.getString(nameColumnIndex);
 
-            //Set the player name if it is not the default name
-            String defaultPlayerName = getString(R.string.main_default_name);
-            if (!playerName.equals(defaultPlayerName)){
-                mName.setText(playerName);
-            }
+            //Set the player name
+            mEditName.setText(playerName);
+
+            mEditName.setSelection(0,mEditName.getText().toString().length());
 
             //Save and finish EditScore activity when "done" is pressed on keyboard
-            mScoreEditName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            mEditName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                     boolean handled = false;
@@ -158,6 +157,6 @@ public class EditNameActivity extends AppCompatActivity implements LoaderManager
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
         // If the loader is invalidated, clear out all the data from the input fields.
-        mScoreEditName.setText("");
+        mEditName.setText("");
     }
 }

@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     private ListView mPlayerListView;
 
+    private int playerNumber = 1;
+
     //The adapter that knows how to create list item views given a cursor
     private PlayerCursorAdapter mCursorAdapter;
 
@@ -44,11 +46,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             @Override
             public void onClick(View view) {
 
+                //create player name string
                 String defaultName = getString(R.string.main_default_name);
-
-                int numberOfPlayers = mPlayerListView.getCount();
-
-                defaultName += " " + numberOfPlayers;
+                defaultName += " " + playerNumber;
+                playerNumber++;
 
                 // Create a new map of values, where column names are the keys,
                 // and player attributes from the editor are the values
@@ -69,6 +70,11 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 if (mActionMode != null) {
                     mActionMode.finish();
                 }
+
+                int numberOfPlayers = mPlayerListView.getCount();
+
+                mPlayerListView.setSelection(numberOfPlayers - 1);
+                mPlayerListView.requestFocus();
             }
         });
 
@@ -214,14 +220,16 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        if (mPlayerListView.getCount() > 1) {
+            getMenuInflater().inflate(R.menu.menu_main, menu);
+        }
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.action_delete_all_entries:
                 deleteAllPlayers();
                 return true;
@@ -230,6 +238,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     public void deleteAllPlayers() {
+
+        //reset playerNumber so that the default playerName starts over at "Player 1"
+        playerNumber = 1;
+
         // Call the ContentResolver to delete the player at the given content URI.
         // Pass in null for the selection and selection args because the mCurrentPlayerUri
         // content URI already identifies the player that we want.
@@ -250,7 +262,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         //Define a projection that specifies the columns from the table we care about
-        String[] projection = new String[] {
+        String[] projection = new String[]{
                 PlayerEntry._ID,
                 PlayerEntry.COLUMN_PLAYER_NAME,
                 PlayerEntry.COLUMN_PLAYER_SCORE
