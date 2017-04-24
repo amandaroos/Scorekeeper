@@ -3,34 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp">
 
-
-    <EditText
-        android:id="@+id/score_input"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:hint="0"
-        android:imeOptions="flagNoExtractUi"
-        android:inputType="numberSigned"
-        android:textAlignment="center"
-        android:textSize="48sp" />
-
-    <TextView
-        android:id="@+id/edit_player_score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:padding="16dp"
-        tools:text="existing score"
-        android:visibility="invisible"/>
-
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
         android:layout_gravity="center"
         app:srcCompat="@drawable/avatar" />
 
@@ -39,7 +18,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:paddingTop="8dp"
         tools:text="Player Name" />
+
+    <TextView
+        android:id="@+id/edit_player_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="4561234567" />
+
+    <EditText
+        android:id="@+id/score_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="16dp"
+        android:hint="0"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="numberSigned"
+        android:textAlignment="center"
+        android:textSize="48sp"/>
 
 
 </LinearLayout>

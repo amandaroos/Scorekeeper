@@ -11,7 +11,6 @@ import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -28,6 +27,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     public static final int PLAYER_LOADER = 0;
 
     private ActionMode mActionMode;
+
+    private ListView mPlayerListView;
 
     //The adapter that knows how to create list item views given a cursor
     private PlayerCursorAdapter mCursorAdapter;
@@ -57,29 +58,38 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 } else {
                     Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_failed), Toast.LENGTH_SHORT).show();
                 }*/
+
+                //TODO Finish contextual action bar when an item has been selected
+                if (mActionMode != null) {
+                    mActionMode.finish();
+                }
             }
         });
 
         //Find the ListView which will be populated with the player data
-        ListView playerListView = (ListView) findViewById(R.id.list_view_player);
+        mPlayerListView = (ListView) findViewById(R.id.list_view_player);
+
 
         //Find and set empty view on the ListView so that it only shows when the list has 0 items.
         View emptyView = findViewById(R.id.empty_view);
-        playerListView.setEmptyView(emptyView);
+        mPlayerListView.setEmptyView(emptyView);
+
+        //set the choice mode for the contextual action bar
+        mPlayerListView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
         //Set up an Adapter to create a list item for each row of pet data in the Cursor
         //There is no pet data yet (until the loader finishes) so pass in null for the Cursor
         mCursorAdapter = new PlayerCursorAdapter(this, null);
-        playerListView.setAdapter(mCursorAdapter);
+        mPlayerListView.setAdapter(mCursorAdapter);
 
         //set an empty footer view at the end of the list to avoid the fab covering information
         TextView empty = new TextView(this);
         empty.setHeight(150);
         //The footer view cannot be selected
-        playerListView.addFooterView(empty, 0, false);
+        mPlayerListView.addFooterView(empty, 0, false);
 
         //set click listeners on each list item
-        playerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        mPlayerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
@@ -92,15 +102,23 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 intent.setData(currentPlayerUri);
 
                 startActivity(intent);
+
+                //Finish contextual action bar when an item has been selected
+                if (mActionMode != null) {
+                    mActionMode.finish();
+                }
+
+                //remove highlight from the selected player
+                mPlayerListView.setItemChecked(position, false);
             }
         });
 
-        //contextual action mode creates contextual action bar for selected list items
-        playerListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+        //Contextual action mode creates contextual action bar for list items selected with
+        //a long press
+        mPlayerListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Log.e("MAin", "LongClickListener called");
                 if (mActionMode != null) {
                     return false;
                 }
@@ -109,11 +127,13 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 mActionMode = MainActivity.this.startActionMode(mActionModeCallback);
                 mActionMode.setTag(id);
                 view.setSelected(true);
+
+                //highlight the selected player by setting as checked
+                mPlayerListView.setItemChecked(position, true);
+
                 return true;
             }
         });
-
-        playerListView.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
         //Initialize Loader
         getLoaderManager().initLoader(PLAYER_LOADER, null, this);
@@ -158,6 +178,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     startActivity(intent);
 
                     mode.finish(); // Action picked, so close the CAB
+
                     return true;
                 case R.id.cab_delete:
                     // Call the ContentResolver to delete the player at the given content URI.
@@ -165,10 +186,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     // content URI already identifies the player that we want.
                     int rowsDeleted = getContentResolver().delete(currentPlayerUri, null, null);
 
-
                     mode.finish(); // Action picked, so close the CAB
                     return true;
                 default:
+                    mode.finish();
                     return false;
             }
         }
@@ -176,10 +197,14 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Called when the user exits the action mode
         @Override
         public void onDestroyActionMode(ActionMode mode) {
+            mPlayerListView.clearChoices();
+
+            for (int i = 0; i < mPlayerListView.getCount(); i++) {
+                mPlayerListView.setItemChecked(i, false);
+            }
             mActionMode = null;
         }
     };
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -196,12 +221,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    private void deletePlayer(Uri uri) {
-
-
-
     }
 
     public void deleteAllPlayers() {

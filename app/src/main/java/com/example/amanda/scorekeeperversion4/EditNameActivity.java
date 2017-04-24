@@ -133,6 +133,12 @@ public class EditNameActivity extends AppCompatActivity implements LoaderManager
             //Read name from the Cursor for the current player
             String playerName = cursor.getString(nameColumnIndex);
 
+            //Set the player name if it is not the default name
+            String defaultPlayerName = getString(R.string.main_default_name);
+            if (!playerName.equals(defaultPlayerName)){
+                mName.setText(playerName);
+            }
+
             //Save and finish EditScore activity when "done" is pressed on keyboard
             mScoreEditName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override

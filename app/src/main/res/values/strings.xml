@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ScoreKeeperVersion4</string>
+    <string name="app_name">Scorekeeper</string>
 
     <!-- Label for name category in the editor [CHAR LIMIT=30] -->
     <string name="category_name">Name</string>
@@ -14,7 +14,7 @@
     <string name="hint_player_score">0</string>
 
     <!-- Label for main activity menu option to delete all players [CHAR LIMIT=20] -->
-    <string name="action_delete_all_players">Delete All</string>
+    <string name="action_delete_all_players">Delete All Players</string>
 
     <!-- Label for editor menu option to save player and leave editor [CHAR LIMIT=20] -->
     <string name="action_save">Save</string>

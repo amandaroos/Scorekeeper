@@ -41,7 +41,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
     //boolean for checking if user changed any parts of the form
     private boolean mPlayerHasChanged = false;
 
-    //check if changes were made
+    //TODO check if changes were made?
     private View.OnTouchListener mTouchListener = new View.OnTouchListener() {
         @Override
         public boolean onTouch(View view, MotionEvent motionEvent) {
