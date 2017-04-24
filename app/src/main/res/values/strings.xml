@@ -1,16 +1,13 @@
 <resources>
     <string name="app_name">Scorekeeper</string>
 
-    <!-- Label for name category in the editor [CHAR LIMIT=30] -->
-    <string name="category_name">Name</string>
+    <!-- Label for EditText in Edit Name Activity [CHAR LIMIT=30] -->
+    <string name="player_name_label">Player Name</string>
 
     <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
     <string name="hint_player_name">Name</string>
 
-    <!-- Label for score category in the editor [CHAR LIMIT=30] -->
-    <string name="category_score">Score</string>
-
-    <!-- Number hint for score field in the editor [CHAR LIMIT=30] -->
+    <!-- Number hint for score field in the Edit Score Activity[CHAR LIMIT=30] -->
     <string name="hint_player_score">0</string>
 
     <!-- Label for main activity menu option to delete all players [CHAR LIMIT=20] -->
@@ -23,7 +20,7 @@
     <string name="action_delete">Delete</string>
 
     <!-- Default name for name field in the list view if name String is empty [CHAR LIMIT=30] -->
-    <string name="main_default_name">New Player</string>
+    <string name="main_default_name">Player</string>
 
     <!-- Toast message in editor when player has updated successfully [CHAR LIMIT=NONE]-->
     <string name="editor_update_player_successful">Player updated.</string>

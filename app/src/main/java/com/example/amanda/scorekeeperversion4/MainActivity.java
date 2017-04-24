@@ -44,10 +44,16 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             @Override
             public void onClick(View view) {
 
+                String defaultName = getString(R.string.main_default_name);
+
+                int numberOfPlayers = mPlayerListView.getCount();
+
+                defaultName += " " + numberOfPlayers;
+
                 // Create a new map of values, where column names are the keys,
                 // and player attributes from the editor are the values
                 ContentValues values = new ContentValues();
-                values.put(PlayerEntry.COLUMN_PLAYER_NAME, "New Player");
+                values.put(PlayerEntry.COLUMN_PLAYER_NAME, defaultName);
                 values.put(PlayerEntry.COLUMN_PLAYER_SCORE, 0);
 
                 // Insert the new row using PlayerProvider

@@ -19,7 +19,8 @@
             android:name=".EditScoreActivity"
             android:parentActivityName=".MainActivity"
             android:windowSoftInputMode="stateVisible"
-            android:label="Add Score">
+            android:label="Add Score"
+            android:theme="@style/EditTheme">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -29,7 +30,8 @@
             android:name=".EditNameActivity"
             android:parentActivityName=".MainActivity"
             android:windowSoftInputMode="stateVisible"
-            android:label="Edit Name">
+            android:label="Edit Name"
+            android:theme="@style/EditTheme">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

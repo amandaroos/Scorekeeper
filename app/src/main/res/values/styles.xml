@@ -6,6 +6,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/list_activated_background</item>
+        <item name="actionModeBackground">@color/colorActionModeBackground</item>
+    </style>
+
+    <!-- Edit Name/Add Score theme -->
+    <style name="EditTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorEditPrimary</item>
+        <item name="colorPrimaryDark">@color/colorEditPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 
 
