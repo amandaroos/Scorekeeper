@@ -13,6 +13,9 @@
     <!-- Label for main activity menu option to delete all players [CHAR LIMIT=20] -->
     <string name="action_delete_all_players">Delete All Players</string>
 
+    <!-- Label for main activity menu option to reset all scores[CHAR LIMIT=20] -->
+    <string name="action_reset_scores">Reset Scores</string>
+
     <!-- Label for editor menu option to save player and leave editor [CHAR LIMIT=20] -->
     <string name="action_save">Save</string>
 

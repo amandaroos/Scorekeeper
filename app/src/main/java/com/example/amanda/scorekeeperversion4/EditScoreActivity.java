@@ -124,16 +124,6 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
         //pass the content resolver the updated player information
         int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
 
-/*        // Show a toast message depending on whether or not the update was successful.
-        if (rowsAffected == 0) {
-            // If no rows were affected, then there was an error with the update.
-            Toast.makeText(this, getString(R.string.editor_update_player_failed),
-                    Toast.LENGTH_SHORT).show();
-        } else {
-            // Otherwise, the update was successful and we can display a toast.
-            Toast.makeText(this, getString(R.string.editor_update_player_successful),
-                    Toast.LENGTH_SHORT).show();
-        }*/
     }
 
     private void deletePlayer() {

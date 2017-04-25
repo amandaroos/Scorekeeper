@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -28,9 +29,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     private ActionMode mActionMode;
 
-    private ListView mPlayerListView;
+    public ListView mPlayerListView;
 
-    private int playerNumber = 1;
+    //used for tracking the number of players in the list
+    private int mPlayerNumber = 0;
 
     //The adapter that knows how to create list item views given a cursor
     private PlayerCursorAdapter mCursorAdapter;
@@ -47,9 +49,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             public void onClick(View view) {
 
                 //create player name string
+                mPlayerNumber++;
                 String defaultName = getString(R.string.main_default_name);
-                defaultName += " " + playerNumber;
-                playerNumber++;
+                defaultName += " " + mPlayerNumber;
+
 
                 // Create a new map of values, where column names are the keys,
                 // and player attributes from the editor are the values
@@ -60,13 +63,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 // Insert the new row using PlayerProvider
                 Uri newUri = getContentResolver().insert(PlayerEntry.CONTENT_URI, values);
 
-/*                if (newUri != null) {
-                    Toast.makeText(getApplicationContext(), "new player saved", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), getString(R.string.editor_insert_player_failed), Toast.LENGTH_SHORT).show();
-                }*/
-
-                //TODO Finish contextual action bar when an item has been selected
+                //Finish contextual action bar when an item has been selected
                 if (mActionMode != null) {
                     mActionMode.finish();
                 }
@@ -75,6 +72,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
                 mPlayerListView.setSelection(numberOfPlayers - 1);
                 mPlayerListView.requestFocus();
+
+                //Calls onCreateOptionsMenu()
+                invalidateOptionsMenu();
             }
         });
 
@@ -138,7 +138,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 // Start the CAB using the ActionMode.Callback defined above
                 mActionMode = MainActivity.this.startActionMode(mActionModeCallback);
                 mActionMode.setTag(id);
-                view.setSelected(true);
 
                 //highlight the selected player by setting as checked
                 mPlayerListView.setItemChecked(position, true);
@@ -172,8 +171,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Called when the user selects a contextual menu item
         @Override
         public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
-
-
+            //get the id from the action mode tag
             long id = (long) mode.getTag();
 
             //Append the id of the current pet to the content URI
@@ -181,24 +179,20 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
             switch (item.getItemId()) {
                 case R.id.cab_edit:
-
                     Intent intent = new Intent(MainActivity.this, EditNameActivity.class);
-
                     //Set the URI on the data field of the intent
                     intent.setData(currentPlayerUri);
-
                     startActivity(intent);
-
-                    mode.finish(); // Action picked, so close the CAB
-
+                    // Action picked, so close the CAB
+                    mode.finish();
                     return true;
                 case R.id.cab_delete:
                     // Call the ContentResolver to delete the player at the given content URI.
                     // Pass in null for the selection and selection args because the mCurrentPlayerUri
                     // content URI already identifies the player that we want.
                     int rowsDeleted = getContentResolver().delete(currentPlayerUri, null, null);
-
-                    mode.finish(); // Action picked, so close the CAB
+                    // Action picked, so close the CAB
+                    mode.finish();
                     return true;
                 default:
                     mode.finish();
@@ -209,8 +203,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Called when the user exits the action mode
         @Override
         public void onDestroyActionMode(ActionMode mode) {
+            //uncheck all items to remove highlight color
             mPlayerListView.clearChoices();
-
             for (int i = 0; i < mPlayerListView.getCount(); i++) {
                 mPlayerListView.setItemChecked(i, false);
             }
@@ -220,18 +214,24 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (mPlayerListView.getCount() > 1) {
-            getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        //Disable menu items when there are no players
+        if (mPlayerNumber == 0) {
+            menu.findItem(R.id.action_delete_all_entries).setEnabled(false);
+            menu.findItem(R.id.action_reset_scores).setEnabled(false);
         }
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         switch (item.getItemId()) {
             case R.id.action_delete_all_entries:
                 deleteAllPlayers();
+                invalidateOptionsMenu();
+                return true;
+            case R.id.action_reset_scores:
+                resetAllScores();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -239,24 +239,24 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
     public void deleteAllPlayers() {
 
-        //reset playerNumber so that the default playerName starts over at "Player 1"
-        playerNumber = 1;
+        //reset mPlayerNumber so that the default playerName starts over at "Player 1"
+        mPlayerNumber = 0;
 
         // Call the ContentResolver to delete the player at the given content URI.
         // Pass in null for the selection and selection args because the mCurrentPlayerUri
         // content URI already identifies the player that we want.
         int rowsDeleted = getContentResolver().delete(PlayerEntry.CONTENT_URI, null, null);
+    }
 
-/*        if (rowsDeleted == 0) {
-            // If no rows were affected, then there was an error with deleting the row
-            Toast.makeText(this, "Error with deleting all players",
-                    Toast.LENGTH_SHORT).show();
-        } else {
-            // Otherwise, the delete was successful and we can display a toast.
-            Toast.makeText(this, "All players deleted",
-                    Toast.LENGTH_SHORT).show();
-        }*/
+    public void resetAllScores(){
+        // Create a new map of values, where column name is the key,
+        // and the reset score is the value
+        ContentValues values = new ContentValues();
+        int scoreReset = 0;
+        values.put(PlayerEntry.COLUMN_PLAYER_SCORE, scoreReset);
 
+        //Pass the content resolver the updated player information
+        int rowsAffected = getContentResolver().update(PlayerEntry.CONTENT_URI, values, null, null);
     }
 
     @Override

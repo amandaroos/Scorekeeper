@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
+import com.example.amanda.scorekeeperversion4.MainActivity;
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
 /**
