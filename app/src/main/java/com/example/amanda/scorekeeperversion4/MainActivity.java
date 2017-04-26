@@ -11,7 +11,6 @@ import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     public ListView mPlayerListView;
 
     //used for tracking the number of players in the list
-    private int mPlayerNumber = 0;
+    private int mPlayerNumber;
 
     //The adapter that knows how to create list item views given a cursor
     private PlayerCursorAdapter mCursorAdapter;
@@ -100,6 +99,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         //The footer view cannot be selected
         mPlayerListView.addFooterView(empty, 0, false);
 
+        //Initialize with the number of players
+        mPlayerNumber = mPlayerListView.getCount()+1;
+
         //set click listeners on each list item
         mPlayerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -141,6 +143,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
                 //highlight the selected player by setting as checked
                 mPlayerListView.setItemChecked(position, true);
+
+
 
                 return true;
             }
@@ -203,7 +207,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Called when the user exits the action mode
         @Override
         public void onDestroyActionMode(ActionMode mode) {
-            //uncheck all items to remove highlight color
+            //Un-check all items to remove highlight color
             mPlayerListView.clearChoices();
             for (int i = 0; i < mPlayerListView.getCount(); i++) {
                 mPlayerListView.setItemChecked(i, false);
@@ -248,7 +252,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         int rowsDeleted = getContentResolver().delete(PlayerEntry.CONTENT_URI, null, null);
     }
 
-    public void resetAllScores(){
+    public void resetAllScores() {
         // Create a new map of values, where column name is the key,
         // and the reset score is the value
         ContentValues values = new ContentValues();
