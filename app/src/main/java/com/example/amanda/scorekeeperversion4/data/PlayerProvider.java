@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.util.Log;
 
+import com.example.amanda.scorekeeperversion4.MainActivity;
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
 /**
@@ -163,11 +164,15 @@ public class PlayerProvider extends ContentProvider {
         // Get writable database
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
 
+        final int match = sUriMatcher.match(uri);
+
+        //Notify all listeners that the data has changed for the player content URI
+        //uri: content://com.example.android.scorekeeper/players
+        getContext().getContentResolver().notifyChange(uri, null);
 
         // Track the number of rows that were deleted
         int rowsDeleted;
 
-        final int match = sUriMatcher.match(uri);
         switch (match) {
             case PLAYERS:
                 // Delete all rows that match the selection and selection args
@@ -190,7 +195,7 @@ public class PlayerProvider extends ContentProvider {
             getContext().getContentResolver().notifyChange(uri, null);
         }
 
-        // Return the number of rows deleted
+        //Return the number of rows deleted
         return rowsDeleted;
     }
 

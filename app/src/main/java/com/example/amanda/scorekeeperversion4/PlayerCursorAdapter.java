@@ -4,11 +4,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.support.v4.widget.CursorAdapter;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
@@ -70,12 +68,6 @@ public class PlayerCursorAdapter extends CursorAdapter {
         //Read attributes from the Cursor for the current player
         String playerName = cursor.getString(nameColumnIndex);
         String playerScore = cursor.getString(scoreColumnIndex);
-
-        // If the player name is empty string or null, then use some default text
-        // that says "New Player", so the TextView isn't blank.
-        if (TextUtils.isEmpty(playerName)){
-            playerName = context.getString(R.string.main_default_name);
-        }
 
         //Populate views with extracted daa
         nameTextView.setText(playerName);

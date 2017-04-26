@@ -5,8 +5,12 @@
     tools:context=".MainActivity">
 
     <item
-        android:id="@+id/action_delete_all_entries"
-        android:title="@string/action_delete_all_entries"
+        android:id="@+id/action_reset_scores"
+        android:title="@string/action_reset_scores"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/action_delete_all_entries"
+        android:title="@string/action_delete_all_players"
+        app:showAsAction="never" />
 </menu>

@@ -1,63 +1,47 @@
 <resources>
-    <string name="app_name">ScoreKeeperVersion4</string>
+    <string name="app_name">Scorekeeper</string>
 
-    <!-- Label for overflow menu option that deletes all player data in the app [CHAR LIMIT=20] -->
-    <string name="action_delete_all_entries">Delete All Players</string>
+    <!-- Label for EditText in Edit Name Activity [CHAR LIMIT=30] -->
+    <string name="player_name_label">Player Name</string>
 
-    <!-- Toast message in main activity when all players deleted successfully [CHAR LIMIT=NONE]-->
-    <string name="main_delete_all_players_successful">All players deleted.</string>
-
-    <!-- Toast message in main activity when all players failed to be deleted [CHAR LIMIT=NONE]-->
-    <string name="main_delete_all_players_failed">Error with deleting all players.</string>
-
-    <!-- Label for name category in the editor [CHAR LIMIT=30] -->
-    <string name="category_name">Name</string>
+    <!-- Separator between Label and EditText in Edit Name Activity [CHAR LIMIT=10] -->
+    <string name="player_name_label_separator">:</string>
 
     <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
     <string name="hint_player_name">Name</string>
 
-    <!-- Label for score category in the editor [CHAR LIMIT=30] -->
-    <string name="category_score">Score</string>
-
-    <!-- Number hint for score field in the editor [CHAR LIMIT=30] -->
+    <!-- Number hint for score field in the Edit Score Activity[CHAR LIMIT=30] -->
     <string name="hint_player_score">0</string>
+
+    <!-- Label for main activity menu option to delete all players [CHAR LIMIT=20] -->
+    <string name="action_delete_all_players">Delete All Players</string>
+
+    <!-- Label for main activity menu option to reset all scores[CHAR LIMIT=20] -->
+    <string name="action_reset_scores">Reset Scores</string>
 
     <!-- Label for editor menu option to save player and leave editor [CHAR LIMIT=20] -->
     <string name="action_save">Save</string>
 
-    <!-- Label for editor overflow menu option that deletes the current player [CHAR LIMIT=20] -->
+    <!-- Label for editor overflow menu option that deletes the selected player [CHAR LIMIT=20] -->
     <string name="action_delete">Delete</string>
 
+    <!-- Label for editor overflow menu option that deletes the selected player [CHAR LIMIT=20] -->
+    <string name="action_edit">Edit</string>
+
+    <!-- Label for player icon in main activity list view[CHAR LIMIT=20] -->
+    <string name="image_player_icon">Player Icon</string>
+
+    <!-- Label for group icon in main activity list view empty view[CHAR LIMIT=20] -->
+    <string name="image_group_icon">Group Icon</string>
+
     <!-- Default name for name field in the list view if name String is empty [CHAR LIMIT=30] -->
-    <string name="main_default_name">New Player</string>
+    <string name="main_default_name">Player</string>
 
-    <!-- Toast message in editor when player has updated successfully [CHAR LIMIT=NONE]-->
-    <string name="editor_update_player_successful">Player updated.</string>
+    <!-- Title for the activity to add a score to a player [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_add_score">Add Score</string>
 
-    <!-- Toast message in editor when player has failed to be updated [CHAR LIMIT=NONE]-->
-    <string name="editor_update_player_failed">Error updating player</string>
+    <!-- Title for the activity to edit a player's name [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit_name">Edit Name</string>
 
-    <!-- Toast message in editor when player has inserted successfully [CHAR LIMIT=NONE]-->
-    <string name="editor_insert_player_successful">Player saved.</string>
 
-    <!-- Toast message in editor when player has failed to be inserted [CHAR LIMIT=NONE]-->
-    <string name="editor_insert_player_failed">Error with saving player</string>
-
-    <!-- Toast message in editor when player has been deleted [CHAR LIMIT=NONE]-->
-    <string name="editor_delete_player_successful">Player deleted.</string>
-
-    <!-- Toast message in editor when player has failed to be deleted [CHAR LIMIT=NONE]-->
-    <string name="editor_delete_player_failed">Error with deleting player</string>
-
-    <!-- Title text for the empty view, which describes the people image [CHAR LIMIT=50] -->
-    <string name="empty_view_title_text">No players to show</string>
-
-    <!-- Subtitle text for the empty view that prompts the user to add a player [CHAR LIMIT=50] -->
-    <string name="empty_view_subtitle_text">Get started by adding a player</string>
-
-    <!-- Title for the activity to add a new player [CHAR LIMIT=20] -->
-    <string name="editor_activity_title_new_player">Add a Player</string>
-
-    <!-- Title for the activity to edit a player [CHAR LIMIT=20] -->
-    <string name="editor_activity_title_edit_player">Edit Player</string>
 </resources>

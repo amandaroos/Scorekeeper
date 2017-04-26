@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_plus_circle"
+        android:icon="@drawable/scorekeeper_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -16,18 +16,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EditorActivity"
+            android:name=".EditScoreActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/EditorTheme">
+            android:windowSoftInputMode="stateVisible"
+            android:label="@string/editor_activity_title_add_score"
+            android:theme="@style/EditTheme">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".EditScoreActivity"
+            android:name=".EditNameActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme">
+            android:windowSoftInputMode="stateVisible"
+            android:label="@string/editor_activity_title_edit_name"
+            android:theme="@style/EditTheme">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
