@@ -139,12 +139,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
                 // Start the CAB using the ActionMode.Callback defined above
                 mActionMode = MainActivity.this.startActionMode(mActionModeCallback);
-                mActionMode.setTag(id);
+                if (mActionMode != null) {
+                    mActionMode.setTag(id);
+                }
 
                 //highlight the selected player by setting as checked
                 mPlayerListView.setItemChecked(position, true);
-
-
 
                 return true;
             }
@@ -215,6 +215,15 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             mActionMode = null;
         }
     };
+
+    @Override
+    protected void onPause() {
+        //Finish contextual action bar when an item has been selected
+        if (mActionMode != null) {
+            mActionMode.finish();
+        }
+        super.onPause();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
