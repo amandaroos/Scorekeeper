@@ -5,13 +5,13 @@
     <string name="player_name_label">Player Name</string>
 
     <!-- Separator between Label and EditText in Edit Name Activity [CHAR LIMIT=10] -->
-    <string name="player_name_label_separator">:</string>
+    <string name="player_name_label_separator" translatable="false">:</string>
 
     <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
     <string name="hint_player_name">Name</string>
 
     <!-- Number hint for score field in the Edit Score Activity[CHAR LIMIT=30] -->
-    <string name="hint_player_score">0</string>
+    <string name="hint_player_score" translatable="false">0</string>
 
     <!-- Label for main activity menu option to delete all players [CHAR LIMIT=20] -->
     <string name="action_delete_all_players">Delete All Players</string>

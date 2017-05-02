@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     public ListView mPlayerListView;
 
     //used for tracking the number of players in the list
-    private int mPlayerNumber;
+    private int mPlayerNumber = 0;
 
     //The adapter that knows how to create list item views given a cursor
     private PlayerCursorAdapter mCursorAdapter;
@@ -67,9 +67,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     mActionMode.finish();
                 }
 
-                int numberOfPlayers = mPlayerListView.getCount();
-
-                mPlayerListView.setSelection(numberOfPlayers - 1);
+                mPlayerListView.setSelection(mPlayerListView.getCount() - 1);
                 mPlayerListView.requestFocus();
 
                 //Calls onCreateOptionsMenu()
@@ -98,9 +96,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         empty.setHeight(150);
         //The footer view cannot be selected
         mPlayerListView.addFooterView(empty, 0, false);
-
-        //Initialize with the number of players
-        mPlayerNumber = mPlayerListView.getCount()+1;
 
         //set click listeners on each list item
         mPlayerListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -228,11 +223,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        //Disable menu items when there are no players
-        if (mPlayerNumber == 0) {
-            menu.findItem(R.id.action_delete_all_entries).setEnabled(false);
-            menu.findItem(R.id.action_reset_scores).setEnabled(false);
-        }
         return true;
     }
 
