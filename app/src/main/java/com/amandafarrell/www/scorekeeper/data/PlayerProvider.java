@@ -1,4 +1,4 @@
-package com.example.amanda.scorekeeperversion4.data;
+package com.amandafarrell.www.scorekeeper.data;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -8,9 +8,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.util.Log;
-
-import com.example.amanda.scorekeeperversion4.MainActivity;
-import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
 /**
  * This ContentProvider manages access to the data stored by the app
@@ -76,7 +73,7 @@ public class PlayerProvider extends ContentProvider {
                 // For the PLAYERS code, query the players table directly with the given
                 // projection, selection, selection arguments, and sort order. The cursor
                 // could contain multiple rows of the players table.
-                cursor = database.query(PlayerEntry.TABLE_NAME, projection, selection,
+                cursor = database.query(PlayerContract.PlayerEntry.TABLE_NAME, projection, selection,
                         selectionArgs, null, null, sortOrder);
                 break;
             case PLAYER_ID:
@@ -88,12 +85,12 @@ public class PlayerProvider extends ContentProvider {
                 // For every "?" in the selection, we need to have an element in the selection
                 // arguments that will fill in the "?". Since we have 1 question mark in the
                 // selection, we have 1 String in the selection arguments' String array.
-                selection = PlayerEntry._ID + "=?";
+                selection = PlayerContract.PlayerEntry._ID + "=?";
                 selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri)) };
 
                 // This will perform a query on the players table where the _id equals 3 to return a
                 // Cursor containing that row of the table.
-                cursor = database.query(PlayerEntry.TABLE_NAME, projection, selection,
+                cursor = database.query(PlayerContract.PlayerEntry.TABLE_NAME, projection, selection,
                         selectionArgs, null, null, sortOrder);
                 break;
             default:
@@ -113,9 +110,9 @@ public class PlayerProvider extends ContentProvider {
         final int match = sUriMatcher.match(uri);
         switch (match) {
             case PLAYERS:
-                return PlayerEntry.CONTENT_LIST_TYPE;
+                return PlayerContract.PlayerEntry.CONTENT_LIST_TYPE;
             case PLAYER_ID:
-                return PlayerEntry.CONTENT_ITEM_TYPE;
+                return PlayerContract.PlayerEntry.CONTENT_ITEM_TYPE;
             default:
                 throw new IllegalStateException("Unknown URI " + uri + " with match " + match);
         }
@@ -142,7 +139,7 @@ public class PlayerProvider extends ContentProvider {
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
 
         // Insert the new row, returning the primary key value of the new row
-        long newRowId = database.insert(PlayerEntry.TABLE_NAME, null, values);
+        long newRowId = database.insert(PlayerContract.PlayerEntry.TABLE_NAME, null, values);
 
         // If the ID is -1, then the insertion failed. Log an error and return null.
         if (newRowId == -1) {
@@ -176,14 +173,14 @@ public class PlayerProvider extends ContentProvider {
         switch (match) {
             case PLAYERS:
                 // Delete all rows that match the selection and selection args
-                rowsDeleted = database.delete(PlayerEntry.TABLE_NAME, selection, selectionArgs);
+                rowsDeleted = database.delete(PlayerContract.PlayerEntry.TABLE_NAME, selection, selectionArgs);
                 break;
 
             case PLAYER_ID:
                 // Delete a single row given by the ID in the URI
-                selection = PlayerEntry._ID + "=?";
+                selection = PlayerContract.PlayerEntry._ID + "=?";
                 selectionArgs = new String[]{String.valueOf(ContentUris.parseId(uri))};
-                rowsDeleted = database.delete(PlayerEntry.TABLE_NAME, selection, selectionArgs);
+                rowsDeleted = database.delete(PlayerContract.PlayerEntry.TABLE_NAME, selection, selectionArgs);
                 break;
             default:
                 throw new IllegalArgumentException("Deletion is not supported for " + uri);
@@ -210,7 +207,7 @@ public class PlayerProvider extends ContentProvider {
                 // For the PLAYER_ID code, extract out the ID from the URI,
                 // so we know which row to update. Selection will be "_id=?" and selection
                 // arguments will be a String array containing the actual ID.
-                selection = PlayerEntry._ID + "=?";
+                selection = PlayerContract.PlayerEntry._ID + "=?";
                 selectionArgs = new String[] { String.valueOf(ContentUris.parseId(uri)) };
                 return updatePlayer(uri, contentValues, selection, selectionArgs);
             default:
@@ -235,7 +232,7 @@ public class PlayerProvider extends ContentProvider {
         SQLiteDatabase database = mDbHelper.getWritableDatabase();
 
         // Insert the new row, returning the primary key value of the new row
-        int rowsUpdated = database.update(PlayerEntry.TABLE_NAME, values, selection, selectionArgs);
+        int rowsUpdated = database.update(PlayerContract.PlayerEntry.TABLE_NAME, values, selection, selectionArgs);
 
         //Notify all listeners that the data has changed for the player content URI
         //given URI has changed

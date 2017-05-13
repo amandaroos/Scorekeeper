@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.amanda.scorekeeperversion4", appContext.getPackageName());
+        assertEquals("com.example.amanda.scorekeeper", appContext.getPackageName());
     }
 }

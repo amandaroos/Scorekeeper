@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.amanda.scorekeeperversion4">
+    package="com.amandafarrell.www.scorekeeper">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.amandafarrell.www.scorekeeper.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -16,29 +16,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EditScoreActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.amandafarrell.www.scorekeeper.EditScoreActivity"
+            android:parentActivityName="com.amandafarrell.www.scorekeeper.MainActivity"
             android:windowSoftInputMode="stateVisible"
             android:label="@string/editor_activity_title_add_score"
             android:theme="@style/EditTheme">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.amandafarrell.www.scorekeeper.MainActivity" />
         </activity>
         <activity
-            android:name=".EditNameActivity"
-            android:parentActivityName=".MainActivity"
+            android:name="com.amandafarrell.www.scorekeeper.EditNameActivity"
+            android:parentActivityName="com.amandafarrell.www.scorekeeper.MainActivity"
             android:windowSoftInputMode="stateVisible"
             android:label="@string/editor_activity_title_edit_name"
             android:theme="@style/EditTheme">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.amandafarrell.www.scorekeeper.MainActivity" />
         </activity>
         <provider
-            android:name=".data.PlayerProvider"
+            android:name="com.amandafarrell.www.scorekeeper.data.PlayerProvider"
             android:authorities="com.example.amanda.scorekeeper"
             android:exported="false" />
     </application>

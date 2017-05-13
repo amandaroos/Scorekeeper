@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.example.amanda.scorekeeperversion4"
+        applicationId "com.amandafarrell.www.scorekeeper"
         minSdkVersion 21
         targetSdkVersion 25
         versionCode 1

@@ -1,10 +1,8 @@
-package com.example.amanda.scorekeeperversion4.data;
+package com.amandafarrell.www.scorekeeper.data;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-
-import static com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
 
 /**
  * Using  SQLiteOpenHelper class. When you use this class to obtain references to your database,
@@ -36,11 +34,11 @@ public class PlayerDbHelper extends SQLiteOpenHelper {
     }
 
     private static final String SQL_CREATE_ENTRIES =
-            "CREATE TABLE " + PlayerEntry.TABLE_NAME + " (" +
-                    PlayerEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    PlayerEntry.COLUMN_PLAYER_NAME + " TEXT, " +
-                    PlayerEntry.COLUMN_PLAYER_SCORE+ " INTEGER)";
+            "CREATE TABLE " + PlayerContract.PlayerEntry.TABLE_NAME + " (" +
+                    PlayerContract.PlayerEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    PlayerContract.PlayerEntry.COLUMN_PLAYER_NAME + " TEXT, " +
+                    PlayerContract.PlayerEntry.COLUMN_PLAYER_SCORE+ " INTEGER)";
 
     private static final String SQL_DELETE_ENTRIES =
-            "DROP TABLE IF EXISTS " + PlayerEntry.TABLE_NAME;
+            "DROP TABLE IF EXISTS " + PlayerContract.PlayerEntry.TABLE_NAME;
 }

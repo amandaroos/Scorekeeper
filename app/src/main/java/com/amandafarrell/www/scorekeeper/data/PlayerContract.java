@@ -1,4 +1,4 @@
-package com.example.amanda.scorekeeperversion4.data;
+package com.amandafarrell.www.scorekeeper.data;
 
 import android.content.ContentResolver;
 import android.net.Uri;

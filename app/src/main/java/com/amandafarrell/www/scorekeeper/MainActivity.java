@@ -1,4 +1,4 @@
-package com.example.amanda.scorekeeperversion4;
+package com.amandafarrell.www.scorekeeper;
 
 import android.app.LoaderManager;
 import android.content.ContentUris;
@@ -20,7 +20,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
+import com.amandafarrell.www.scorekeeper.data.PlayerContract;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -56,11 +56,11 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 // Create a new map of values, where column names are the keys,
                 // and player attributes from the editor are the values
                 ContentValues values = new ContentValues();
-                values.put(PlayerEntry.COLUMN_PLAYER_NAME, defaultName);
-                values.put(PlayerEntry.COLUMN_PLAYER_SCORE, 0);
+                values.put(PlayerContract.PlayerEntry.COLUMN_PLAYER_NAME, defaultName);
+                values.put(PlayerContract.PlayerEntry.COLUMN_PLAYER_SCORE, 0);
 
                 // Insert the new row using PlayerProvider
-                Uri newUri = getContentResolver().insert(PlayerEntry.CONTENT_URI, values);
+                Uri newUri = getContentResolver().insert(PlayerContract.PlayerEntry.CONTENT_URI, values);
 
                 //Finish contextual action bar when an item has been selected
                 if (mActionMode != null) {
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 Intent intent = new Intent(MainActivity.this, EditScoreActivity.class);
 
                 //Append the id of the current pet to the content URI
-                Uri currentPlayerUri = ContentUris.withAppendedId(PlayerEntry.CONTENT_URI, id);
+                Uri currentPlayerUri = ContentUris.withAppendedId(PlayerContract.PlayerEntry.CONTENT_URI, id);
 
                 //Set the URI on the data field of the intent
                 intent.setData(currentPlayerUri);
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             long id = (long) mode.getTag();
 
             //Append the id of the current pet to the content URI
-            Uri currentPlayerUri = ContentUris.withAppendedId(PlayerEntry.CONTENT_URI, id);
+            Uri currentPlayerUri = ContentUris.withAppendedId(PlayerContract.PlayerEntry.CONTENT_URI, id);
 
             switch (item.getItemId()) {
                 case R.id.cab_edit:
@@ -248,7 +248,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // Call the ContentResolver to delete the player at the given content URI.
         // Pass in null for the selection and selection args because the mCurrentPlayerUri
         // content URI already identifies the player that we want.
-        int rowsDeleted = getContentResolver().delete(PlayerEntry.CONTENT_URI, null, null);
+        int rowsDeleted = getContentResolver().delete(PlayerContract.PlayerEntry.CONTENT_URI, null, null);
     }
 
     public void resetAllScores() {
@@ -256,10 +256,10 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         // and the reset score is the value
         ContentValues values = new ContentValues();
         int scoreReset = 0;
-        values.put(PlayerEntry.COLUMN_PLAYER_SCORE, scoreReset);
+        values.put(PlayerContract.PlayerEntry.COLUMN_PLAYER_SCORE, scoreReset);
 
         //Pass the content resolver the updated player information
-        int rowsAffected = getContentResolver().update(PlayerEntry.CONTENT_URI, values, null, null);
+        int rowsAffected = getContentResolver().update(PlayerContract.PlayerEntry.CONTENT_URI, values, null, null);
     }
 
 
@@ -267,14 +267,14 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         //Define a projection that specifies the columns from the table we care about
         String[] projection = new String[]{
-                PlayerEntry._ID,
-                PlayerEntry.COLUMN_PLAYER_NAME,
-                PlayerEntry.COLUMN_PLAYER_SCORE
+                PlayerContract.PlayerEntry._ID,
+                PlayerContract.PlayerEntry.COLUMN_PLAYER_NAME,
+                PlayerContract.PlayerEntry.COLUMN_PLAYER_SCORE
         };
 
         //This loader will execute the ContentProvider's query method on a background thread
         return new CursorLoader(this,
-                PlayerEntry.CONTENT_URI,
+                PlayerContract.PlayerEntry.CONTENT_URI,
                 projection,
                 null,
                 null,

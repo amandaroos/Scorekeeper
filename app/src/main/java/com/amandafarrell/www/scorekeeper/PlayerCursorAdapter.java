@@ -1,15 +1,14 @@
-package com.example.amanda.scorekeeperversion4;
+package com.amandafarrell.www.scorekeeper;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.support.v4.widget.CursorAdapter;
-import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.amanda.scorekeeperversion4.data.PlayerContract.PlayerEntry;
+import com.amandafarrell.www.scorekeeper.data.PlayerContract;
 
 /**
  * {@link PlayerCursorAdapter} is an adapter for a list or grid view
@@ -62,8 +61,8 @@ public class PlayerCursorAdapter extends CursorAdapter {
         TextView scoreTextView = (TextView) view.findViewById(R.id.score);
 
         //Find the columns of player attributes we are interested in
-        int nameColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_NAME);
-        int scoreColumnIndex = cursor.getColumnIndex(PlayerEntry.COLUMN_PLAYER_SCORE);
+        int nameColumnIndex = cursor.getColumnIndex(PlayerContract.PlayerEntry.COLUMN_PLAYER_NAME);
+        int scoreColumnIndex = cursor.getColumnIndex(PlayerContract.PlayerEntry.COLUMN_PLAYER_SCORE);
 
         //Read attributes from the Cursor for the current player
         String playerName = cursor.getString(nameColumnIndex);
