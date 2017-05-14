@@ -26,9 +26,6 @@ public class EditNameActivity extends AppCompatActivity implements LoaderManager
 
     private EditText mEditName;
 
-
-    private final String LOG_TAG = EditNameActivity.class.getSimpleName();
-
     //Content URI for the existing player
     private Uri mCurrentPlayerUri;
 

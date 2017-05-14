@@ -27,8 +27,6 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
     private TextView mName;
     private TextView mScore;
 
-    private final String LOG_TAG = EditScoreActivity.class.getSimpleName();
-
     //Content URI for the player
     private Uri mCurrentPlayerUri;
 

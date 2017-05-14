@@ -7,7 +7,6 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
-import android.util.Log;
 
 /**
  * This ContentProvider manages access to the data stored by the app
@@ -41,11 +40,6 @@ public class PlayerProvider extends ContentProvider {
         sUriMatcher.addURI(PlayerContract.CONTENT_AUTHORITY, PlayerContract.PATH_PLAYERS
                 + "/#", PLAYER_ID);
     }
-
-    /**
-     * Tag for the log messages
-     */
-    public static final String LOG_TAG = PlayerProvider.class.getSimpleName();
 
 
     //Database helper object
@@ -141,9 +135,8 @@ public class PlayerProvider extends ContentProvider {
         // Insert the new row, returning the primary key value of the new row
         long newRowId = database.insert(PlayerContract.PlayerEntry.TABLE_NAME, null, values);
 
-        // If the ID is -1, then the insertion failed. Log an error and return null.
+        // If the ID is -1, then the insertion failed
         if (newRowId == -1) {
-            Log.e(LOG_TAG, "Failed to insert row for " + uri);
             return null;
         }
 
@@ -238,7 +231,6 @@ public class PlayerProvider extends ContentProvider {
         //given URI has changed
         if (rowsUpdated != 0) {
             getContext().getContentResolver().notifyChange(uri, null);
-            Log.e("PlayerProvider", ".notifyChange called");
         }
 
         return rowsUpdated;
