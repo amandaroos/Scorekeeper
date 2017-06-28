@@ -6,3 +6,4 @@ Simple, multiplayer scorekeeper
 -Tap on a player to add or subtract points
 -Use the menu to reset all scores or delete all players
 
+
