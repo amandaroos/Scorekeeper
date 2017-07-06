@@ -19,7 +19,7 @@ Simple, multiplayer scorekeeper
 
 These actions are all fairly simple to implement because this app is built on a SQLite database. I made a 4-minute video describing the bascis of how the SQLite Database works in this app: https://youtu.be/RBLFM4gY5bY
 
-Therer are three files used to make the database in this app:
+There are three files used to make the database in this app:
 
 -PlayerDBHelper
 
