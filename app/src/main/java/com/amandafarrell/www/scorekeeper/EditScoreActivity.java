@@ -9,12 +9,14 @@ import android.os.Bundle;
 import android.app.LoaderManager;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amandafarrell.www.scorekeeper.data.PlayerContract.PlayerEntry;
 
@@ -68,8 +70,6 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
             case R.id.action_save:
                 //Save player to the database
                 saveScore();
-                //Exit activity
-                finish();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -83,15 +83,16 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
         String scoreString = mScoreEditText.getText().toString().trim();
 
         //Get player's current score
-        int currentScore = Integer.parseInt(mScore.getText().toString().trim());
+        try{
+            int currentScore = Integer.parseInt(mScore.getText().toString().trim());
 
-        // Create a new map of values, where column name is the key,
-        // and player score from the editor is the value
-        ContentValues values = new ContentValues();
+            // Create a new map of values, where column name is the key,
+            // and player score from the editor is the value
+            ContentValues values = new ContentValues();
 
-        // If the score is not provided by the user, don't try to parse the string into an
-        // integer value. Use 0 by default.
-        int score = currentScore;
+            // If the score is not provided by the user, don't try to parse the string into an
+            // integer value. Use 0 by default.
+            int score = currentScore;
 
 /*        if (Integer.parseInt(scoreString)) {
             Toast.makeText(this, "Score is too high to save", Toast.LENGTH_SHORT).show();
@@ -104,10 +105,17 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
                 return;
             }
 
-        values.put(PlayerEntry.COLUMN_PLAYER_SCORE, score);
+            values.put(PlayerEntry.COLUMN_PLAYER_SCORE, score);
 
-        //pass the content resolver the updated player information
-        int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
+            //pass the content resolver the updated player information
+            int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
+
+            finish();
+        }
+        catch (Exception e){
+            Toast.makeText(this, "Entered score is too large", Toast.LENGTH_LONG).show();
+            Log.e("EditScore","This is the catch in the saveScore function");
+        }
     }
 
     //Create and return a loader that queries data for a single player
@@ -155,7 +163,6 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
                     boolean handled = false;
                     if (actionId == EditorInfo.IME_ACTION_DONE) {
                         saveScore();
-                        finish();
                         handled = true;
                     }
                     return handled;
