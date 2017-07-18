@@ -94,9 +94,6 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
             // integer value. Use 0 by default.
             int score = currentScore;
 
-/*        if (Integer.parseInt(scoreString)) {
-            Toast.makeText(this, "Score is too high to save", Toast.LENGTH_SHORT).show();
-        } else {*/
             if (!TextUtils.isEmpty(scoreString)) {
 
                 score += Integer.parseInt(scoreString);
@@ -113,8 +110,9 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
             finish();
         }
         catch (Exception e){
-            Toast.makeText(this, "Entered score is too large", Toast.LENGTH_LONG).show();
-            Log.e("EditScore","This is the catch in the saveScore function");
+            Toast.makeText(this, R.string.large_number_error_toast, Toast.LENGTH_LONG).show();
+
+            mScoreEditText.setText("");
         }
     }
 

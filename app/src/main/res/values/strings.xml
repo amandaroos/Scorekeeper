@@ -43,5 +43,8 @@
     <!-- Title for the activity to edit a player's name [CHAR LIMIT=20] -->
     <string name="editor_activity_title_edit_name">Edit Name</string>
 
+    <!-- Toast message when user enters a score that is too large [CHAR LIMIT=30] -->
+    <string name="large_number_error_toast">Error: score is too large</string>
+
 
 </resources>

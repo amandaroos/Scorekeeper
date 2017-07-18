@@ -13,4 +13,5 @@
     <string name="action_save">Guardar</string>
     <string name="hint_player_name">Nombre</string>
     <string name="player_name_label">Nombre del Jugador</string>
+    <string name="large_number_error_toast">" Error: la puntuación es demasiado grande"</string>
 </resources>

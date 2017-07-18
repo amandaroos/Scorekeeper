@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="@string/hint_player_score"
+        android:hint=""
         android:imeOptions="flagNoExtractUi"
         android:inputType="numberSigned"
         android:paddingTop="8dp"
