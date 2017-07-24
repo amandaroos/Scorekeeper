@@ -6,7 +6,9 @@ import android.support.v4.widget.CursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amandafarrell.www.scorekeeper.data.PlayerContract;
 
@@ -54,10 +56,10 @@ public class PlayerCursorAdapter extends CursorAdapter {
      *                correct row.
      */
     @Override
-    public void bindView(View view, Context context, Cursor cursor) {
+    public void bindView(View view, final Context context, Cursor cursor) {
 
         //find views to populate in inflated layout
-        TextView nameTextView = (TextView) view. findViewById(R.id.name);
+        TextView nameTextView = (TextView) view.findViewById(R.id.name);
         TextView scoreTextView = (TextView) view.findViewById(R.id.score);
 
         //Find the columns of player attributes we are interested in
@@ -71,5 +73,24 @@ public class PlayerCursorAdapter extends CursorAdapter {
         //Populate views with extracted daa
         nameTextView.setText(playerName);
         scoreTextView.setText(playerScore);
+
+        //TODO set onclick listeners on quick-change buttons
+        Button minusButton = (Button) view.findViewById(R.id.minus_button);
+        Button plusButton = (Button) view.findViewById(R.id.plus_button);
+
+        minusButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Minus button pressed", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        plusButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, "Plus button pressed", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 }

@@ -6,12 +6,14 @@
     android:layout_height="wrap_content"
     android:background="?android:attr/activatedBackgroundIndicator"
     android:orientation="horizontal"
-    android:padding="@dimen/activity_margin">
+    android:padding="@dimen/activity_margin"
+    android:id="@+id/list_item_layout"
+    android:descendantFocusability="blocksDescendants">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="2">
+        android:layout_weight="5">
 
         <ImageView
             android:layout_width="24dp"
@@ -30,13 +32,38 @@
             tools:text="Player Name" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/score"
+    <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:textAlignment="center"
-        android:textAppearance="?android:textAppearanceMedium"
-        tools:text="123456" />
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/minus_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="-"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorIcons"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            tools:text="123456" />
+
+        <Button
+            android:id="@+id/plus_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="+"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorIcons"/>
+
+    </LinearLayout>
+
 </LinearLayout>
