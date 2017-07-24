@@ -13,7 +13,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="5">
+        android:layout_weight="8">
 
         <ImageView
             android:layout_width="24dp"
@@ -35,7 +35,7 @@
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="3">
+        android:layout_weight="5">
 
         <Button
             android:id="@+id/minus_button"
@@ -47,14 +47,15 @@
 
         <TextView
             android:id="@+id/score"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:layout_gravity="center"
             android:textAlignment="center"
             android:textAppearance="?android:textAppearanceMedium"
-            tools:text="123456" />
+            tools:text="12345" />
 
         <Button
             android:id="@+id/plus_button"
@@ -62,7 +63,7 @@
             android:layout_height="32dp"
             android:text="+"
             android:background="@color/colorAccent"
-            android:textColor="@color/colorIcons"/>
+            android:textColor="@color/colorIcons" />
 
     </LinearLayout>
 
