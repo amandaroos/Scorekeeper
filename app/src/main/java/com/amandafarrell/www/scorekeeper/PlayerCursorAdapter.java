@@ -1,7 +1,10 @@
 package com.amandafarrell.www.scorekeeper;
 
+import android.content.ContentUris;
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.net.Uri;
 import android.support.v4.widget.CursorAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,7 +59,7 @@ public class PlayerCursorAdapter extends CursorAdapter {
      *                correct row.
      */
     @Override
-    public void bindView(View view, final Context context, Cursor cursor) {
+    public void bindView(View view, final Context context, final Cursor cursor) {
 
         //find views to populate in inflated layout
         TextView nameTextView = (TextView) view.findViewById(R.id.name);
@@ -68,29 +71,60 @@ public class PlayerCursorAdapter extends CursorAdapter {
 
         //Read attributes from the Cursor for the current player
         String playerName = cursor.getString(nameColumnIndex);
-        String playerScore = cursor.getString(scoreColumnIndex);
+        final String playerScore = cursor.getString(scoreColumnIndex);
 
         //Populate views with extracted daa
         nameTextView.setText(playerName);
         scoreTextView.setText(playerScore);
 
-        //TODO set onclick listeners on quick-change buttons
+        //Set onclick listeners on plus and minus buttons
         Button minusButton = (Button) view.findViewById(R.id.minus_button);
         Button plusButton = (Button) view.findViewById(R.id.plus_button);
+
+        int playerIdColumnIndex = cursor.getColumnIndex(PlayerContract.PlayerEntry._ID);
+        int playerId = cursor.getInt(playerIdColumnIndex);
+
+        final Uri currentPlayerUri = ContentUris.withAppendedId(PlayerContract.PlayerEntry.CONTENT_URI, playerId);
+
+        final int incrementAmount = 1;
 
         minusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Minus button pressed", Toast.LENGTH_SHORT).show();
+                int currentScore = Integer.parseInt(playerScore.trim());
+
+                // Create a new map of values, where column name is the key,
+                // and player score is the value
+                ContentValues values = new ContentValues();
+
+                // Increment the score by the increment amount
+                int score = currentScore - incrementAmount;
+
+                values.put(PlayerContract.PlayerEntry.COLUMN_PLAYER_SCORE, score);
+
+                //pass the content resolver the updated player score
+                int rowsAffected = context.getContentResolver().update(currentPlayerUri, values, null, null);
             }
         });
 
         plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, "Plus button pressed", Toast.LENGTH_SHORT).show();
+                int currentScore = Integer.parseInt(playerScore.trim());
+
+                // Create a new map of values, where column name is the key,
+                // and player score is the value
+                ContentValues values = new ContentValues();
+
+                // Increment the score by the increment amount
+                int score = currentScore + incrementAmount;
+
+
+                values.put(PlayerContract.PlayerEntry.COLUMN_PLAYER_SCORE, score);
+
+                //pass the content resolver the updated player score
+                int rowsAffected = context.getContentResolver().update(currentPlayerUri, values, null, null);
             }
         });
-
     }
 }
