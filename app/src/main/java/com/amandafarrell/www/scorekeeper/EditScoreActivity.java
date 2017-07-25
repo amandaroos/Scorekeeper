@@ -20,6 +20,8 @@ import android.widget.Toast;
 
 import com.amandafarrell.www.scorekeeper.data.PlayerContract.PlayerEntry;
 
+import org.w3c.dom.Text;
+
 /**
  * Allows user to edit the player's score
  */
@@ -27,7 +29,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
 
     private EditText mScoreEditText;
     private TextView mName;
-    private TextView mScore;
+    private TextView mCurrentScore;
 
     //Content URI for the player
     private Uri mCurrentPlayerUri;
@@ -48,8 +50,9 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
 
         // Find all relevant views
         mName = (TextView) findViewById(R.id.player_name);
-        mScore = (TextView) findViewById(R.id.edit_player_score);
+        mCurrentScore = (TextView) findViewById(R.id.edit_player_current_score);
         mScoreEditText = (EditText) findViewById(R.id.score_input);
+
     }
 
     @Override
@@ -70,6 +73,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
             case R.id.action_save:
                 //Save player to the database
                 saveScore();
+                finish();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -84,7 +88,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
 
         //Get player's current score
         try{
-            int currentScore = Integer.parseInt(mScore.getText().toString().trim());
+            int currentScore = Integer.parseInt(mCurrentScore.getText().toString().trim());
 
             // Create a new map of values, where column name is the key,
             // and player score from the editor is the value
@@ -106,8 +110,6 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
 
             //pass the content resolver the updated player information
             int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
-
-            finish();
         }
         catch (Exception e){
             Toast.makeText(this, R.string.large_number_error_toast, Toast.LENGTH_LONG).show();
@@ -152,7 +154,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
 
             //Populate views with extracted data
             mName.setText(playerName);
-            mScore.setText(playerScore);
+            mCurrentScore.setText(playerScore);
 
             //Save and finish EditScore activity when "done" is pressed on keyboard
             mScoreEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -161,6 +163,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
                     boolean handled = false;
                     if (actionId == EditorInfo.IME_ACTION_DONE) {
                         saveScore();
+                        finish();
                         handled = true;
                     }
                     return handled;

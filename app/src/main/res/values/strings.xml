@@ -46,5 +46,8 @@
     <!-- Toast message when user enters a score that is too large [CHAR LIMIT=30] -->
     <string name="large_number_error_toast">Error: score is too large</string>
 
+    <!-- Label of current score on edit score activity [CHAR LIMIT=30] -->
+    <string name="edit_player_current_score">Current score</string>
+
 
 </resources>

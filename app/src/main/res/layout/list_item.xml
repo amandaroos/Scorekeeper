@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of players -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?android:attr/activatedBackgroundIndicator"
+    android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal"
-    android:padding="@dimen/activity_margin"
-    android:id="@+id/list_item_layout"
-    android:descendantFocusability="blocksDescendants">
+    android:padding="8dp">
 
     <LinearLayout
+        android:id="@+id/layout1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="8">
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_toStartOf="@+id/layout2"
+        android:minHeight="56dp">
 
         <ImageView
             android:layout_width="24dp"
@@ -28,43 +32,48 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingLeft="16dp"
+            android:paddingRight="16dp"
             android:textAppearance="?android:textAppearanceSmall"
-            tools:text="Player Name" />
+            tools:text="John Jacob Jingler" />
     </LinearLayout>
 
+
     <LinearLayout
-        android:layout_width="0dp"
+        android:id="@+id/layout2"
+        android:layout_width="156dp"
         android:layout_height="wrap_content"
-        android:layout_weight="5">
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/minus_button"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:text="-"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="@color/colorAccent"
-            android:textColor="@color/colorIcons"/>
+            android:text="-"
+            android:textColor="@color/colorIcons" />
 
         <TextView
             android:id="@+id/score"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingLeft="8dp"
-            android:paddingRight="8dp"
             android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
             android:textAlignment="center"
             android:textAppearance="?android:textAppearanceMedium"
-            tools:text="12345" />
+            tools:text="123456" />
 
         <Button
             android:id="@+id/plus_button"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:text="+"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="@color/colorAccent"
+            android:text="+"
             android:textColor="@color/colorIcons" />
 
     </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
