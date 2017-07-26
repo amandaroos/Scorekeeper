@@ -1,6 +1,7 @@
 package com.amandafarrell.www.scorekeeper;
 
 import android.app.LoaderManager;
+import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.CursorLoader;
@@ -47,8 +48,22 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             @Override
             public void onClick(View view) {
 
+                String[] projection =  {PlayerContract.PlayerEntry._ID};
+
+                Cursor cursor = getContentResolver().query(
+                        PlayerContract.PlayerEntry.CONTENT_URI,
+                        projection,
+                        null,
+                        null,
+                        null);
+
                 //create player name string
-                mPlayerNumber++;
+                if(cursor.moveToFirst()) {
+                    mPlayerNumber = cursor.getCount() + 1;
+                }
+                else {
+                    mPlayerNumber = 1;
+                }
                 String defaultName = getString(R.string.main_default_name);
                 defaultName += " " + mPlayerNumber;
 
@@ -72,6 +87,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
                 //Calls onCreateOptionsMenu()
                 invalidateOptionsMenu();
+
+                cursor.close();
             }
         });
 
@@ -241,9 +258,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     public void deleteAllPlayers() {
-
-        //reset mPlayerNumber so that the default playerName starts over at "Player 1"
-        mPlayerNumber = 0;
 
         // Call the ContentResolver to delete the player at the given content URI.
         // Pass in null for the selection and selection args because the mCurrentPlayerUri
