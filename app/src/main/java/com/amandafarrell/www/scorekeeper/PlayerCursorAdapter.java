@@ -45,7 +45,10 @@ public class PlayerCursorAdapter extends CursorAdapter {
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
         // Return the list item view
-        return LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
+        ViewHolder viewHolder = new ViewHolder(view);
+        view.setTag(viewHolder);
+        return view;
     }
 
     /**
@@ -61,9 +64,7 @@ public class PlayerCursorAdapter extends CursorAdapter {
     @Override
     public void bindView(View view, final Context context, final Cursor cursor) {
 
-        //find views to populate in inflated layout
-        TextView nameTextView = (TextView) view.findViewById(R.id.name);
-        TextView scoreTextView = (TextView) view.findViewById(R.id.score);
+        ViewHolder viewHolder = (ViewHolder) view.getTag();
 
         //Find the columns of player attributes we are interested in
         int nameColumnIndex = cursor.getColumnIndex(PlayerContract.PlayerEntry.COLUMN_PLAYER_NAME);
@@ -73,14 +74,11 @@ public class PlayerCursorAdapter extends CursorAdapter {
         String playerName = cursor.getString(nameColumnIndex);
         final String playerScore = cursor.getString(scoreColumnIndex);
 
-        //Populate views with extracted daa
-        nameTextView.setText(playerName);
-        scoreTextView.setText(playerScore);
+        //Populate views with extracted data
+        viewHolder.nameView.setText(playerName);
+        viewHolder.scoreView.setText(playerScore);
 
         //Set onclick listeners on plus and minus buttons
-        Button minusButton = (Button) view.findViewById(R.id.minus_button);
-        Button plusButton = (Button) view.findViewById(R.id.plus_button);
-
         int playerIdColumnIndex = cursor.getColumnIndex(PlayerContract.PlayerEntry._ID);
         int playerId = cursor.getInt(playerIdColumnIndex);
 
@@ -88,7 +86,7 @@ public class PlayerCursorAdapter extends CursorAdapter {
 
         final int incrementAmount = 1;
 
-        minusButton.setOnClickListener(new View.OnClickListener() {
+        viewHolder.minusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int currentScore = Integer.parseInt(playerScore.trim());
@@ -107,7 +105,7 @@ public class PlayerCursorAdapter extends CursorAdapter {
             }
         });
 
-        plusButton.setOnClickListener(new View.OnClickListener() {
+        viewHolder.plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int currentScore = Integer.parseInt(playerScore.trim());
@@ -126,5 +124,25 @@ public class PlayerCursorAdapter extends CursorAdapter {
                 int rowsAffected = context.getContentResolver().update(currentPlayerUri, values, null, null);
             }
         });
+    }
+
+
+    /**
+     * ViewHolder finds views so that the app doesn't have to research the view hierarchy when
+     * a list item view is recycled
+     */
+    public static class ViewHolder {
+
+        public final TextView nameView;
+        public final TextView scoreView;
+        public final Button minusButton;
+        public final Button plusButton;
+
+        public ViewHolder (View view){
+            nameView = (TextView) view.findViewById(R.id.name);
+            scoreView = (TextView) view.findViewById(R.id.score);
+            minusButton = (Button) view.findViewById(R.id.minus_button);
+            plusButton = (Button) view.findViewById(R.id.plus_button);
+        }
     }
 }
