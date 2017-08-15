@@ -128,7 +128,7 @@ public class PlayerCursorAdapter extends CursorAdapter {
 
 
     /**
-     * ViewHolder finds views so that the app doesn't have to research the view hierarchy when
+     * ViewHolder finds views so that the app doesn't have to re-search the view hierarchy when
      * a list item view is recycled
      */
     public static class ViewHolder {

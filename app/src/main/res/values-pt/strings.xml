@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contador de Pontos</string>
+    <string name="action_delete">Apague</string>
+    <string name="action_delete_all_players">Apague Tudos os Jogadores</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_reset_scores">Repor Pontos</string>
+    <string name="action_save">Salve</string>
+    <string name="edit_player_current_score">Pontos Atual</string>
+    <string name="editor_activity_title_add_score">Adicionar Pontos</string>
+    <string name="editor_activity_title_edit_name">Editar Nome</string>
+    <string name="hint_player_name">Nome</string>
+    <string name="image_group_icon">Ícone do Grupo</string>
+    <string name="image_player_icon">Ícone do Jogador</string>
+    <string name="large_number_error_toast">Erro: a pontuação é muito grande</string>
+    <string name="main_default_name">Jogador</string>
+    <string name="player_name_label">Nome do Jogador</string>
+</resources>
