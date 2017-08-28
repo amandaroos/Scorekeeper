@@ -49,6 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:hint="+/-"
+        android:textColorHint="@color/colorPressedItem"
         android:imeOptions="flagNoExtractUi"
         android:inputType="numberSigned"
         android:paddingTop="8dp"
