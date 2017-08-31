@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/activity_margin"
     tools:context="com.amandafarrell.www.scorekeeper.MainActivity">
 
     <ListView
         android:id="@+id/list_view_player"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        />
+        android:layout_height="wrap_content" />
 
     <!-- Empty view for the list -->
     <RelativeLayout
@@ -23,11 +22,11 @@
 
         <ImageView
             android:id="@+id/people"
-            android:contentDescription="@string/image_group_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            app:srcCompat="@drawable/ic_people"/>
+            android:contentDescription="@string/image_group_icon"
+            app:srcCompat="@drawable/ic_people" />
 
     </RelativeLayout>
 
@@ -36,9 +35,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/ic_person_add"
-        app:backgroundTint="@color/colorPrimary"/>
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/ic_person_add" />
 
 </RelativeLayout>
