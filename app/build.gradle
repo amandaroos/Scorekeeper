@@ -12,7 +12,7 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '26.0.2'
     signingConfigs {
         config {
             keyAlias keystoreProperties['keyAlias']
