@@ -55,5 +55,4 @@
     <!-- Label of quick minus button [CHAR LIMIT=5] -->
     <string name="quick_minus_button" translatable="false">-</string>
 
-
 </resources>
