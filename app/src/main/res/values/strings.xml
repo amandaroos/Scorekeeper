@@ -50,10 +50,10 @@
     <string name="edit_player_current_score">Current score</string>
 
     <!-- Label of quick plus button [CHAR LIMIT=5] -->
-    <string name="quick_plus_button">+</string>
+    <string name="quick_plus_button" translatable="false">+</string>
 
     <!-- Label of quick minus button [CHAR LIMIT=5] -->
-    <string name="quick_minus_button">-</string>
+    <string name="quick_minus_button" translatable="false">-</string>
 
 
 </resources>
