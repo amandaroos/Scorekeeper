@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Tanteador</string>
+    <string name="app_name">" "</string>
     <string name="action_delete">Eliminar</string>
     <string name="action_delete_all_players">Eliminar Todos Jugadores</string>
     <string name="action_edit">Editar</string>
