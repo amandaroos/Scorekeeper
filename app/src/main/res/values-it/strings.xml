@@ -3,7 +3,7 @@
     <string name="app_name">Segnapunti</string>
     <string name="action_delete">Elimina</string>
     <string name="action_delete_all_players">Elimina Tutti i Giocatori</string>
-    <string name="action_edit">Modifica</string>
+    <string name="action_edit">modificare</string>
     <string name="action_reset_scores">Ripristina Punteggi</string>
     <string name="action_save">Salvare</string>
     <string name="edit_player_current_score">Punteggio Attuale</string>

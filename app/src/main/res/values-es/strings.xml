@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">" "</string>
+    <string name="app_name">Tanteador</string>
     <string name="action_delete">Eliminar</string>
     <string name="action_delete_all_players">Eliminar Todos Jugadores</string>
     <string name="action_edit">Editar</string>
@@ -9,7 +9,7 @@
     <string name="image_group_icon">Icono de Grupo</string>
     <string name="image_player_icon">Icono de Jugador</string>
     <string name="main_default_name">Jugador</string>
-    <string name="action_reset_scores">Reiniciar</string>
+    <string name="action_reset_scores">Restablecer Puntajes</string>
     <string name="action_save">Guardar</string>
     <string name="hint_player_name">Nombre</string>
     <string name="player_name_label">Nombre del Jugador</string>

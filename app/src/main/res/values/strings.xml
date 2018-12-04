@@ -38,7 +38,7 @@
     <string name="main_default_name">Player</string>
 
     <!-- Title for the activity to add a score to a player [CHAR LIMIT=20] -->
-    <string name="editor_activity_title_add_score">Add Score</string>
+    <string name="editor_activity_title_add_score">Add score</string>
 
     <!-- Title for the activity to edit a player's name [CHAR LIMIT=20] -->
     <string name="editor_activity_title_edit_name">Edit Name</string>

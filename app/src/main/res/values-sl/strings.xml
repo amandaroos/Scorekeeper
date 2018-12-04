@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ocenjevalec</string>
+    <string name="player_name_label">Ime igralca</string>
+    <string name="main_default_name">Igralec</string>
+    <string name="large_number_error_toast">Napaka: rezultat je prevelik</string>
+    <string name="image_player_icon">Ikona igralca</string>
+    <string name="image_group_icon">Ikona skupine</string>
+    <string name="hint_player_name">Ime</string>
+    <string name="editor_activity_title_edit_name">Uredite ime</string>
+    <string name="editor_activity_title_add_score">Dodaj oceno</string>
+    <string name="edit_player_current_score">Trenutni rezultat</string>
+    <string name="action_save">Shrani</string>
+    <string name="action_reset_scores">Ponastavi rezultate</string>
+    <string name="action_edit">Uredi</string>
+    <string name="action_delete_all_players">Izbriši vse igralce</string>
+    <string name="action_delete">Izbriši</string>
+</resources>

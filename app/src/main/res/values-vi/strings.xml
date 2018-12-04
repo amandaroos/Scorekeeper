@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Người ghi bàn</string>
+    <string name="player_name_label">Tên người chơi</string>
+    <string name="main_default_name">Người chơi</string>
+    <string name="large_number_error_toast">Lỗi: điểm số quá lớn</string>
+    <string name="image_player_icon">Biểu tượng trình phát</string>
+    <string name="image_group_icon">Biểu tượng nhóm</string>
+    <string name="hint_player_name">Tên</string>
+    <string name="editor_activity_title_edit_name">Chỉnh sửa tên</string>
+    <string name="editor_activity_title_add_score">Thêm điểm</string>
+    <string name="edit_player_current_score">Điểm hiện tại</string>
+    <string name="action_save">Tiết kiệm</string>
+    <string name="action_reset_scores">Đặt lại Điểm số</string>
+    <string name="action_edit">Chỉnh sửa</string>
+    <string name="action_delete_all_players">Xóa tất cả người chơi</string>
+    <string name="action_delete">Xóa bỏ</string>
+</resources>

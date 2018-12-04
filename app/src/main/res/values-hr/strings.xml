@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">zapisničar</string>
+    <string name="player_name_label">Igračevo ime</string>
+    <string name="main_default_name">Igrač</string>
+    <string name="large_number_error_toast">Pogreška: ocjena je prevelika</string>
+    <string name="image_player_icon">Ikona igrača</string>
+    <string name="image_group_icon">Ikona grupe</string>
+    <string name="hint_player_name">Ime</string>
+    <string name="editor_activity_title_edit_name">Uredi ime</string>
+    <string name="editor_activity_title_add_score">Dodaj bodove</string>
+    <string name="edit_player_current_score">Trenutni rezultat</string>
+    <string name="action_save">Uštedjeti</string>
+    <string name="action_reset_scores">Poništi ocjene</string>
+    <string name="action_edit">Uredi</string>
+    <string name="action_delete_all_players">Izbriši sve igrače</string>
+    <string name="action_delete">Izbrisati</string>
+</resources>

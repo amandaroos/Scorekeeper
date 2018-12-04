@@ -13,6 +13,6 @@
     <string name="image_group_icon">Ikona grupy</string>
     <string name="image_player_icon">Ikona Gracza</string>
     <string name="large_number_error_toast">Błąd: wynik jest zbyt duży</string>
-    <string name="main_default_name">Gracza</string>
+    <string name="main_default_name">Gracz</string>
     <string name="player_name_label">Nazwa Gracza</string>
 </resources>
