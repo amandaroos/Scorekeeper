@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Scorekeeper</string>
-    <string name="player_name_label">Spiller navn</string>
+    <string name="player_name_label">Spiller Navn</string>
     <string name="main_default_name">Spiller</string>
     <string name="large_number_error_toast">Fejl: Resultatet er for stort</string>
     <string name="image_player_icon">Spiller Ikon</string>
     <string name="image_group_icon">Gruppeikon</string>
     <string name="hint_player_name">Navn</string>
-    <string name="editor_activity_title_edit_name">Rediger navn</string>
+    <string name="editor_activity_title_edit_name">Rediger Navn</string>
     <string name="editor_activity_title_add_score">Tilføj score</string>
     <string name="edit_player_current_score">Nuværende score</string>
     <string name="action_save">Gemme</string>
     <string name="action_reset_scores">Nulstil scorer</string>
     <string name="action_edit">Redigere</string>
-    <string name="action_delete_all_players">Slet alle spillere</string>
+    <string name="action_delete_all_players">Slet alle Spillere</string>
     <string name="action_delete">Slet</string>
 </resources>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Jegyzőkönyvvezetőt</string>
-    <string name="player_name_label">Játékos neve</string>
+    <string name="player_name_label">Játékos Neve</string>
     <string name="main_default_name">Játékos</string>
     <string name="large_number_error_toast">Hiba: a pontszám túl nagy</string>
     <string name="image_player_icon">Játékos ikon</string>
     <string name="image_group_icon">Csoport ikon</string>
     <string name="hint_player_name">Név</string>
-    <string name="editor_activity_title_edit_name">Név szerkesztése</string>
+    <string name="editor_activity_title_edit_name">Név Szerkesztése</string>
     <string name="editor_activity_title_add_score">Pontszám hozzáadása</string>
     <string name="edit_player_current_score">Jelenlegi pontszám</string>
     <string name="action_save">Mentés</string>
-    <string name="action_reset_scores">Reset pontszámok</string>
-    <string name="action_edit">szerkesztése</string>
-    <string name="action_delete_all_players">Összes játékos törlése</string>
+    <string name="action_reset_scores">Reset Pontszámok</string>
+    <string name="action_edit">Szerkesztése</string>
+    <string name="action_delete_all_players">Összes Játékos törlése</string>
     <string name="action_delete">Töröl</string>
 </resources>

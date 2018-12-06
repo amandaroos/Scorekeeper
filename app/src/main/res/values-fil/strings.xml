@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="player_name_label">Pangalan ng manlalaro</string>
+    <string name="player_name_label">Pangalan ng Manlalaro</string>
     <string name="main_default_name">Manlalaro</string>
     <string name="large_number_error_toast">Error: masyadong malaki ang iskor</string>
     <string name="image_player_icon">Icon ng Player</string>
@@ -9,7 +9,7 @@
     <string name="editor_activity_title_edit_name">I-edit ang Pangalan</string>
     <string name="editor_activity_title_add_score">Magdagdag ng puntos</string>
     <string name="edit_player_current_score">Kasalukuyang puntos</string>
-    <string name="action_save">i-save</string>
+    <string name="action_save">I-save</string>
     <string name="action_reset_scores">I-reset ang Mga Marka</string>
     <string name="action_edit">I-edit</string>
     <string name="action_delete_all_players">Tanggalin ang Lahat ng Mga Player</string>

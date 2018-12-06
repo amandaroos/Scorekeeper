@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Người ghi bàn</string>
-    <string name="player_name_label">Tên người chơi</string>
-    <string name="main_default_name">Người chơi</string>
+    <string name="player_name_label">Tên Người Chơi</string>
+    <string name="main_default_name">Người Chơi</string>
     <string name="large_number_error_toast">Lỗi: điểm số quá lớn</string>
     <string name="image_player_icon">Biểu tượng trình phát</string>
     <string name="image_group_icon">Biểu tượng nhóm</string>
@@ -13,6 +13,6 @@
     <string name="action_save">Tiết kiệm</string>
     <string name="action_reset_scores">Đặt lại Điểm số</string>
     <string name="action_edit">Chỉnh sửa</string>
-    <string name="action_delete_all_players">Xóa tất cả người chơi</string>
+    <string name="action_delete_all_players">Xóa tất cả Người Chơi</string>
     <string name="action_delete">Xóa bỏ</string>
 </resources>

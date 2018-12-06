@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Penjaga gol</string>
-    <string name="player_name_label">Nama pemain</string>
+    <string name="player_name_label">Nama Pemain</string>
     <string name="main_default_name">Pemain</string>
     <string name="large_number_error_toast">Ralat: skor terlalu besar</string>
     <string name="image_player_icon">Ikon Pemain</string>
