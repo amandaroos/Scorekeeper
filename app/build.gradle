@@ -25,8 +25,8 @@ android {
         applicationId "com.amandafarrell.www.scorekeeper"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 6
-        versionName "Scorekeeper 2.2"
+        versionCode 8
+        versionName "Scorekeeper 2.4"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
