@@ -15,4 +15,9 @@
     <string name="large_number_error_toast">Errore: il punteggio è troppo grande</string>
     <string name="main_default_name">Giocatore</string>
     <string name="player_name_label">Nome del Giocatore</string>
+    <string name="action_donate">Dona allo sviluppatore</string>
+    <string name="donate_title">Donare</string>
+    <string name="donate_greeting">Ciao!</string>
+    <string name="donate_message">Il mio nome è Amanda. Se ti piace questa app che ho sviluppato, considera l\'acquisto della mia app per le donazioni. L\'app per le donazioni non fa nulla, ma la tua donazione mi mostrerà che il mio tempo speso per lo sviluppo di app gratuite senza pubblicità è apprezzato. Grazie!</string>
+    <string name="button_donate">Scaricalo su Google Play</string>
 </resources>

@@ -55,4 +55,15 @@
     <!-- Label of quick minus button [CHAR LIMIT=5] -->
     <string name="quick_minus_button" translatable="false">-</string>
 
+    <!--Donation page-->
+    <string name="action_donate">Donate to Developer</string>
+    <string name="donate_title">Donate</string>
+    <string name="donate_greeting">Hello!</string>
+    <string name="donate_message">My name is Amanda. If you are enjoying this app I developed,
+        please consider purchasing my donation app.\n\nThe donation app does not do anything,
+        but your donation will show me that my time spent developing free, no-ads apps is appreciated. Thanks!</string>
+    <string name="play_store_direct_link" translatable="false">market://details?id=com.amandafarrell.www.donationfordeveloper_blue</string>
+    <string name="play_store_browser_link" translatable="false">https://play.google.com/store/apps/details?id=com.amandafarrell.www.donationfordeveloper_blue</string>
+    <string name="button_donate">Get it on Google Play</string>
+
 </resources>

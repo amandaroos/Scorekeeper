@@ -15,4 +15,9 @@
     <string name="action_edit">Muuda</string>
     <string name="action_delete_all_players">Kustuta kõik Mängijad</string>
     <string name="action_delete">Kustuta</string>
+    <string name="action_donate">Anneta arendajale</string>
+    <string name="donate_title">Anneta</string>
+    <string name="donate_greeting">Tere!</string>
+    <string name="donate_message">Minu nimi on Amanda. Kui naudite seda rakendust, mida ma välja töötasin, palun kaaluge oma annetuse rakenduse ostmist. Annetuse rakendus ei tee midagi, kuid teie annetus näitab mulle, et minu vaba ajaga reklaamide arendamise aeg on hinnatud. Täname!</string>
+    <string name="button_donate">Hankige see teenuses Google Play</string>
 </resources>

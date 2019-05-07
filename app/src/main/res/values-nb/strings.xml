@@ -15,4 +15,9 @@
     <string name="large_number_error_toast">Feil: Poengsum er for stort</string>
     <string name="main_default_name">Spiller</string>
     <string name="player_name_label">Spillernavn</string>
+    <string name="action_donate">Doner til utvikler</string>
+    <string name="donate_title">Donere</string>
+    <string name="donate_greeting">Hallo!</string>
+    <string name="donate_message">Jeg heter Amanda. Hvis du nyter denne appen jeg utviklet, kan du vurdere å kjøpe min donasjonsapp. Donasjonsappen gjør ingenting, men donasjonen din viser at tiden min har brukt å utvikle gratis, ingen annonser, er verdsatt. Takk!</string>
+    <string name="button_donate">Få det på Google Play</string>
 </resources>

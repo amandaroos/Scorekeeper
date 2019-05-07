@@ -15,4 +15,9 @@
     <string name="action_edit">Editați | ×</string>
     <string name="action_delete_all_players">Ștergeți toți Jucătorii</string>
     <string name="action_delete">Șterge</string>
+    <string name="action_donate">Donați dezvoltatorului</string>
+    <string name="donate_title">Dona</string>
+    <string name="donate_greeting">Salut!</string>
+    <string name="donate_message">Numele meu este Amanda. Dacă vă bucurați de această aplicație pe care am dezvoltat-o, vă recomandăm să achiziționați aplicația mea de donare. Aplicația de donare nu face nimic, dar donarea dvs. îmi va arăta că timpul petrecut pentru dezvoltarea gratuită a aplicațiilor fără anunțuri este apreciat. Mulțumiri!</string>
+    <string name="button_donate">Obțineți-o pe Google Play</string>
 </resources>

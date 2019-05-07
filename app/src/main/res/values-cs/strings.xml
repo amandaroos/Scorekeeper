@@ -15,4 +15,9 @@
     <string name="action_edit">Upravit</string>
     <string name="action_delete_all_players">Smazat všechny Hráče</string>
     <string name="action_delete">Odstranit</string>
+    <string name="action_donate">Přispějte vývojáři</string>
+    <string name="donate_title">Darovat</string>
+    <string name="donate_greeting">Ahoj!</string>
+    <string name="donate_message">Jmenuji se Amanda. Pokud se vám líbí tato aplikace, kterou jsem vyvinul, prosím, zvažte nákup mé aplikace dar. Dárcovství aplikace nic neudělá, ale váš dar mi ukáže, že můj čas strávený vyvíjením bezplatných aplikací není oceněn. Dík!</string>
+    <string name="button_donate">Získat ji na Google Play</string>
 </resources>
