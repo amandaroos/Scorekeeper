@@ -15,4 +15,9 @@
     <string name="action_edit">Uredi</string>
     <string name="action_delete_all_players">Izbriši sve Igrače</string>
     <string name="action_delete">Izbrisati</string>
+    <string name="action_donate">Donirajte programeru</string>
+    <string name="donate_title">darovati</string>
+    <string name="donate_greeting">Zdravo!</string>
+    <string name="donate_message">Moje ime je Amanda. Ako uživate u ovoj aplikaciji koju sam razvio, razmislite o kupnji moje aplikacije za donaciju. Aplikacija za donaciju ne radi ništa, ali vaša donacija će mi pokazati da se cijeni moje vrijeme provedeno u razvoju besplatnih aplikacija bez oglasa. Hvala!</string>
+    <string name="button_donate">Preuzmite je na Google Playu</string>
 </resources>

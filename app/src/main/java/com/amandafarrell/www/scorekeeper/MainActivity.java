@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             @Override
             public void onClick(View view) {
 
-                String[] projection =  {PlayerContract.PlayerEntry._ID};
+                String[] projection = {PlayerContract.PlayerEntry._ID};
 
                 Cursor cursor = getContentResolver().query(
                         PlayerContract.PlayerEntry.CONTENT_URI,
@@ -58,12 +59,16 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                         null);
 
                 //create player name string
-                if(cursor.moveToFirst()) {
-                    mPlayerNumber = cursor.getCount() + 1;
+                try {
+                    if (cursor.moveToFirst()) {
+                        mPlayerNumber = cursor.getCount() + 1;
+                    } else {
+                        mPlayerNumber = 1;
+                    }
+                } catch (NullPointerException e) {
+                    Log.e("MainActivity", "moveToFirst: ", e);
                 }
-                else {
-                    mPlayerNumber = 1;
-                }
+
                 String defaultName = getString(R.string.main_default_name);
                 defaultName += " " + mPlayerNumber;
 
@@ -88,12 +93,18 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 //Calls onCreateOptionsMenu()
                 invalidateOptionsMenu();
 
-                cursor.close();
+                try {
+                    cursor.close();
+                } catch (NullPointerException e) {
+                    Log.e("MainActivity", "cursor.close(): ", e);
+                }
             }
         });
 
         //Find the ListView which will be populated with the player data
-        mPlayerListView = (ListView) findViewById(R.id.list_view_player);
+        mPlayerListView = (ListView)
+
+                findViewById(R.id.list_view_player);
 
 
         //Find and set empty view on the ListView so that it only shows when the list has 0 items.
@@ -105,7 +116,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         //Set up an Adapter to create a list item for each row of pet data in the Cursor
         //There is no pet data yet (until the loader finishes) so pass in null for the Cursor
-        mCursorAdapter = new PlayerCursorAdapter(this, null);
+        mCursorAdapter = new
+
+                PlayerCursorAdapter(this, null);
         mPlayerListView.setAdapter(mCursorAdapter);
 
         //set an empty footer view at the end of the list to avoid the fab covering information
@@ -143,7 +156,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         //a long press
         mPlayerListView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position,
+                                           long id) {
 
                 if (mActionMode != null) {
                     return false;
@@ -163,7 +177,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         });
 
         //Initialize Loader
-        getLoaderManager().initLoader(PLAYER_LOADER, null, this);
+        getLoaderManager().
+
+                initLoader(PLAYER_LOADER, null, this);
     }
 
     private ActionMode.Callback mActionModeCallback = new ActionMode.Callback() {
@@ -253,6 +269,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             case R.id.action_reset_scores:
                 resetAllScores();
                 return true;
+            case R.id.action_donate:
+                Intent intent = new Intent(MainActivity.this, DonateActivity.class);
+                startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

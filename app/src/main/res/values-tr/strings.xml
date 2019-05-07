@@ -15,4 +15,9 @@
     <string name="action_edit">Düzenle</string>
     <string name="action_delete_all_players">Tüm Oyuncuları Sil</string>
     <string name="action_delete">Silmek</string>
+    <string name="action_donate">Geliştiriciye Bağış Yap</string>
+    <string name="donate_title">bağışlamak</string>
+    <string name="donate_greeting">Merhaba!</string>
+    <string name="donate_message">Benim adım Amanda. Geliştirdiğim bu uygulamayı beğeniyorsanız, lütfen bağış uygulamamı satın almayı düşünün. Bağış uygulaması hiçbir şey yapmıyor, ancak bağışınız bana ücretsiz, reklamsız uygulamaları geliştirmek için harcadığım zamanın takdir edildiğini gösterecek. Teşekkürler!</string>
+    <string name="button_donate">Google Play\'den indirin</string>
 </resources>

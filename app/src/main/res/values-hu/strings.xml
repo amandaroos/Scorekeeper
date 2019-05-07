@@ -15,4 +15,9 @@
     <string name="action_edit">Szerkesztése</string>
     <string name="action_delete_all_players">Összes Játékos törlése</string>
     <string name="action_delete">Töröl</string>
+    <string name="action_donate">Adományozz a fejlesztőnek</string>
+    <string name="donate_title">Adományoz</string>
+    <string name="donate_greeting">Szia!</string>
+    <string name="donate_message">A nevem Amanda. Ha élvezed ezt az alkalmazást, fejlesztettem, kérjük, vegye figyelembe az adományt. Az adományozási alkalmazás nem tesz semmit, de adománya megmutatja nekem, hogy az ingyenes, hirdetések nélküli alkalmazások fejlesztésére fordított időm nagyra értékelik. Kösz!</string>
+    <string name="button_donate">Szerezd meg a Google Play-en</string>
 </resources>

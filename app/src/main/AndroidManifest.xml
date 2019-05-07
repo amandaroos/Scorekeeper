@@ -38,6 +38,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.amandafarrell.www.scorekeeper.MainActivity" />
         </activity>
+        <activity
+            android:name=".DonateActivity"
+            android:label="@string/donate_title"
+            android:parentActivityName=".MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <provider
             android:name="com.amandafarrell.www.scorekeeper.data.PlayerProvider"
             android:authorities="com.example.amanda.scorekeeper"

@@ -15,4 +15,9 @@
     <string name="action_edit">Rediģēt</string>
     <string name="action_delete_all_players">Dzēst visus Atskaņotājus</string>
     <string name="action_delete">Dzēst</string>
+    <string name="action_donate">Ziedot izstrādātājam</string>
+    <string name="donate_title">Ziedot</string>
+    <string name="donate_greeting">Sveiki!</string>
+    <string name="donate_message">Mans vārds ir Amanda. Ja izmantojat šo lietotni, lūdzu, apsveriet iespēju iegādāties manu ziedojumu lietotni. Ziedojumu programma neko nedara, bet jūsu ziedojums man parādīs, ka mans laiks, kas pavadīts, lai izstrādātu bezmaksas reklāmas bez reklāmām, tiek novērtēts. Paldies!</string>
+    <string name="button_donate">Iegūstiet to pakalpojumā Google Play</string>
 </resources>
