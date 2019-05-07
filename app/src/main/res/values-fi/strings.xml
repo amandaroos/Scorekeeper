@@ -15,4 +15,9 @@
     <string name="action_edit">Muokata</string>
     <string name="action_delete_all_players">Poista kaikki Pelaajat</string>
     <string name="action_delete">Poistaa</string>
+    <string name="action_donate">Lahjoita kehittäjälle</string>
+    <string name="donate_title">Lahjoittaa</string>
+    <string name="donate_greeting">Hei!</string>
+    <string name="donate_message">Nimeni on Amanda. Jos käytät tätä sovellusta, jonka olen kehittänyt, harkitse lahjoitussovelluksen ostamista. Lahjoitussovellus ei tee mitään, mutta lahjoituksesi osoittaa minulle, että vapaa-aika-mainosten sovellusten kehittämiseen käytetty aika on arvostettu. Kiitos!</string>
+    <string name="button_donate">Hanki se Google Playssa</string>
 </resources>

@@ -15,4 +15,9 @@
     <string name="action_edit">Edit</string>
     <string name="action_delete_all_players">Hapus Semua Pemain</string>
     <string name="action_delete">Menghapus</string>
+    <string name="action_donate">Donasi ke Pengembang</string>
+    <string name="donate_title">Menyumbangkan</string>
+    <string name="donate_greeting">Halo!</string>
+    <string name="donate_message">Nama saya Amanda. Jika Anda menikmati aplikasi yang saya kembangkan ini, silakan pertimbangkan untuk membeli aplikasi donasi saya. Aplikasi donasi tidak melakukan apa-apa, tetapi donasi Anda akan menunjukkan kepada saya bahwa waktu saya dihabiskan untuk mengembangkan aplikasi gratis tanpa iklan dihargai. Terima kasih!</string>
+    <string name="button_donate">Dapatkan di Google Play</string>
 </resources>

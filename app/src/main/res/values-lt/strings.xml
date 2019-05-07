@@ -15,4 +15,9 @@
     <string name="action_edit">Redaguoti</string>
     <string name="action_delete_all_players">Ištrinti visus Žaidėjus</string>
     <string name="action_delete">Ištrinti</string>
+    <string name="action_donate">Paaukokite kūrėjui</string>
+    <string name="donate_title">Paremkite</string>
+    <string name="donate_greeting">Sveiki!</string>
+    <string name="donate_message">Mano vardas yra Amanda. Jei naudojate šią programą, kurią sukūriau, apsvarstykite galimybę įsigyti mano dovanojimo programą. Donorystės programa nieko nedaro, tačiau jūsų donorystė parodys man, kad mano laikas, praleistas kuriant nemokamą, be skelbimų programą, yra vertinamas. Dėkoju!</string>
+    <string name="button_donate">Gaukite jį „Google Play“</string>
 </resources>

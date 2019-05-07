@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             @Override
             public void onClick(View view) {
 
-                String[] projection =  {PlayerContract.PlayerEntry._ID};
+                String[] projection = {PlayerContract.PlayerEntry._ID};
 
                 Cursor cursor = getContentResolver().query(
                         PlayerContract.PlayerEntry.CONTENT_URI,
@@ -58,10 +58,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                         null);
 
                 //create player name string
-                if(cursor.moveToFirst()) {
+                if (cursor.moveToFirst()) {
                     mPlayerNumber = cursor.getCount() + 1;
-                }
-                else {
+                } else {
                     mPlayerNumber = 1;
                 }
                 String defaultName = getString(R.string.main_default_name);
@@ -253,6 +252,9 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             case R.id.action_reset_scores:
                 resetAllScores();
                 return true;
+            case R.id.action_donate:
+                Intent intent = new Intent(MainActivity.this, DonateActivity.class);
+                startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

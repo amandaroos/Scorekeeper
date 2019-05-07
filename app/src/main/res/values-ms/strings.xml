@@ -15,4 +15,9 @@
     <string name="action_edit">Edit</string>
     <string name="action_delete_all_players">Padam Semua Pemain</string>
     <string name="action_delete">Padam</string>
+    <string name="action_donate">Dermakan kepada Pemaju</string>
+    <string name="donate_title">Dermakan</string>
+    <string name="donate_greeting">Hello!</string>
+    <string name="donate_message">Nama saya Amanda. Jika anda menikmati aplikasi ini saya maju, sila pertimbangkan untuk membeli aplikasi derma saya. Aplikasi derma tidak melakukan apa-apa, tetapi derma anda akan menunjukkan kepada saya bahawa masa saya dihabiskan untuk membangunkan aplikasi percuma, tidak ada iklan yang dihargai. Terima kasih!</string>
+    <string name="button_donate">Dapatkannya di Google Play</string>
 </resources>

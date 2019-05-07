@@ -15,4 +15,9 @@
     <string name="large_number_error_toast">Błąd: wynik jest zbyt duży</string>
     <string name="main_default_name">Gracz</string>
     <string name="player_name_label">Nazwa Gracza</string>
+    <string name="action_donate">Darowizna dla programisty</string>
+    <string name="donate_title">Podarować</string>
+    <string name="donate_greeting">Witaj!</string>
+    <string name="donate_message">Mam na imię Amanda. Jeśli korzystasz z tej aplikacji, którą opracowałem, rozważ zakupienie mojej aplikacji dotacyjnej. Aplikacja darowizn nic nie robi, ale Twoja darowizna pokaże mi, że mój czas poświęcony na tworzenie darmowych aplikacji bez reklam jest mile widziany. Dzięki!</string>
+    <string name="button_donate">Pobierz w Google Play</string>
 </resources>
