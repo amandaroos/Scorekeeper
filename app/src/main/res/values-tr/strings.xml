@@ -20,4 +20,10 @@
     <string name="donate_greeting">Merhaba!</string>
     <string name="donate_message">Benim adım Amanda. Geliştirdiğim bu uygulamayı beğeniyorsanız, lütfen bağış uygulamamı satın almayı düşünün. Bağış uygulaması hiçbir şey yapmıyor, ancak bağışınız bana ücretsiz, reklamsız uygulamaları geliştirmek için harcadığım zamanın takdir edildiğini gösterecek. Teşekkürler!</string>
     <string name="button_donate">Google Play\'den indirin</string>
-</resources>
+    <string name="Small">Küçük</string> 
+    <string name="large">Büyük</string> 
+    <string name="medium">Orta</string> 
+    <string name="small_heart">küçük kalp</string> 
+    <string name="medium_heart">orta kalp</string> 
+    <string name="large_heart">büyük kalp</string> 
+ </resources>

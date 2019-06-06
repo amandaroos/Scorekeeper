@@ -20,4 +20,10 @@
     <string name="donate_greeting">Hello!</string>
     <string name="donate_message">Nama saya Amanda. Jika anda menikmati aplikasi ini saya maju, sila pertimbangkan untuk membeli aplikasi derma saya. Aplikasi derma tidak melakukan apa-apa, tetapi derma anda akan menunjukkan kepada saya bahawa masa saya dihabiskan untuk membangunkan aplikasi percuma, tidak ada iklan yang dihargai. Terima kasih!</string>
     <string name="button_donate">Dapatkannya di Google Play</string>
-</resources>
+    <string name="Small">Kecil</string> 
+    <string name="large">Besar</string> 
+    <string name="medium">Sederhana</string> 
+    <string name="small_heart">hati kecil</string> 
+    <string name="medium_heart">jantung sederhana</string> 
+    <string name="large_heart">hati yang besar</string> 
+ </resources>

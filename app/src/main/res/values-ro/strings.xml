@@ -20,4 +20,10 @@
     <string name="donate_greeting">Salut!</string>
     <string name="donate_message">Numele meu este Amanda. Dacă vă bucurați de această aplicație pe care am dezvoltat-o, vă recomandăm să achiziționați aplicația mea de donare. Aplicația de donare nu face nimic, dar donarea dvs. îmi va arăta că timpul petrecut pentru dezvoltarea gratuită a aplicațiilor fără anunțuri este apreciat. Mulțumiri!</string>
     <string name="button_donate">Obțineți-o pe Google Play</string>
-</resources>
+    <string name="Small">Mic</string> 
+    <string name="large">Mare</string> 
+    <string name="medium">Mediu</string> 
+    <string name="small_heart">mica inima</string> 
+    <string name="medium_heart">inima medie</string> 
+    <string name="large_heart">mare inima</string> 
+ </resources>

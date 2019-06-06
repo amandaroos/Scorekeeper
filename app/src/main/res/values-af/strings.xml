@@ -21,4 +21,10 @@
     <string name="donate_greeting">Hello!</string>
     <string name="donate_message">My naam is Amanda. As jy hierdie program geniet wat ek ontwikkel het, oorweeg dit asseblief om my skenkingprogram te koop. Die donasie-program doen niks, maar jou skenking sal my wys dat my tyd bestee aan die ontwikkeling van gratis, nie-advertensies-programme waardeer word. Dankie</string>
     <string name="button_donate">Kry dit op Google Play</string>
-</resources>
+    <string name="Small">klein</string> 
+    <string name="large">groot</string> 
+    <string name="medium">medium</string> 
+    <string name="small_heart">klein hart</string> 
+    <string name="medium_heart">medium hart</string> 
+    <string name="large_heart">groot hart</string> 
+ </resources>

@@ -20,4 +20,10 @@
     <string name="donate_greeting">Sveiki!</string>
     <string name="donate_message">Mano vardas yra Amanda. Jei naudojate šią programą, kurią sukūriau, apsvarstykite galimybę įsigyti mano dovanojimo programą. Donorystės programa nieko nedaro, tačiau jūsų donorystė parodys man, kad mano laikas, praleistas kuriant nemokamą, be skelbimų programą, yra vertinamas. Dėkoju!</string>
     <string name="button_donate">Gaukite jį „Google Play“</string>
-</resources>
+    <string name="Small">Mažas</string> 
+    <string name="large">Didelis</string> 
+    <string name="medium">Vidutinis</string> 
+    <string name="small_heart">maža širdis</string> 
+    <string name="medium_heart">vidutinė širdis</string> 
+    <string name="large_heart">didelė širdis</string> 
+ </resources>

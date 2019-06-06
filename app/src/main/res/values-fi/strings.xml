@@ -20,4 +20,10 @@
     <string name="donate_greeting">Hei!</string>
     <string name="donate_message">Nimeni on Amanda. Jos käytät tätä sovellusta, jonka olen kehittänyt, harkitse lahjoitussovelluksen ostamista. Lahjoitussovellus ei tee mitään, mutta lahjoituksesi osoittaa minulle, että vapaa-aika-mainosten sovellusten kehittämiseen käytetty aika on arvostettu. Kiitos!</string>
     <string name="button_donate">Hanki se Google Playssa</string>
-</resources>
+    <string name="Small">Pieni</string> 
+    <string name="large">Suuri</string> 
+    <string name="medium">keskikokoinen</string> 
+    <string name="small_heart">pieni sydän</string> 
+    <string name="medium_heart">keskimmäinen sydän</string> 
+    <string name="large_heart">suuri sydän</string> 
+ </resources>

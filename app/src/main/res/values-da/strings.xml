@@ -20,4 +20,10 @@
     <string name="donate_greeting">Hej!</string>
     <string name="donate_message">Jeg hedder Amanda. Hvis du nyder denne app, jeg har udviklet, kan du overveje at købe min donationsapp. Donation-appen gør ikke noget, men din donation vil vise mig, at min tid til at udvikle gratis apps med ingen annoncer er værdsat. Tak!</string>
     <string name="button_donate">Få det på Google Play</string>
-</resources>
+    <string name="Small">Lille</string> 
+    <string name="large">Stor</string> 
+    <string name="medium">Medium</string> 
+    <string name="small_heart">lille hjerte</string> 
+    <string name="medium_heart">medium hjerte</string> 
+    <string name="large_heart">stort hjerte</string> 
+ </resources>

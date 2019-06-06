@@ -20,4 +20,10 @@
     <string name="donate_greeting">Tere!</string>
     <string name="donate_message">Minu nimi on Amanda. Kui naudite seda rakendust, mida ma välja töötasin, palun kaaluge oma annetuse rakenduse ostmist. Annetuse rakendus ei tee midagi, kuid teie annetus näitab mulle, et minu vaba ajaga reklaamide arendamise aeg on hinnatud. Täname!</string>
     <string name="button_donate">Hankige see teenuses Google Play</string>
-</resources>
+    <string name="Small">Väike</string> 
+    <string name="large">Suur</string> 
+    <string name="medium">Keskmine</string> 
+    <string name="small_heart">väike süda</string> 
+    <string name="medium_heart">keskmine süda</string> 
+    <string name="large_heart">suur süda</string> 
+ </resources>

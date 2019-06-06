@@ -19,4 +19,10 @@
     <string name="donate_greeting">Kamusta!</string>
     <string name="donate_message">Ang pangalan ko ay Amanda. Kung nasiyahan ka sa app na ito na binuo ko, mangyaring isaalang-alang ang pagbili ng aking donasyon app. Ang donasyon app ay hindi gumawa ng anumang bagay, ngunit ang iyong donasyon ay magpapakita sa akin na ang aking oras na ginugol sa pagbuo ng libre, walang apps sa mga ad ay pinahahalagahan. Salamat!</string>
     <string name="button_donate">Kunin sa google play</string>
-</resources>
+    <string name="Small">Maliit</string> 
+    <string name="large">Malaking</string> 
+    <string name="medium">Katamtaman</string> 
+    <string name="small_heart">maliit na puso</string> 
+    <string name="medium_heart">katamtamang puso</string> 
+    <string name="large_heart">malaking puso</string> 
+ </resources>

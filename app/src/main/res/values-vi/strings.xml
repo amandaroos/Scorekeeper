@@ -20,4 +20,10 @@
     <string name="donate_greeting">Xin chào!</string>
     <string name="donate_message">Tôi tên là Amanda. Nếu bạn đang thưởng thức ứng dụng này do tôi phát triển, vui lòng xem xét việc mua ứng dụng quyên góp của tôi. Ứng dụng quyên góp không làm gì cả, nhưng đóng góp của bạn sẽ cho tôi thấy rằng thời gian của tôi dành cho việc phát triển các ứng dụng miễn phí, không quảng cáo được đánh giá cao. Cảm ơn!</string>
     <string name="button_donate">Tải nó trên Google Play</string>
-</resources>
+    <string name="Small">Nhỏ bé</string> 
+    <string name="large">Lớn</string> 
+    <string name="medium">Trung bình</string> 
+    <string name="small_heart">trái tim nhỏ</string> 
+    <string name="medium_heart">trái tim trung bình</string> 
+    <string name="large_heart">trái tim rộng lớn</string> 
+ </resources>

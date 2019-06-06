@@ -20,4 +20,10 @@
     <string name="donate_greeting">¡Hola!</string>
     <string name="donate_message">Mi nombre es Amanda. Si está disfrutando de esta aplicación que desarrollé, considere comprar mi aplicación de donación. La aplicación de donación no hace nada, pero su donación me mostrará que mi tiempo dedicado a desarrollar aplicaciones gratuitas sin anuncios es apreciado. ¡Gracias!</string>
     <string name="button_donate">Consiguelo en google play</string>
-</resources>
+    <string name="Small">Pequeña</string> 
+    <string name="large">Grande</string> 
+    <string name="medium">Medio</string> 
+    <string name="small_heart">corazón pequeño</string> 
+    <string name="medium_heart">corazón mediano</string> 
+    <string name="large_heart">corazon grande</string> 
+ </resources>

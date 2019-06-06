@@ -20,4 +20,10 @@
     <string name="donate_greeting">Witaj!</string>
     <string name="donate_message">Mam na imię Amanda. Jeśli korzystasz z tej aplikacji, którą opracowałem, rozważ zakupienie mojej aplikacji dotacyjnej. Aplikacja darowizn nic nie robi, ale Twoja darowizna pokaże mi, że mój czas poświęcony na tworzenie darmowych aplikacji bez reklam jest mile widziany. Dzięki!</string>
     <string name="button_donate">Pobierz w Google Play</string>
-</resources>
+    <string name="Small">Mały</string> 
+    <string name="large">Duży</string> 
+    <string name="medium">Średni</string> 
+    <string name="small_heart">małe serce</string> 
+    <string name="medium_heart">średnie serce</string> 
+    <string name="large_heart">duże serce</string> 
+ </resources>

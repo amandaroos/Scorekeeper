@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Layout for a single list item in the list of players -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/list_item_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?android:attr/activatedBackgroundIndicator"
     android:descendantFocusability="blocksDescendants"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:padding="8dp">
 
     <LinearLayout
         android:id="@+id/layout1"
@@ -17,21 +17,13 @@
         android:layout_centerVertical="true"
         android:layout_toStartOf="@+id/layout2">
 
-        <ImageView
-            android:id="@+id/player_image_icon"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/image_player_icon"
-            app:srcCompat="@drawable/avatar" />
-
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp"
+            android:paddingEnd="6dp"
+            android:paddingStart="6dp"
             android:textAppearance="?android:textAppearanceSmall"
             tools:text="John Jacob Jingler" />
     </LinearLayout>
@@ -66,7 +58,8 @@
         <Button
             android:id="@+id/plus_button"
             style="@style/QuickButtons"
-            android:text="@string/quick_plus_button" />
+            android:text="@string/quick_plus_button"
+            />
 
     </LinearLayout>
 </RelativeLayout>

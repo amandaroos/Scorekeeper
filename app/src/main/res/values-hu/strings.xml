@@ -20,4 +20,10 @@
     <string name="donate_greeting">Szia!</string>
     <string name="donate_message">A nevem Amanda. Ha élvezed ezt az alkalmazást, fejlesztettem, kérjük, vegye figyelembe az adományt. Az adományozási alkalmazás nem tesz semmit, de adománya megmutatja nekem, hogy az ingyenes, hirdetések nélküli alkalmazások fejlesztésére fordított időm nagyra értékelik. Kösz!</string>
     <string name="button_donate">Szerezd meg a Google Play-en</string>
-</resources>
+    <string name="Small">Kicsi</string> 
+    <string name="large">Nagy</string> 
+    <string name="medium">Közepes</string> 
+    <string name="small_heart">kis szív</string> 
+    <string name="medium_heart">közepes szív</string> 
+    <string name="large_heart">nagy szív</string> 
+ </resources>

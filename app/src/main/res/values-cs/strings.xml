@@ -20,4 +20,10 @@
     <string name="donate_greeting">Ahoj!</string>
     <string name="donate_message">Jmenuji se Amanda. Pokud se vám líbí tato aplikace, kterou jsem vyvinul, prosím, zvažte nákup mé aplikace dar. Dárcovství aplikace nic neudělá, ale váš dar mi ukáže, že můj čas strávený vyvíjením bezplatných aplikací není oceněn. Dík!</string>
     <string name="button_donate">Získat ji na Google Play</string>
-</resources>
+    <string name="Small">Malý</string> 
+    <string name="large">Velký</string> 
+    <string name="medium">Střední</string> 
+    <string name="small_heart">malé srdce</string> 
+    <string name="medium_heart">střední srdce</string> 
+    <string name="large_heart">velké srdce</string> 
+ </resources>
