@@ -1,7 +1,6 @@
 package com.amandafarrell.www.scorekeeper;
 
 import android.app.LoaderManager;
-import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.CursorLoader;
@@ -9,9 +8,9 @@ import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
@@ -272,6 +271,14 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             case R.id.action_donate:
                 Intent intent = new Intent(MainActivity.this, DonateActivity.class);
                 startActivity(intent);
+            case R.id.action_upgrade:
+                try {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse(getString(R.string.play_store_direct_link_upgrade))));
+                } catch (android.content.ActivityNotFoundException anfe) {
+                    startActivity(new Intent(Intent.ACTION_VIEW,
+                            Uri.parse(getString(R.string.play_store_browser_link_upgrade))));
+                }
         }
         return super.onOptionsItemSelected(item);
     }

@@ -75,5 +75,8 @@
     <string name="small_heart">small heart</string>
     <string name="medium_heart">medium heart</string>
     <string name="large_heart">large heart</string>
+    <string name="action_upgrade">Upgrade</string>
+    <string name="play_store_browser_link_upgrade" translatable="false">https://play.google.com/store/apps/details?id=com.amandafarrell.scorekeeperupgrade</string>
+    <string name="play_store_direct_link_upgrade" translatable="false">market://details?id=com.amandafarrell.scorekeeperupgrade</string>
 
 </resources>
