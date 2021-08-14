@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Pisteidenlaskija</string>
-    <string name="player_name_label">Pelaaja Nimi</string>
-    <string name="main_default_name">Pelaaja</string>
-    <string name="large_number_error_toast">Virhe: pistemäärä on liian suuri</string>
-    <string name="image_player_icon">Player-symboli</string>
-    <string name="image_group_icon">Ryhmäkuvake</string>
-    <string name="hint_player_name">Nimi</string>
-    <string name="editor_activity_title_edit_name">Muokkaa Nimeä</string>
-    <string name="editor_activity_title_add_score">Lisää pisteitä</string>
-    <string name="edit_player_current_score">Nykyinen pistemäärä</string>
-    <string name="action_save">Tallentaa</string>
-    <string name="action_reset_scores">Nollaa Tulokset</string>
-    <string name="action_edit">Muokata</string>
-    <string name="action_delete_all_players">Poista kaikki Pelaajat</string>
-    <string name="action_delete">Poistaa</string>
-    <string name="action_donate">Lahjoita kehittäjälle</string>
-    <string name="donate_title">Lahjoittaa</string>
-    <string name="donate_greeting">Hei!</string>
-    <string name="donate_message">Nimeni on Amanda. Jos käytät tätä sovellusta, jonka olen kehittänyt, harkitse lahjoitussovelluksen ostamista. Lahjoitussovellus ei tee mitään, mutta lahjoituksesi osoittaa minulle, että vapaa-aika-mainosten sovellusten kehittämiseen käytetty aika on arvostettu. Kiitos!</string>
-    <string name="button_donate">Hanki se Google Playssa</string>
-    <string name="Small">Pieni</string> 
-    <string name="large">Suuri</string> 
-    <string name="medium">keskikokoinen</string> 
-    <string name="small_heart">pieni sydän</string> 
-    <string name="medium_heart">keskimmäinen sydän</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Poista kaikki pelaajat</string> 
+    <string name="action_delete">Poistaa</string> 
+    <string name="action_donate">Lahjoita kehittäjälle</string> 
+    <string name="action_edit">Muokata</string> 
+    <string name="action_reset_scores">Nollaa tulokset</string> 
+    <string name="action_save">Tallentaa</string> 
+    <string name="action_upgrade">Päivittää</string> 
+    <string name="app_name">Pisteet</string> 
+    <string name="button_donate">Kokeile sitä Google Playssa</string> 
+    <string name="donate_greeting">Hei!</string> 
+    <string name="donate_title">Lahjoittaa</string> 
+    <string name="edit_player_current_score">Nykyinen pisteet</string> 
+    <string name="editor_activity_title_add_score">Lisää pisteet</string> 
+    <string name="editor_activity_title_edit_name">Muokkaa nimeä</string> 
+    <string name="hint_player_name">Nimi</string> 
+    <string name="image_group_icon">Ryhmän kuvake</string> 
+    <string name="image_player_icon">Pelaajan kuvake</string> 
     <string name="large_heart">suuri sydän</string> 
+    <string name="large_number_error_toast">Virhe: Pisteet ovat liian suuria</string> 
+    <string name="large">Suuri</string> 
+    <string name="main_default_name">Pelaaja</string> 
+    <string name="medium_heart">keskipitkä sydän</string> 
+    <string name="medium">Väliaine</string> 
+    <string name="player_name_label">Pelaaja nimi</string> 
+    <string name="small_heart">pieni sydän</string> 
+    <string name="Small">Pieni</string> 
+    <string name="donate_message">Nimeni on Amanda.
+ Jos nautit tämän sovelluksen, jota kehitetty, kannattaa ostaa lahjoituksen sovelluksen. Lahjoitussovellus ei tee mitään, mutta lahjoituksesi näyttää minulle, että minun aikani käyttää ilmaiseksi, ei-mainosten sovelluksia arvostetaan.
+ Kiitos!</string> 
  </resources>

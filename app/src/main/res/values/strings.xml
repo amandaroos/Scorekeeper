@@ -59,9 +59,7 @@
     <string name="action_donate">Donate to Developer</string>
     <string name="donate_title">Donate</string>
     <string name="donate_greeting">Hello!</string>
-    <string name="donate_message">My name is Amanda. If you are enjoying this app I developed,
-        please consider purchasing my donation app.\n\nThe donation app does not do anything,
-        but your donation will show me that my time spent developing free, no-ads apps is appreciated. Thanks!</string>
+    <string name="donate_message">My name is Amanda. If you are enjoying this app I developed,         please consider purchasing my donation app.  The donation app does not do anything,         but your donation will show me that my time spent developing free, no-ads apps is appreciated. Thanks!</string>
     <string name="play_store_direct_link_blue" translatable="false">market://details?id=com.amandafarrell.www.donationfordeveloper_blue</string>
     <string name="play_store_browser_link_blue" translatable="false">https://play.google.com/store/apps/details?id=com.amandafarrell.www.donationfordeveloper_blue</string>
     <string name="play_store_direct_link_red" translatable="false">market://details?id=com.amandafarrell.www.donationfordeveloperred</string>

@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Zapisovateľ</string>
-    <string name="player_name_label">Meno Hráča</string>
-    <string name="main_default_name">Prehrávač</string>
-    <string name="large_number_error_toast">Chyba: skóre je príliš veľké</string>
-    <string name="image_player_icon">Ikona prehrávača</string>
-    <string name="image_group_icon">Ikona skupiny</string>
-    <string name="hint_player_name">Názov</string>
-    <string name="editor_activity_title_edit_name">Upraviť Názov</string>
-    <string name="editor_activity_title_add_score">Pridajte skóre</string>
-    <string name="edit_player_current_score">Aktuálne skóre</string>
-    <string name="action_save">Uložiť</string>
-    <string name="action_reset_scores">Obnoviť Výsledky</string>
-    <string name="action_edit">Editovať</string>
-    <string name="action_delete_all_players">Odstrániť všetkých Hráčov</string>
-    <string name="action_delete">Vymazať</string>
-    <string name="action_donate">Prispejte vývojárovi</string>
-    <string name="donate_title">darovať</string>
-    <string name="donate_greeting">Ahoj!</string>
-    <string name="donate_message">Volám sa Amanda. Ak sa vám páči táto aplikácia, ktorú som vyvinul, prosím, zvážte nákup mojej aplikácie darcovstva. Darcovstvo aplikácia nerobí nič, ale váš dar mi ukáže, že môj čas strávený vyvíjaním bezplatných aplikácií nie je zobrazený. Vďaka!</string>
-    <string name="button_donate">Získajte ho v službe Google Play</string>
-    <string name="Small">malý</string> 
-    <string name="large">Veľký</string> 
-    <string name="medium">stredná</string> 
-    <string name="small_heart">malé srdce</string> 
-    <string name="medium_heart">stredné srdce</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Odstráňte všetkých hráčov</string> 
+    <string name="action_delete">Vymazať</string> 
+    <string name="action_donate">Darovať vývojárovi</string> 
+    <string name="action_edit">Upraviť</string> 
+    <string name="action_reset_scores">Reset Skóre</string> 
+    <string name="action_save">Uložiť</string> 
+    <string name="action_upgrade">Upgrade</string> 
+    <string name="app_name">Strelec</string> 
+    <string name="button_donate">Skúste to na Google Play</string> 
+    <string name="donate_greeting">Ahoj!</string> 
+    <string name="donate_title">Darovať</string> 
+    <string name="edit_player_current_score">Aktuálne skóre</string> 
+    <string name="editor_activity_title_add_score">Pridať skóre</string> 
+    <string name="editor_activity_title_edit_name">Upraviť názov</string> 
+    <string name="hint_player_name">názov</string> 
+    <string name="image_group_icon">Ikona skupiny</string> 
+    <string name="image_player_icon">Ikona hráča</string> 
     <string name="large_heart">veľké srdce</string> 
+    <string name="large_number_error_toast">Chyba: Skóre je príliš veľké</string> 
+    <string name="large">Veľký</string> 
+    <string name="main_default_name">Hráč</string> 
+    <string name="medium_heart">stredný srdce</string> 
+    <string name="medium">Stredný</string> 
+    <string name="player_name_label">Meno hráča</string> 
+    <string name="small_heart">malé srdce</string> 
+    <string name="Small">Malý</string> 
+    <string name="donate_message">Moje meno je Amanda.
+ Ak sa tešíte na túto aplikáciu, ktorú som vyvinul, prosím, zvážte nákup mojej dar. Aplikácia Donation App nerobí nič, ale váš dar mi ukáže, že môj čas strávený rozvíjaním zadarmo, aplikácie NO-ADS je ocenené.
+ Vďaka!</string> 
  </resources>

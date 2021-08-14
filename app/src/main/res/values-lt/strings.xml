@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Skorekeeper</string>
-    <string name="player_name_label">Žaidėjo Vardas</string>
-    <string name="main_default_name">Žaidėjas</string>
-    <string name="large_number_error_toast">Klaida: rezultatas per didelis</string>
-    <string name="image_player_icon">Grotuvo piktograma</string>
-    <string name="image_group_icon">Grupės piktograma</string>
-    <string name="hint_player_name">Vardas</string>
-    <string name="editor_activity_title_edit_name">Redaguoti Pavadinimą</string>
-    <string name="editor_activity_title_add_score">Pridėti score</string>
-    <string name="edit_player_current_score">Dabartinis rezultatas</string>
-    <string name="action_save">Sutaupyti</string>
-    <string name="action_reset_scores">Atstatyti Natos</string>
-    <string name="action_edit">Redaguoti</string>
-    <string name="action_delete_all_players">Ištrinti visus Žaidėjus</string>
-    <string name="action_delete">Ištrinti</string>
-    <string name="action_donate">Paaukokite kūrėjui</string>
-    <string name="donate_title">Paremkite</string>
-    <string name="donate_greeting">Sveiki!</string>
-    <string name="donate_message">Mano vardas yra Amanda. Jei naudojate šią programą, kurią sukūriau, apsvarstykite galimybę įsigyti mano dovanojimo programą. Donorystės programa nieko nedaro, tačiau jūsų donorystė parodys man, kad mano laikas, praleistas kuriant nemokamą, be skelbimų programą, yra vertinamas. Dėkoju!</string>
-    <string name="button_donate">Gaukite jį „Google Play“</string>
-    <string name="Small">Mažas</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Ištrinti visus žaidėjus</string> 
+    <string name="action_delete">Ištrinti</string> 
+    <string name="action_donate">Paremkite kūrėjui</string> 
+    <string name="action_edit">Redaguoti</string> 
+    <string name="action_reset_scores">Atstatyti taškus</string> 
+    <string name="action_save">Sutaupyti</string> 
+    <string name="action_upgrade">Patobulinti</string> 
+    <string name="app_name">Rezultatas. \ T</string> 
+    <string name="button_donate">Išbandykite "Google Play"</string> 
+    <string name="donate_greeting">Sveiki!</string> 
+    <string name="donate_title">Donate.</string> 
+    <string name="edit_player_current_score">Dabartinis rezultatas. \ T</string> 
+    <string name="editor_activity_title_add_score">Pridėti rezultatą</string> 
+    <string name="editor_activity_title_edit_name">Redaguoti vardą</string> 
+    <string name="hint_player_name">vardas</string> 
+    <string name="image_group_icon">Grupės piktograma</string> 
+    <string name="image_player_icon">Žaidėjo piktograma</string> 
+    <string name="large_heart">Didelė širdimi</string> 
+    <string name="large_number_error_toast">Klaida: rezultatas yra per didelis</string> 
     <string name="large">Didelis</string> 
-    <string name="medium">Vidutinis</string> 
-    <string name="small_heart">maža širdis</string> 
-    <string name="medium_heart">vidutinė širdis</string> 
-    <string name="large_heart">didelė širdis</string> 
+    <string name="main_default_name">Žaidėjas. \ T</string> 
+    <string name="medium_heart">Vidutinė širdimi</string> 
+    <string name="medium">Medžiaga</string> 
+    <string name="player_name_label">Žaidėjo vardas</string> 
+    <string name="small_heart">Maža širdis</string> 
+    <string name="Small">Mažas</string> 
+    <string name="donate_message">Mano vardas yra Amanda.
+ Jei naudojate šią programą aš sukūriau, prašome apsvarstyti galimybę įsigyti savo donorystės programą. Donorystės programa nieko nedaro, bet jūsų donorystė parodys man, kad mano laikas, praleistas kuriant nemokamai, be skelbimų programos yra vertinamos.
+ Dėkoju!</string> 
  </resources>

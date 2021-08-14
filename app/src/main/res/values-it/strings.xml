@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Segnapunti</string>
-    <string name="action_delete">Elimina</string>
-    <string name="action_delete_all_players">Elimina Tutti i Giocatori</string>
-    <string name="action_edit">Modificare</string>
-    <string name="action_reset_scores">Ripristina Punteggi</string>
-    <string name="action_save">Salvare</string>
-    <string name="edit_player_current_score">Punteggio Attuale</string>
-    <string name="editor_activity_title_add_score">Aggiungere Punteggio</string>
-    <string name="editor_activity_title_edit_name">Modifica Nome</string>
-    <string name="hint_player_name">Nome</string>
-    <string name="image_group_icon">Icona del Gruppo</string>
-    <string name="image_player_icon">Icone del Giocatore</string>
-    <string name="large_number_error_toast">Errore: il punteggio è troppo grande</string>
-    <string name="main_default_name">Giocatore</string>
-    <string name="player_name_label">Nome del Giocatore</string>
-    <string name="action_donate">Dona allo sviluppatore</string>
-    <string name="donate_title">Donare</string>
-    <string name="donate_greeting">Ciao!</string>
-    <string name="donate_message">Il mio nome è Amanda. Se ti piace questa app che ho sviluppato, considera l\'acquisto della mia app per le donazioni. L\'app per le donazioni non fa nulla, ma la tua donazione mi mostrerà che il mio tempo speso per lo sviluppo di app gratuite senza pubblicità è apprezzato. Grazie!</string>
-    <string name="button_donate">Scaricalo su Google Play</string>
-    <string name="Small">Piccola</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Elimina tutti i giocatori</string> 
+    <string name="action_delete">Elimina</string> 
+    <string name="action_donate">Dona allo sviluppatore</string> 
+    <string name="action_edit">Modificare</string> 
+    <string name="action_reset_scores">Ripristinare i punteggi</string> 
+    <string name="action_save">Salva</string> 
+    <string name="action_upgrade">Aggiornamento</string> 
+    <string name="app_name">Segnapunti</string> 
+    <string name="button_donate">Provalo su Google Play</string> 
+    <string name="donate_greeting">Ciao!</string> 
+    <string name="donate_title">Donare</string> 
+    <string name="edit_player_current_score">Punteggio corrente</string> 
+    <string name="editor_activity_title_add_score">Aggiungi un punteggio</string> 
+    <string name="editor_activity_title_edit_name">Modifica nome</string> 
+    <string name="hint_player_name">Nome</string> 
+    <string name="image_group_icon">Icona di gruppo</string> 
+    <string name="image_player_icon">Icona del giocatore</string> 
+    <string name="large_heart">grande cuore</string> 
+    <string name="large_number_error_toast">Errore: il punteggio è troppo grande</string> 
     <string name="large">Grande</string> 
-    <string name="medium">Media</string> 
-    <string name="small_heart">piccolo cuore</string> 
+    <string name="main_default_name">Giocatrice</string> 
     <string name="medium_heart">cuore medio</string> 
-    <string name="large_heart">cuore grande</string> 
+    <string name="medium">medio</string> 
+    <string name="player_name_label">Nome del giocatore</string> 
+    <string name="small_heart">Piccolo cuore</string> 
+    <string name="Small">Piccola</string> 
+    <string name="donate_message">Il mio nome è Amanda.
+ Se ti stai divertendo questa app, si prega di considerare l\'acquisto della mia app Donazione. L\'app Donazione non fa nulla, ma la tua donazione mi mostrerà che il mio tempo ha trascorso le app gratuite in via di sviluppo, è apprezzata.
+ Grazie!</string> 
  </resources>

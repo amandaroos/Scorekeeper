@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Scorekeeper</string>
-    <string name="action_delete">Kasować</string>
-    <string name="action_delete_all_players">Usuń wszystkich Graczy</string>
-    <string name="action_edit">Edytować</string>
-    <string name="action_reset_scores">Zresetuj Wyniki</string>
-    <string name="action_save">Zapisać</string>
-    <string name="edit_player_current_score">Obecny Wynik</string>
-    <string name="editor_activity_title_add_score">Dodaj Wynik</string>
-    <string name="editor_activity_title_edit_name">Edytuj Imię</string>
-    <string name="hint_player_name">Imię</string>
-    <string name="image_group_icon">Ikona grupy</string>
-    <string name="image_player_icon">Ikona Gracza</string>
-    <string name="large_number_error_toast">Błąd: wynik jest zbyt duży</string>
-    <string name="main_default_name">Gracz</string>
-    <string name="player_name_label">Nazwa Gracza</string>
-    <string name="action_donate">Darowizna dla programisty</string>
-    <string name="donate_title">Podarować</string>
-    <string name="donate_greeting">Witaj!</string>
-    <string name="donate_message">Mam na imię Amanda. Jeśli korzystasz z tej aplikacji, którą opracowałem, rozważ zakupienie mojej aplikacji dotacyjnej. Aplikacja darowizn nic nie robi, ale Twoja darowizna pokaże mi, że mój czas poświęcony na tworzenie darmowych aplikacji bez reklam jest mile widziany. Dzięki!</string>
-    <string name="button_donate">Pobierz w Google Play</string>
-    <string name="Small">Mały</string> 
-    <string name="large">Duży</string> 
-    <string name="medium">Średni</string> 
-    <string name="small_heart">małe serce</string> 
-    <string name="medium_heart">średnie serce</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Usuń wszystkich graczy</string> 
+    <string name="action_delete">Usunąć</string> 
+    <string name="action_donate">Podaruj deweloperę</string> 
+    <string name="action_edit">Edytować</string> 
+    <string name="action_reset_scores">Zresetuj wyniki.</string> 
+    <string name="action_save">Ratować</string> 
+    <string name="action_upgrade">Uaktualnić</string> 
+    <string name="app_name">ScoreKeeper.</string> 
+    <string name="button_donate">Wypróbuj go w Google Play</string> 
+    <string name="donate_greeting">Cześć!</string> 
+    <string name="donate_title">Podarować</string> 
+    <string name="edit_player_current_score">Obecny wynik</string> 
+    <string name="editor_activity_title_add_score">Dodaj wynik</string> 
+    <string name="editor_activity_title_edit_name">Zmień imię</string> 
+    <string name="hint_player_name">Nazwa</string> 
+    <string name="image_group_icon">Ikona grupy</string> 
+    <string name="image_player_icon">Ikona gracza</string> 
     <string name="large_heart">duże serce</string> 
+    <string name="large_number_error_toast">Błąd: wynik jest zbyt duży</string> 
+    <string name="large">Wielki</string> 
+    <string name="main_default_name">Gracz</string> 
+    <string name="medium_heart">średnie serce</string> 
+    <string name="medium">Średni</string> 
+    <string name="player_name_label">Nazwa gracza</string> 
+    <string name="small_heart">małe serce</string> 
+    <string name="Small">Mały</string> 
+    <string name="donate_message">Mam na imię Amanda.
+ Jeśli korzystasz z tej aplikacji, opracowałem, rozważ zakupy moją aplikację darowizną
+ Dziękuję!</string> 
  </resources>

@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Tanteador</string>
-    <string name="action_delete">Eliminar</string>
-    <string name="action_delete_all_players">Eliminar Todos Jugadores</string>
-    <string name="action_edit">Editar</string>
-    <string name="editor_activity_title_edit_name">Editar Nombre</string>
-    <string name="editor_activity_title_add_score">Añadir Puntos</string>
-    <string name="image_group_icon">Icono de Grupo</string>
-    <string name="image_player_icon">Icono de Jugador</string>
-    <string name="main_default_name">Jugador</string>
-    <string name="action_reset_scores">Restablecer Puntajes</string>
-    <string name="action_save">Guardar</string>
-    <string name="hint_player_name">Nombre</string>
-    <string name="player_name_label">Nombre del Jugador</string>
-    <string name="large_number_error_toast">Error: la puntuación es demasiado grande</string>
-    <string name="edit_player_current_score">Puntuación actual</string>
-    <string name="action_donate">Donar al desarrollador</string>
-    <string name="donate_title">Donar</string>
-    <string name="donate_greeting">¡Hola!</string>
-    <string name="donate_message">Mi nombre es Amanda. Si está disfrutando de esta aplicación que desarrollé, considere comprar mi aplicación de donación. La aplicación de donación no hace nada, pero su donación me mostrará que mi tiempo dedicado a desarrollar aplicaciones gratuitas sin anuncios es apreciado. ¡Gracias!</string>
-    <string name="button_donate">Consiguelo en google play</string>
-    <string name="Small">Pequeña</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Eliminar a todos los jugadores</string> 
+    <string name="action_delete">Borrar</string> 
+    <string name="action_donate">Dona al desarrollador</string> 
+    <string name="action_edit">Editar</string> 
+    <string name="action_reset_scores">Restablecer puntuaciones</string> 
+    <string name="action_save">Salvar</string> 
+    <string name="action_upgrade">Mejora</string> 
+    <string name="app_name">Tanteadora</string> 
+    <string name="button_donate">Pruébalo en Google Play</string> 
+    <string name="donate_greeting">¡Hola!</string> 
+    <string name="donate_title">Donar</string> 
+    <string name="edit_player_current_score">Puntuación actual</string> 
+    <string name="editor_activity_title_add_score">Puntuación</string> 
+    <string name="editor_activity_title_edit_name">Editar nombre</string> 
+    <string name="hint_player_name">Nombre</string> 
+    <string name="image_group_icon">Grupo de grupo</string> 
+    <string name="image_player_icon">Icono de jugador</string> 
+    <string name="large_heart">corazon</string> 
+    <string name="large_number_error_toast">Error: la puntuación es demasiado grande</string> 
     <string name="large">Grande</string> 
+    <string name="main_default_name">Jugadora</string> 
+    <string name="medium_heart">corazón medio</string> 
     <string name="medium">Medio</string> 
+    <string name="player_name_label">Nombre del jugador</string> 
     <string name="small_heart">corazón pequeño</string> 
-    <string name="medium_heart">corazón mediano</string> 
-    <string name="large_heart">corazon grande</string> 
+    <string name="Small">Pequeño</string> 
+    <string name="donate_message">Mi nombre es Amanda.
+ Si está disfrutando de esta aplicación, desarrollé, considere comprar mi aplicación de donación. La aplicación de donación no hace nada, pero su donación me mostrará que mi tiempo dedicado a desarrollar aplicaciones gratuitas, no se aprecia las aplicaciones sin anuncios.
+ ¡Gracias!</string> 
  </resources>

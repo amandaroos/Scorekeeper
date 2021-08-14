@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Compteur de Points</string>
-    <string name="action_delete">Effacer</string>
-    <string name="action_delete_all_players">Effacer Tous les Joueurs</string>
-    <string name="action_edit">Modifier</string>
-    <string name="action_reset_scores">Réinitialiser Score</string>
-    <string name="action_save">Sauvegarder</string>
-    <string name="edit_player_current_score">Score Actuel</string>
-    <string name="editor_activity_title_add_score">Ajouter un Score</string>
-    <string name="editor_activity_title_edit_name">Modifier le Nom</string>
-    <string name="hint_player_name">Nom</string>
-    <string name="image_group_icon">Icône de Groupe</string>
-    <string name="image_player_icon">Icône de Joueur</string>
-    <string name="large_number_error_toast">Erreur: le score est trop important</string>
-    <string name="main_default_name">Joueur</string>
-    <string name="player_name_label">Nom de Joueur</string>
-    <string name="action_donate">Faire un don au développeur</string>
-    <string name="donate_title">Faire un don</string>
-    <string name="donate_greeting">Salut!</string>
-    <string name="donate_message">Mon nom est Amanda. Si vous appréciez cette application que j\'ai développée, pensez à acheter mon application de donation. L\'application de don ne fait rien, mais votre don me montrera que mon temps passé à développer des applications gratuites sans annonces est apprécié. Merci!</string>
-    <string name="button_donate">Obtenez le sur Google Play</string>
-    <string name="Small">Petite</string> 
-    <string name="large">Grande</string> 
-    <string name="medium">Moyenne</string> 
-    <string name="small_heart">petit coeur</string> 
-    <string name="medium_heart">coeur moyen</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Supprimer tous les joueurs</string> 
+    <string name="action_delete">Supprimer</string> 
+    <string name="action_donate">Faites un don au développeur</string> 
+    <string name="action_edit">Éditer</string> 
+    <string name="action_reset_scores">Réinitialiser les scores</string> 
+    <string name="action_save">sauver</string> 
+    <string name="action_upgrade">Améliorer</string> 
+    <string name="app_name">Marqueuse</string> 
+    <string name="button_donate">Essayez-le sur Google Play</string> 
+    <string name="donate_greeting">Bonjour!</string> 
+    <string name="donate_title">Faire un don</string> 
+    <string name="edit_player_current_score">Score actuel</string> 
+    <string name="editor_activity_title_add_score">Ajouter un score</string> 
+    <string name="editor_activity_title_edit_name">Nom d\'édition</string> 
+    <string name="hint_player_name">Nom</string> 
+    <string name="image_group_icon">Groupe d\'icône de groupe</string> 
+    <string name="image_player_icon">Icône de joueur</string> 
     <string name="large_heart">grand coeur</string> 
+    <string name="large_number_error_toast">Erreur: le score est trop grand</string> 
+    <string name="large">Grande</string> 
+    <string name="main_default_name">Joueuse</string> 
+    <string name="medium_heart">coeur moyen</string> 
+    <string name="medium">Moyen</string> 
+    <string name="player_name_label">Nom de joueur</string> 
+    <string name="small_heart">petit coeur</string> 
+    <string name="Small">Petite</string> 
+    <string name="donate_message">Mon nom est Amanda.
+ Si vous appréciez cette application, je suis développé, veuillez envisager d\'acheter mon application de donation.L\'application de donation ne fait rien, mais votre don me montrera que mon temps passé à développer des applications gratuites et sans annonces est appréciée.
+ Merci!</string> 
  </resources>

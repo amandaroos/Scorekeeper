@@ -1,28 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="player_name_label">Pangalan ng Manlalaro</string>
-    <string name="main_default_name">Manlalaro</string>
-    <string name="large_number_error_toast">Error: masyadong malaki ang iskor</string>
-    <string name="image_player_icon">Icon ng Player</string>
-    <string name="image_group_icon">Icon ng Grupo</string>
-    <string name="hint_player_name">Pangalan</string>
-    <string name="editor_activity_title_edit_name">I-edit ang Pangalan</string>
-    <string name="editor_activity_title_add_score">Magdagdag ng puntos</string>
-    <string name="edit_player_current_score">Kasalukuyang puntos</string>
-    <string name="action_save">I-save</string>
-    <string name="action_reset_scores">I-reset ang Mga Marka</string>
-    <string name="action_edit">I-edit</string>
-    <string name="action_delete_all_players">Tanggalin ang Lahat ng Mga Player</string>
-    <string name="action_delete">Tanggalin</string>
-    <string name="action_donate">Mag-donate sa Developer</string>
-    <string name="donate_title">Mag-donate</string>
-    <string name="donate_greeting">Kamusta!</string>
-    <string name="donate_message">Ang pangalan ko ay Amanda. Kung nasiyahan ka sa app na ito na binuo ko, mangyaring isaalang-alang ang pagbili ng aking donasyon app. Ang donasyon app ay hindi gumawa ng anumang bagay, ngunit ang iyong donasyon ay magpapakita sa akin na ang aking oras na ginugol sa pagbuo ng libre, walang apps sa mga ad ay pinahahalagahan. Salamat!</string>
-    <string name="button_donate">Kunin sa google play</string>
-    <string name="Small">Maliit</string> 
-    <string name="large">Malaking</string> 
-    <string name="medium">Katamtaman</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Tanggalin ang lahat ng mga manlalaro</string> 
+    <string name="action_delete">Tanggalin.</string> 
+    <string name="action_donate">Mag-donate sa developer.</string> 
+    <string name="action_edit">I-edit</string> 
+    <string name="action_reset_scores">I-reset ang mga marka</string> 
+    <string name="action_save">I-save</string> 
+    <string name="action_upgrade">Mag-upgrade</string> 
+    <string name="app_name">Scorekeeper.</string> 
+    <string name="button_donate">Subukan ito sa Google Play.</string> 
+    <string name="donate_greeting">Kamusta!</string> 
+    <string name="donate_title">Donate.</string> 
+    <string name="edit_player_current_score">Kasalukuyang iskor</string> 
+    <string name="editor_activity_title_add_score">Magdagdag ng Kalidad</string> 
+    <string name="editor_activity_title_edit_name">I-edit ang Pangalan</string> 
+    <string name="hint_player_name">Pangalan</string> 
+    <string name="image_group_icon">Icon ng grupo</string> 
+    <string name="image_player_icon">Icon ng manlalaro</string> 
+    <string name="large_heart">Malaking puso</string> 
+    <string name="large_number_error_toast">Error: Masyadong malaki ang iskor</string> 
+    <string name="large">Malaki</string> 
+    <string name="main_default_name">Manlalaro</string> 
+    <string name="medium_heart">Katamtamang puso</string> 
+    <string name="medium">Daluyan</string> 
+    <string name="player_name_label">Pangalan ng manlalaro</string> 
     <string name="small_heart">maliit na puso</string> 
-    <string name="medium_heart">katamtamang puso</string> 
-    <string name="large_heart">malaking puso</string> 
+    <string name="Small">Maliit</string> 
+    <string name="donate_message">Ang pangalan ko ay Amanda.
+ Kung tinatangkilik mo ang app na ito na binuo ko, mangyaring isaalang-alang ang pagbili ng aking donasyon app. Ang donasyon app ay hindi gumawa ng anumang bagay, ngunit ang iyong donasyon ay magpapakita sa akin na ang aking oras na ginugol ng pagbuo ng libre, walang ads apps ay appreciated.
+ Salamat!</string> 
  </resources>

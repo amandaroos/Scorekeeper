@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Contador de Pontos</string>
-    <string name="action_delete">Apague</string>
-    <string name="action_delete_all_players">Apague Tudos os Jogadores</string>
-    <string name="action_edit">Editar</string>
-    <string name="action_reset_scores">Repor Pontos</string>
-    <string name="action_save">Salve</string>
-    <string name="edit_player_current_score">Pontos Atual</string>
-    <string name="editor_activity_title_add_score">Adicionar Pontos</string>
-    <string name="editor_activity_title_edit_name">Editar Nome</string>
-    <string name="hint_player_name">Nome</string>
-    <string name="image_group_icon">Ícone do Grupo</string>
-    <string name="image_player_icon">Ícone do Jogador</string>
-    <string name="large_number_error_toast">Erro: a pontuação é muito grande</string>
-    <string name="main_default_name">Jogador</string>
-    <string name="player_name_label">Nome do Jogador</string>
-    <string name="action_donate">Doe ao desenvolvedor</string>
-    <string name="donate_title">Doar</string>
-    <string name="donate_greeting">Olá!</string>
-    <string name="donate_message">Meu nome é Amanda. Se você está gostando deste aplicativo que desenvolvi, por favor, considere a compra do meu aplicativo de doação. O aplicativo de doação não faz nada, mas sua doação me mostrará que meu tempo gasto desenvolvendo aplicativos gratuitos e sem anúncios é apreciado. Obrigada!</string>
-    <string name="button_donate">Obtê-lo no Google Play</string>
-    <string name="Small">Pequena</string> 
-    <string name="large">ampla</string> 
-    <string name="medium">Média</string> 
-    <string name="small_heart">Coração pequeno</string> 
-    <string name="medium_heart">coração médio</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Exclua todos os jogadores</string> 
+    <string name="action_delete">Excluir</string> 
+    <string name="action_donate">Doe para o desenvolvedor</string> 
+    <string name="action_edit">Editar</string> 
+    <string name="action_reset_scores">Redefinir pontuações</string> 
+    <string name="action_save">Salvar</string> 
+    <string name="action_upgrade">Melhoria</string> 
+    <string name="app_name">ScoreKeeper.</string> 
+    <string name="button_donate">Experimente no Google Play</string> 
+    <string name="donate_greeting">Olá!</string> 
+    <string name="donate_title">Doar</string> 
+    <string name="edit_player_current_score">Pontuação atual</string> 
+    <string name="editor_activity_title_add_score">Adicionar pontuação</string> 
+    <string name="editor_activity_title_edit_name">Editar nome</string> 
+    <string name="hint_player_name">Nome</string> 
+    <string name="image_group_icon">Ícone do grupo</string> 
+    <string name="image_player_icon">Ícone do jogador.</string> 
     <string name="large_heart">grande coração</string> 
+    <string name="large_number_error_toast">Erro: pontuação é muito grande</string> 
+    <string name="large">Grande</string> 
+    <string name="main_default_name">Jogadora</string> 
+    <string name="medium_heart">Coração Médio</string> 
+    <string name="medium">Média</string> 
+    <string name="player_name_label">Nome do jogador</string> 
+    <string name="small_heart">Coração pequeno</string> 
+    <string name="Small">Pequena</string> 
+    <string name="donate_message">Meu nome é Amanda.
+ Se você está gostando deste aplicativo eu desenvolvi, por favor considere comprar meu aplicativo de doação.O aplicativo de doação não faz nada, mas sua doação me mostrará que meu tempo gasto desenvolvendo aplicativos gratuitos e sem anúncios é apreciado.
+ Obrigado!</string> 
  </resources>

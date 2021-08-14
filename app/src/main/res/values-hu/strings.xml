@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Jegyzőkönyvvezetőt</string>
-    <string name="player_name_label">Játékos Neve</string>
-    <string name="main_default_name">Játékos</string>
-    <string name="large_number_error_toast">Hiba: a pontszám túl nagy</string>
-    <string name="image_player_icon">Játékos ikon</string>
-    <string name="image_group_icon">Csoport ikon</string>
-    <string name="hint_player_name">Név</string>
-    <string name="editor_activity_title_edit_name">Név Szerkesztése</string>
-    <string name="editor_activity_title_add_score">Pontszám hozzáadása</string>
-    <string name="edit_player_current_score">Jelenlegi pontszám</string>
-    <string name="action_save">Mentés</string>
-    <string name="action_reset_scores">Reset Pontszámok</string>
-    <string name="action_edit">Szerkesztése</string>
-    <string name="action_delete_all_players">Összes Játékos törlése</string>
-    <string name="action_delete">Töröl</string>
-    <string name="action_donate">Adományozz a fejlesztőnek</string>
-    <string name="donate_title">Adományoz</string>
-    <string name="donate_greeting">Szia!</string>
-    <string name="donate_message">A nevem Amanda. Ha élvezed ezt az alkalmazást, fejlesztettem, kérjük, vegye figyelembe az adományt. Az adományozási alkalmazás nem tesz semmit, de adománya megmutatja nekem, hogy az ingyenes, hirdetések nélküli alkalmazások fejlesztésére fordított időm nagyra értékelik. Kösz!</string>
-    <string name="button_donate">Szerezd meg a Google Play-en</string>
-    <string name="Small">Kicsi</string> 
-    <string name="large">Nagy</string> 
-    <string name="medium">Közepes</string> 
-    <string name="small_heart">kis szív</string> 
-    <string name="medium_heart">közepes szív</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Törölje az összes játékost</string> 
+    <string name="action_delete">Töröl</string> 
+    <string name="action_donate">Adományozza a fejlesztőt</string> 
+    <string name="action_edit">Szerkesztés</string> 
+    <string name="action_reset_scores">Állítsa vissza a pontszámokat</string> 
+    <string name="action_save">Mentés</string> 
+    <string name="action_upgrade">Frissítés</string> 
+    <string name="app_name">Igazoló</string> 
+    <string name="button_donate">Próbálja ki a Google Playen</string> 
+    <string name="donate_greeting">Szia!</string> 
+    <string name="donate_title">Adományoz</string> 
+    <string name="edit_player_current_score">Jelenlegi pontszám</string> 
+    <string name="editor_activity_title_add_score">Adja hozzá a pontszámot</string> 
+    <string name="editor_activity_title_edit_name">Név szerkesztése</string> 
+    <string name="hint_player_name">Név</string> 
+    <string name="image_group_icon">Csoport ikon</string> 
+    <string name="image_player_icon">Játékos ikon</string> 
     <string name="large_heart">nagy szív</string> 
+    <string name="large_number_error_toast">Hiba: A pontszám túl nagy</string> 
+    <string name="large">Nagy</string> 
+    <string name="main_default_name">Játékos</string> 
+    <string name="medium_heart">közepes szív</string> 
+    <string name="medium">Közepes</string> 
+    <string name="player_name_label">Játékos neve</string> 
+    <string name="small_heart">kis szív</string> 
+    <string name="Small">Kicsi</string> 
+    <string name="donate_message">A nevem Amanda.
+ Ha élvezi ezt az alkalmazást, akkor fontolja meg, kérjük, fontolja meg az adományozási alkalmazás megvásárlását. Az adományozási alkalmazás nem tesz semmit, de az adománya megmutatja nekem, hogy az ingyenes, ingyenes, nem-ADS alkalmazások elismert idejét.
+ Kösz!</string> 
  </resources>

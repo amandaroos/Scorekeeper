@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">"Protokollföraren "</string>
-    <string name="player_name_label">Spelarnamn</string>
-    <string name="main_default_name">Spelare</string>
-    <string name="large_number_error_toast">Fel: poängen är för stor</string>
-    <string name="image_player_icon">Spelarens ikon</string>
-    <string name="image_group_icon">Gruppikon</string>
-    <string name="hint_player_name">Namn</string>
-    <string name="editor_activity_title_edit_name">Redigera Namn</string>
-    <string name="editor_activity_title_add_score">Lägg till poäng</string>
-    <string name="edit_player_current_score">Nuvarande poäng</string>
-    <string name="action_save">Spara</string>
-    <string name="action_reset_scores">Återställ Poäng</string>
-    <string name="action_edit">Redigera</string>
-    <string name="action_delete_all_players">Ta bort alla Spelare</string>
-    <string name="action_delete">Radera</string>
-    <string name="action_donate">Donera till utvecklare</string>
-    <string name="donate_title">Donera</string>
-    <string name="donate_greeting">Hej!</string>
-    <string name="donate_message">Mitt namn är Amanda. Om du njuter av den här appen jag utvecklade, var snäll och överväga att köpa min donationsapp. Donations-appen gör inget, men din donation visar mig att min tid på att utveckla gratis apps utan annonser är uppskattad. Tack!</string>
-    <string name="button_donate">Skaffa det på Google Play</string>
-    <string name="Small">Små</string> 
-    <string name="large">Stor</string> 
-    <string name="medium">Medium</string> 
-    <string name="small_heart">litet hjärta</string> 
-    <string name="medium_heart">medelhögt hjärta</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Ta bort alla spelare</string> 
+    <string name="action_delete">Radera</string> 
+    <string name="action_donate">Donera till utvecklare</string> 
+    <string name="action_edit">Redigera</string> 
+    <string name="action_reset_scores">Återställ poäng</string> 
+    <string name="action_save">Spara</string> 
+    <string name="action_upgrade">Uppgradering</string> 
+    <string name="app_name">Kysserare</string> 
+    <string name="button_donate">Prova på Google Play</string> 
+    <string name="donate_greeting">Hallå!</string> 
+    <string name="donate_title">Donera</string> 
+    <string name="edit_player_current_score">Aktuell poäng</string> 
+    <string name="editor_activity_title_add_score">Lägg till poäng</string> 
+    <string name="editor_activity_title_edit_name">Redigera namn</string> 
+    <string name="hint_player_name">namn</string> 
+    <string name="image_group_icon">Gruppikon</string> 
+    <string name="image_player_icon">Spelareikon</string> 
     <string name="large_heart">stort hjärta</string> 
+    <string name="large_number_error_toast">Fel: poäng är för stor</string> 
+    <string name="large">Stor</string> 
+    <string name="main_default_name">Spelare</string> 
+    <string name="medium_heart">medelhögtal</string> 
+    <string name="medium">Medium</string> 
+    <string name="player_name_label">Spelarnamn</string> 
+    <string name="small_heart">litet hjärta</string> 
+    <string name="Small">Små</string> 
+    <string name="donate_message">Mitt namn är Amanda.
+ Om du njuter av den här appen utvecklades jag, snälla överväga att köpa min donationsapp. Donationsappen gör ingenting, men din donation kommer att visa mig att min tid att utveckla gratis, NO-ADS-appar uppskattas.
+ Tack!</string> 
  </resources>

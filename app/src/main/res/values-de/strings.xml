@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Scorekeeper</string>
-    <string name="player_name_label">Spielername</string>
-    <string name="action_delete">Löschen</string>
-    <string name="action_delete_all_players">Alle Spieler Löschen</string>
-    <string name="action_edit">Bearbeiten</string>
-    <string name="action_reset_scores">Noten Zurücksetzen</string>
-    <string name="action_save">Sparen</string>
-    <string name="edit_player_current_score">Momentaner Punktestand</string>
-    <string name="editor_activity_title_add_score">Punktzahl Hinzufügen</string>
-    <string name="editor_activity_title_edit_name">Namen Bearbeiten</string>
-    <string name="hint_player_name">Name</string>
-    <string name="image_group_icon">Gruppensymbol</string>
-    <string name="image_player_icon">Spieler-Symbol</string>
-    <string name="large_number_error_toast">Fehler: Score ist zu groß</string>
-    <string name="main_default_name">Spieler</string>
-    <string name="action_donate">Spende an den Entwickler</string>
-    <string name="donate_title">Spenden</string>
-    <string name="donate_greeting">Hallo!</string>
-    <string name="donate_message">Ich heiße Amanda. Wenn Ihnen diese von mir entwickelte App gefällt, erwägen Sie bitte den Kauf meiner Spenden-App. Die Spenden-App hat nichts zu tun, aber Ihre Spende zeigt mir, dass meine Zeit, die Sie mit der Entwicklung kostenloser Apps ohne Werbung verbringen, sehr geschätzt wird. Vielen Dank!</string>
-    <string name="button_donate">Bekomm es auf Google Play</string>
-    <string name="Small">Klein</string> 
-    <string name="large">Groß</string> 
-    <string name="medium">Mittel</string> 
-    <string name="small_heart">kleines Herz</string> 
-    <string name="medium_heart">mittleres Herz</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Alle Spieler löschen</string> 
+    <string name="action_delete">Löschen</string> 
+    <string name="action_donate">Spenden Sie an Entwickler</string> 
+    <string name="action_edit">Bearbeiten</string> 
+    <string name="action_reset_scores">SCOREs zurücksetzen.</string> 
+    <string name="action_save">Speichern</string> 
+    <string name="action_upgrade">Aktualisierung</string> 
+    <string name="app_name">Scorekeeper</string> 
+    <string name="button_donate">Probieren Sie es auf Google Play aus</string> 
+    <string name="donate_greeting">Hallo!</string> 
+    <string name="donate_title">Spenden</string> 
+    <string name="edit_player_current_score">Momentaner Punktestand</string> 
+    <string name="editor_activity_title_add_score">Ergebnis hinzufügen</string> 
+    <string name="editor_activity_title_edit_name">Namen bearbeiten</string> 
+    <string name="hint_player_name">Name</string> 
+    <string name="image_group_icon">Gruppensymbol</string> 
+    <string name="image_player_icon">Spielerikone</string> 
     <string name="large_heart">großes Herz</string> 
+    <string name="large_number_error_toast">Fehler: Score ist zu groß</string> 
+    <string name="large">Groß</string> 
+    <string name="main_default_name">Spieler</string> 
+    <string name="medium_heart">mittelherzig</string> 
+    <string name="medium">Mittel</string> 
+    <string name="player_name_label">Spielername</string> 
+    <string name="small_heart">kleines Herz</string> 
+    <string name="Small">Klein</string> 
+    <string name="donate_message">Ich heiße Amanda.
+ Wenn Sie diese App genießen, die ich entwickelt habe, erwägen Sie bitte, meine Spenden-App zu kaufen
+ Vielen Dank!</string> 
  </resources>

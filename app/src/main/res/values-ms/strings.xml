@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Penjaga gol</string>
-    <string name="player_name_label">Nama Pemain</string>
-    <string name="main_default_name">Pemain</string>
-    <string name="large_number_error_toast">Ralat: skor terlalu besar</string>
-    <string name="image_player_icon">Ikon Pemain</string>
-    <string name="image_group_icon">Ikon Kumpulan</string>
-    <string name="hint_player_name">Nama</string>
-    <string name="editor_activity_title_edit_name">Edit Nama</string>
-    <string name="editor_activity_title_add_score">Tambah skor</string>
-    <string name="edit_player_current_score">Skor semasa</string>
-    <string name="action_save">Simpan</string>
-    <string name="action_reset_scores">Tetapkan semula Markah</string>
-    <string name="action_edit">Edit</string>
-    <string name="action_delete_all_players">Padam Semua Pemain</string>
-    <string name="action_delete">Padam</string>
-    <string name="action_donate">Dermakan kepada Pemaju</string>
-    <string name="donate_title">Dermakan</string>
-    <string name="donate_greeting">Hello!</string>
-    <string name="donate_message">Nama saya Amanda. Jika anda menikmati aplikasi ini saya maju, sila pertimbangkan untuk membeli aplikasi derma saya. Aplikasi derma tidak melakukan apa-apa, tetapi derma anda akan menunjukkan kepada saya bahawa masa saya dihabiskan untuk membangunkan aplikasi percuma, tidak ada iklan yang dihargai. Terima kasih!</string>
-    <string name="button_donate">Dapatkannya di Google Play</string>
-    <string name="Small">Kecil</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Padam semua pemain</string> 
+    <string name="action_delete">Memadam</string> 
+    <string name="action_donate">Dermakan kepada pemaju</string> 
+    <string name="action_edit">Edit</string> 
+    <string name="action_reset_scores">Tetapkan semula skor</string> 
+    <string name="action_save">JIMAT</string> 
+    <string name="action_upgrade">Naik taraf</string> 
+    <string name="app_name">Scorkeeper.</string> 
+    <string name="button_donate">Cuba di Google Play</string> 
+    <string name="donate_greeting">Hello!</string> 
+    <string name="donate_title">Menderma</string> 
+    <string name="edit_player_current_score">Skor semasa</string> 
+    <string name="editor_activity_title_add_score">Tambah skor</string> 
+    <string name="editor_activity_title_edit_name">Edit nama</string> 
+    <string name="hint_player_name">Nama</string> 
+    <string name="image_group_icon">Ikon kumpulan</string> 
+    <string name="image_player_icon">Ikon pemain</string> 
+    <string name="large_heart">hati yang besar.</string> 
+    <string name="large_number_error_toast">Ralat: Score terlalu besar</string> 
     <string name="large">Besar</string> 
-    <string name="medium">Sederhana</string> 
+    <string name="main_default_name">Pemain</string> 
+    <string name="medium_heart">Medium hati</string> 
+    <string name="medium">Medium.</string> 
+    <string name="player_name_label">Nama pemain</string> 
     <string name="small_heart">hati kecil</string> 
-    <string name="medium_heart">jantung sederhana</string> 
-    <string name="large_heart">hati yang besar</string> 
+    <string name="Small">Kecil.</string> 
+    <string name="donate_message">Nama saya Amanda.
+ Sekiranya anda menikmati aplikasi ini, saya maju, sila pertimbangkan untuk membeli aplikasi sumbangan saya. Aplikasi derma tidak berbuat apa-apa, tetapi sumbangan anda akan menunjukkan kepada saya bahawa masa saya menghabiskan masa yang dibangunkan, aplikasi tidak ada iklan dihargai.
+ Terima kasih!</string> 
  </resources>

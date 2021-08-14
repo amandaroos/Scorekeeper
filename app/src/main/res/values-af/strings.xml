@@ -1,30 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Punte telling Keeper</string>
-    <string name="action_delete">Verwyder</string>
-    <string name="action_delete_all_players">Verwyder Alle Spelers</string>
-    <string name="action_edit">Wysig</string>
-    <string name="action_reset_scores">Herstel Scores</string>
-    <string name="action_save">Red</string>
-    <string name="edit_player_current_score">Huidige telling</string>
-    <string name="editor_activity_title_add_score">Voeg Telling By</string>
-    <string name="editor_activity_title_edit_name">Wysig Naam</string>
-    <string name="hint_player_name">Naam</string>
-    <string name="image_group_icon">Groepikoon</string>
-    <string name="image_player_icon">Spelerikoon</string>
-    <string name="large_number_error_toast">Fout: telling is te groot</string>
-    <string name="main_default_name">Speler</string>
-    <string name="player_name_label">Speler Naam</string>
-
-    <string name="action_donate">Skenk aan Ontwikkelaar</string>
-    <string name="donate_title">skenk</string>
-    <string name="donate_greeting">Hello!</string>
-    <string name="donate_message">My naam is Amanda. As jy hierdie program geniet wat ek ontwikkel het, oorweeg dit asseblief om my skenkingprogram te koop. Die donasie-program doen niks, maar jou skenking sal my wys dat my tyd bestee aan die ontwikkeling van gratis, nie-advertensies-programme waardeer word. Dankie</string>
-    <string name="button_donate">Kry dit op Google Play</string>
-    <string name="Small">klein</string> 
-    <string name="large">groot</string> 
-    <string name="medium">medium</string> 
-    <string name="small_heart">klein hart</string> 
-    <string name="medium_heart">medium hart</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Verwyder alle spelers</string> 
+    <string name="action_delete">Verwyder</string> 
+    <string name="action_donate">Skenk aan ontwikkelaar</string> 
+    <string name="action_edit">Redigeer</string> 
+    <string name="action_reset_scores">Herstel tellings</string> 
+    <string name="action_save">Spaar</string> 
+    <string name="action_upgrade">Opgradering</string> 
+    <string name="app_name">Skyfhouer</string> 
+    <string name="button_donate">Probeer dit op Google Play</string> 
+    <string name="donate_greeting">Hallo!</string> 
+    <string name="donate_title">skenk</string> 
+    <string name="edit_player_current_score">Huidige telling</string> 
+    <string name="editor_activity_title_add_score">Voeg telling by</string> 
+    <string name="editor_activity_title_edit_name">Wysig naam</string> 
+    <string name="hint_player_name">Naam</string> 
+    <string name="image_group_icon">Groepikoon</string> 
+    <string name="image_player_icon">Speler ikoon</string> 
     <string name="large_heart">groot hart</string> 
+    <string name="large_number_error_toast">Fout: telling is te groot</string> 
+    <string name="large">Groot</string> 
+    <string name="main_default_name">Toneelspeler</string> 
+    <string name="medium_heart">medium hart</string> 
+    <string name="medium">Medium</string> 
+    <string name="player_name_label">Speler naam</string> 
+    <string name="small_heart">klein hart</string> 
+    <string name="Small">Klein</string> 
+    <string name="donate_message">My naam is Amanda.
+ As jy hierdie program geniet wat ek ontwikkel het, oorweeg dit om my skenkingprogram te koop. Die skenkingprogram doen niks nie, maar jou skenking sal my wys dat my tyd bestee word om gratis te ontwikkel.
+ Dankie!</string> 
  </resources>

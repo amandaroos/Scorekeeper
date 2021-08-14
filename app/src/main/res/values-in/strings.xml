@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Pencatat angka pertandingan</string>
-    <string name="player_name_label">Nama Pemain</string>
-    <string name="main_default_name">Pemain</string>
-    <string name="large_number_error_toast">Kesalahan: skor terlalu besar</string>
-    <string name="image_player_icon">Ikon Pemain</string>
-    <string name="image_group_icon">Ikon Grup</string>
-    <string name="hint_player_name">Nama</string>
-    <string name="editor_activity_title_edit_name">Edit Nama</string>
-    <string name="editor_activity_title_add_score">Tambahkan skor</string>
-    <string name="edit_player_current_score">Skor saat ini</string>
-    <string name="action_save">Menyimpan</string>
-    <string name="action_reset_scores">Setel Ulang Skor</string>
-    <string name="action_edit">Edit</string>
-    <string name="action_delete_all_players">Hapus Semua Pemain</string>
-    <string name="action_delete">Menghapus</string>
-    <string name="action_donate">Donasi ke Pengembang</string>
-    <string name="donate_title">Menyumbangkan</string>
-    <string name="donate_greeting">Halo!</string>
-    <string name="donate_message">Nama saya Amanda. Jika Anda menikmati aplikasi yang saya kembangkan ini, silakan pertimbangkan untuk membeli aplikasi donasi saya. Aplikasi donasi tidak melakukan apa-apa, tetapi donasi Anda akan menunjukkan kepada saya bahwa waktu saya dihabiskan untuk mengembangkan aplikasi gratis tanpa iklan dihargai. Terima kasih!</string>
-    <string name="button_donate">Dapatkan di Google Play</string>
-    <string name="Small">Kecil</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Hapus semua pemain</string> 
+    <string name="action_delete">Menghapus</string> 
+    <string name="action_donate">Donasi ke pengembang</string> 
+    <string name="action_edit">Edit</string> 
+    <string name="action_reset_scores">RESET Skor</string> 
+    <string name="action_save">Menyimpan</string> 
+    <string name="action_upgrade">Meningkatkan</string> 
+    <string name="app_name">Pencatat angka pertandingan</string> 
+    <string name="button_donate">Cobalah di Google Play</string> 
+    <string name="donate_greeting">Halo!</string> 
+    <string name="donate_title">Menyumbangkan</string> 
+    <string name="edit_player_current_score">Skor saat ini</string> 
+    <string name="editor_activity_title_add_score">Tambahkan skor</string> 
+    <string name="editor_activity_title_edit_name">Edit Nama</string> 
+    <string name="hint_player_name">Nama</string> 
+    <string name="image_group_icon">Ikon kelompok</string> 
+    <string name="image_player_icon">Ikon pemain</string> 
+    <string name="large_heart">Hati besar</string> 
+    <string name="large_number_error_toast">Kesalahan: Skor terlalu besar</string> 
     <string name="large">Besar</string> 
+    <string name="main_default_name">Pemain</string> 
+    <string name="medium_heart">Medium Heart.</string> 
     <string name="medium">Medium</string> 
+    <string name="player_name_label">Nama pemain</string> 
     <string name="small_heart">hati kecil</string> 
-    <string name="medium_heart">jantung sedang</string> 
-    <string name="large_heart">hati yang besar</string> 
+    <string name="Small">Kecil</string> 
+    <string name="donate_message">Nama saya Amanda.
+ Jika Anda menikmati aplikasi ini saya kembangkan, silakan pertimbangkan untuk membeli aplikasi donasi saya. Aplikasi donasi tidak melakukan apa-apa, tetapi donasi Anda akan menunjukkan kepada saya bahwa waktu saya dihabiskan untuk mengembangkan aplikasi tanpa iklan yang dihargai.
+ Terima kasih!</string> 
  </resources>

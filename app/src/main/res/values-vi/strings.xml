@@ -1,29 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Người ghi bàn</string>
-    <string name="player_name_label">Tên Người Chơi</string>
-    <string name="main_default_name">Người Chơi</string>
-    <string name="large_number_error_toast">Lỗi: điểm số quá lớn</string>
-    <string name="image_player_icon">Biểu tượng trình phát</string>
-    <string name="image_group_icon">Biểu tượng nhóm</string>
-    <string name="hint_player_name">Tên</string>
-    <string name="editor_activity_title_edit_name">Chỉnh sửa tên</string>
-    <string name="editor_activity_title_add_score">Thêm điểm</string>
-    <string name="edit_player_current_score">Điểm hiện tại</string>
-    <string name="action_save">Tiết kiệm</string>
-    <string name="action_reset_scores">Đặt lại Điểm số</string>
-    <string name="action_edit">Chỉnh sửa</string>
-    <string name="action_delete_all_players">Xóa tất cả Người Chơi</string>
-    <string name="action_delete">Xóa bỏ</string>
-    <string name="action_donate">Đóng góp cho nhà phát triển</string>
-    <string name="donate_title">Quyên góp</string>
-    <string name="donate_greeting">Xin chào!</string>
-    <string name="donate_message">Tôi tên là Amanda. Nếu bạn đang thưởng thức ứng dụng này do tôi phát triển, vui lòng xem xét việc mua ứng dụng quyên góp của tôi. Ứng dụng quyên góp không làm gì cả, nhưng đóng góp của bạn sẽ cho tôi thấy rằng thời gian của tôi dành cho việc phát triển các ứng dụng miễn phí, không quảng cáo được đánh giá cao. Cảm ơn!</string>
-    <string name="button_donate">Tải nó trên Google Play</string>
-    <string name="Small">Nhỏ bé</string> 
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Xóa tất cả người chơi</string> 
+    <string name="action_delete">Xóa bỏ</string> 
+    <string name="action_donate">Quyên góp cho nhà phát triển</string> 
+    <string name="action_edit">Chỉnh sửa</string> 
+    <string name="action_reset_scores">Đặt lại điểm số</string> 
+    <string name="action_save">Cứu</string> 
+    <string name="action_upgrade">Nâng cấp</string> 
+    <string name="app_name">Ghi bàn.</string> 
+    <string name="button_donate">Hãy thử nó trên Google Play</string> 
+    <string name="donate_greeting">Xin chào!</string> 
+    <string name="donate_title">Quyên tặng</string> 
+    <string name="edit_player_current_score">Điểm hiện tại</string> 
+    <string name="editor_activity_title_add_score">Thêm điểm</string> 
+    <string name="editor_activity_title_edit_name">Chỉnh sửa tên</string> 
+    <string name="hint_player_name">Tên</string> 
+    <string name="image_group_icon">Biểu tượng nhóm</string> 
+    <string name="image_player_icon">Biểu tượng người chơi</string> 
+    <string name="large_heart">Trái tim lớn</string> 
+    <string name="large_number_error_toast">Lỗi: Điểm quá lớn</string> 
     <string name="large">Lớn</string> 
-    <string name="medium">Trung bình</string> 
+    <string name="main_default_name">Người chơi</string> 
+    <string name="medium_heart">Trung tâm trung bình</string> 
+    <string name="medium">Vừa phải</string> 
+    <string name="player_name_label">Tên người chơi</string> 
     <string name="small_heart">trái tim nhỏ</string> 
-    <string name="medium_heart">trái tim trung bình</string> 
-    <string name="large_heart">trái tim rộng lớn</string> 
+    <string name="Small">Bé nhỏ</string> 
+    <string name="donate_message">Tôi tên là Amanda.
+ Nếu bạn đang tận hưởng ứng dụng này, tôi đã phát triển, vui lòng xem xét việc mua ứng dụng quyên góp của tôi. Ứng dụng quyên góp không làm gì cả, nhưng đóng góp của bạn sẽ cho tôi thấy rằng thời gian của tôi dành cho việc phát triển các ứng dụng miễn phí, không quảng cáo được đánh giá cao.
+ Cảm ơn!</string> 
  </resources>
