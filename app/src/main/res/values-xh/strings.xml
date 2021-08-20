@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Cima bonke abadlali</string> 
+    <string name="action_delete">Cima</string> 
+    <string name="action_donate">Nikela kuMvelisi</string> 
+    <string name="action_edit">Hlela</string> 
+    <string name="action_reset_scores">Hlela kwakhona amanqaku</string> 
+    <string name="action_save">Gcina</string> 
+    <string name="action_upgrade">Phucula</string> 
+    <string name="app_name">I-Scoudeeper</string> 
+    <string name="button_donate">Yizame kwi-google play</string> 
+    <string name="donate_greeting">Molo!</string> 
+    <string name="donate_title">Nikela</string> 
+    <string name="edit_player_current_score">Inqaku langoku</string> 
+    <string name="editor_activity_title_add_score">Yongeza amanqaku</string> 
+    <string name="editor_activity_title_edit_name">Hlela Igama</string> 
+    <string name="hint_player_name">Igama</string> 
+    <string name="image_group_icon">I icon yeqela</string> 
+    <string name="image_player_icon">Icon yomdlali</string> 
+    <string name="large_heart">Intliziyo enkulu</string> 
+    <string name="large_number_error_toast">Impazamo: Inqaku likhulu kakhulu</string> 
+    <string name="large">Enkulu</string> 
+    <string name="main_default_name">Umdlali</string> 
+    <string name="medium_heart">Intliziyo ephakathi</string> 
+    <string name="medium">Phakathi</string> 
+    <string name="player_name_label">Igama lomdlali</string> 
+    <string name="small_heart">Intliziyo encinci</string> 
+    <string name="Small">Encinci</string> 
+    <string name="donate_message">Igama lam ndinguAmanda.
+ Ukuba uyakonwabela le app iphuhlise, nceda uqaphele ukuthenga umnikelo wam.
+ Enkosi!</string> 
+ </resources>

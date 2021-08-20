@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Jokalari guztiak ezabatu</string> 
+    <string name="action_delete">Ezabatu</string> 
+    <string name="action_donate">Dohaintzan garatzaileari</string> 
+    <string name="action_edit">Editatu</string> 
+    <string name="action_reset_scores">Berrezarri puntuazioak</string> 
+    <string name="action_save">Aurreztu</string> 
+    <string name="action_upgrade">Sartu lan</string> 
+    <string name="app_name">Partetore</string> 
+    <string name="button_donate">Saiatu Google Play-en</string> 
+    <string name="donate_greeting">Kaixo!</string> 
+    <string name="donate_title">Eman</string> 
+    <string name="edit_player_current_score">Egungo puntuazioa</string> 
+    <string name="editor_activity_title_add_score">Gehitu puntuazioa</string> 
+    <string name="editor_activity_title_edit_name">Editatu izena</string> 
+    <string name="hint_player_name">Izen</string> 
+    <string name="image_group_icon">Taldearen ikonoa</string> 
+    <string name="image_player_icon">Jokalari ikonoa</string> 
+    <string name="large_heart">Bihotz handia</string> 
+    <string name="large_number_error_toast">Errorea: Puntuazioa handiegia da</string> 
+    <string name="large">Handi</string> 
+    <string name="main_default_name">Jokatzaile</string> 
+    <string name="medium_heart">Bihotz ertaina</string> 
+    <string name="medium">Bitarte</string> 
+    <string name="player_name_label">Jokalariaren izena</string> 
+    <string name="small_heart">bihotz txikia</string> 
+    <string name="Small">Txiki</string> 
+    <string name="donate_message">Nire izena Amanda da.
+ Aplikazio hau garatzen ari bazara, kontuan hartu nire dohaintza aplikazioa erostea. Dohaintza aplikazioak ez du ezer egiten, baina zure dohaintzak erakutsiko dit nire denbora garatzen igarotako doakoak garatzen ari naizela, iragarkirik gabeko aplikazioak.
+ Eskerrik asko!</string> 
+ </resources>

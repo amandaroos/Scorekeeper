@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Διαγράψτε όλους τους παίκτες</string> 
+    <string name="action_delete">Διαγράφω</string> 
+    <string name="action_donate">Δώστε στον προγραμματιστή</string> 
+    <string name="action_edit">Επεξεργασία</string> 
+    <string name="action_reset_scores">Επαναφορά βαθμολογιών</string> 
+    <string name="action_save">Σώσει</string> 
+    <string name="action_upgrade">Αναβαθμίζω</string> 
+    <string name="app_name">Σκωτσάπτης</string> 
+    <string name="button_donate">Δοκιμάστε το στο Google Play</string> 
+    <string name="donate_greeting">Γειά σου!</string> 
+    <string name="donate_title">Προσφέρω</string> 
+    <string name="edit_player_current_score">Τρέχουσα βαθμολογία</string> 
+    <string name="editor_activity_title_add_score">Προσθέστε σκορ</string> 
+    <string name="editor_activity_title_edit_name">Επεξεργασία ονόματος</string> 
+    <string name="hint_player_name">Ονομα</string> 
+    <string name="image_group_icon">Εικονίδιο ομάδας</string> 
+    <string name="image_player_icon">Εικονίδιο παίκτη</string> 
+    <string name="large_heart">μεγάλη καρδιά</string> 
+    <string name="large_number_error_toast">Σφάλμα: Το σκορ είναι πολύ μεγάλο</string> 
+    <string name="large">Μεγάλο</string> 
+    <string name="main_default_name">Παίχτης</string> 
+    <string name="medium_heart">μεσαία καρδιά</string> 
+    <string name="medium">Μεσαίο</string> 
+    <string name="player_name_label">Ονομα παίκτη</string> 
+    <string name="small_heart">μικρή καρδιά</string> 
+    <string name="Small">Μικρό</string> 
+    <string name="donate_message">Το όνομά μου είναι Amanda.
+ Εάν απολαμβάνετε αυτή την εφαρμογή ανέπτυξα, σκεφτείτε να αγοράσετε την εφαρμογή δωρεάς μου. Η εφαρμογή δωρεάς δεν κάνει τίποτα, αλλά η δωρεά σας θα μου δείξει ότι ο χρόνος μου πέρασε την ανάπτυξη δωρεάν, οι εφαρμογές χωρίς διαφημίσεις εκτιμώνται.
+ Ευχαριστώ!</string> 
+ </resources>

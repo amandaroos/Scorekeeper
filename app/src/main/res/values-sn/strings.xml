@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Delete vatambi vese</string> 
+    <string name="action_delete">Delete</string> 
+    <string name="action_donate">Ipa Kugadzira</string> 
+    <string name="action_edit">Rongedza</string> 
+    <string name="action_reset_scores">Reset Scores</string> 
+    <string name="action_save">Chengetedza</string> 
+    <string name="action_upgrade">Kusimudzira</string> 
+    <string name="app_name">Scorekeep</string> 
+    <string name="button_donate">Edza iyo paGoogle Play</string> 
+    <string name="donate_greeting">Mhoro!</string> 
+    <string name="donate_title">Kupa</string> 
+    <string name="edit_player_current_score">Parizvino alama</string> 
+    <string name="editor_activity_title_add_score">Wedzera chikoro</string> 
+    <string name="editor_activity_title_edit_name">Rongedza zita</string> 
+    <string name="hint_player_name">Zita</string> 
+    <string name="image_group_icon">Boka reboka</string> 
+    <string name="image_player_icon">Mutambi icon</string> 
+    <string name="large_heart">Mwoyo wakakura</string> 
+    <string name="large_number_error_toast">Kanganiso: Score yakanyanya</string> 
+    <string name="large">Hombe</string> 
+    <string name="main_default_name">Mutambi</string> 
+    <string name="medium_heart">Mwoyo wepakati</string> 
+    <string name="medium">Pakati</string> 
+    <string name="player_name_label">Mutambi zita</string> 
+    <string name="small_heart">moyo mudiki</string> 
+    <string name="Small">Zvidiki</string> 
+    <string name="donate_message">Zita rangu ndiAmanda.
+ Kana iwe uchinakidzwa neiyi app yandakakurira, ndapota funga nezvekutenga yangu yekupa mari.
+ Ndatenda!</string> 
+ </resources>

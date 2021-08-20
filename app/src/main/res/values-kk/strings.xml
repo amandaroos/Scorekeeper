@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Барлық ойыншыларды жойыңыз</string> 
+    <string name="action_delete">Жою</string> 
+    <string name="action_donate">Әзірлеушіге қайырымдылық жасаңыз</string> 
+    <string name="action_edit">Редакциялау</string> 
+    <string name="action_reset_scores">Ұпайларды қалпына келтіру</string> 
+    <string name="action_save">Жинау</string> 
+    <string name="action_upgrade">Жаңалау</string> 
+    <string name="app_name">Ұстазқыш</string> 
+    <string name="button_donate">Google Play-де көріңіз</string> 
+    <string name="donate_greeting">Сәлеметсіз бе!</string> 
+    <string name="donate_title">Қию</string> 
+    <string name="edit_player_current_score">Ағымдағы балл</string> 
+    <string name="editor_activity_title_add_score">Ұпай қосу</string> 
+    <string name="editor_activity_title_edit_name">Атын өзгерту</string> 
+    <string name="hint_player_name">Ат</string> 
+    <string name="image_group_icon">Топ белгішесі</string> 
+    <string name="image_player_icon">Ойнатқыш белгішесі</string> 
+    <string name="large_heart">үлкен жүрек</string> 
+    <string name="large_number_error_toast">Қате: балл тым үлкен</string> 
+    <string name="large">Ірі</string> 
+    <string name="main_default_name">Ойыншы</string> 
+    <string name="medium_heart">Орташа жүрек</string> 
+    <string name="medium">Амал</string> 
+    <string name="player_name_label">Ойнатқыштың аты</string> 
+    <string name="small_heart">Шағын жүрек</string> 
+    <string name="Small">Кішкене</string> 
+    <string name="donate_message">Менің атым Аманда.</string> 
+ </resources>

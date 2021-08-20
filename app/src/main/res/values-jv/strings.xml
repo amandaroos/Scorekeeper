@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Mbusak kabeh pemain</string> 
+    <string name="action_delete">Mbusak</string> 
+    <string name="action_donate">Sumbang kanggo pangembang</string> 
+    <string name="action_edit">Sunting</string> 
+    <string name="action_reset_scores">Ngreset skor</string> 
+    <string name="action_save">Ngirit</string> 
+    <string name="action_upgrade">Upgrade</string> 
+    <string name="app_name">Scorkeeper</string> 
+    <string name="button_donate">Coba ing Google Play</string> 
+    <string name="donate_greeting">Halo!</string> 
+    <string name="donate_title">Sumbang</string> 
+    <string name="edit_player_current_score">Skor Saiki</string> 
+    <string name="editor_activity_title_add_score">Tambah skor</string> 
+    <string name="editor_activity_title_edit_name">Jeneng Sunting</string> 
+    <string name="hint_player_name">Jeneng</string> 
+    <string name="image_group_icon">Lambang klompok</string> 
+    <string name="image_player_icon">Ikon Player</string> 
+    <string name="large_heart">jantung gedhe</string> 
+    <string name="large_number_error_toast">Kesalahan: Skor akeh banget</string> 
+    <string name="large">Gedhe</string> 
+    <string name="main_default_name">Pemain</string> 
+    <string name="medium_heart">Ati medium</string> 
+    <string name="medium">Medium</string> 
+    <string name="player_name_label">Jeneng pamuter</string> 
+    <string name="small_heart">Ati Cilik</string> 
+    <string name="Small">Cilik</string> 
+    <string name="donate_message">Nami kula Amanda.
+ Yen sampeyan lagi nyenengake aplikasi iki, coba tuku app sumbangan. Aplikasi sumbangan ora nindakake apa-apa, nanging sumbangan sampeyan bakal nuduhake manawa wektu aku ngembangake gratis, ora ana sing dihargai.
+ Thanks!</string> 
+ </resources>

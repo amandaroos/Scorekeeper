@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">ಎಲ್ಲಾ ಆಟಗಾರರನ್ನು ಅಳಿಸಿ</string> 
+    <string name="action_delete">ಅಳಿಸಿ</string> 
+    <string name="action_donate">ಡೆವಲಪರ್ಗೆ ದಾನ</string> 
+    <string name="action_edit">ತಿದ್ದು</string> 
+    <string name="action_reset_scores">ಸ್ಕೋರ್ಗಳನ್ನು ಮರುಹೊಂದಿಸಿ</string> 
+    <string name="action_save">ಉಳಿಸು</string> 
+    <string name="action_upgrade">ಅಪ್ಗ್ರೇಡ್ ಮಾಡು</string> 
+    <string name="app_name">ಸ್ಕೋರ್ಕೀಪರ್</string> 
+    <string name="button_donate">Google Play ನಲ್ಲಿ ಇದನ್ನು ಪ್ರಯತ್ನಿಸಿ</string> 
+    <string name="donate_greeting">ಹಲೋ!</string> 
+    <string name="donate_title">ದಾನ ಮಾಡು</string> 
+    <string name="edit_player_current_score">ಪ್ರಸಕ್ತ ಸ್ಕೋರ್</string> 
+    <string name="editor_activity_title_add_score">ಅಂಕಗಳನ್ನು ಸೇರಿಸಿ</string> 
+    <string name="editor_activity_title_edit_name">ಹೆಸರನ್ನು ಸಂಪಾದಿಸಿ</string> 
+    <string name="hint_player_name">ಹೆಸರು</string> 
+    <string name="image_group_icon">ಗುಂಪು ಐಕಾನ್</string> 
+    <string name="image_player_icon">ಆಟಗಾರನ ಐಕಾನ್</string> 
+    <string name="large_heart">ದೊಡ್ಡ ಹೃದಯ</string> 
+    <string name="large_number_error_toast">ದೋಷ: ಸ್ಕೋರ್ ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ</string> 
+    <string name="large">ದೊಡ್ಡ</string> 
+    <string name="main_default_name">ಆಟಗಾರ</string> 
+    <string name="medium_heart">ಮಧ್ಯಮ ಹೃದಯ</string> 
+    <string name="medium">ಮಾಧ್ಯಮ</string> 
+    <string name="player_name_label">ಆಟಗಾರನ ಹೆಸರು</string> 
+    <string name="small_heart">ಸಣ್ಣ ಹೃದಯ</string> 
+    <string name="Small">ಸಣ್ಣ</string> 
+    <string name="donate_message">ನನ್ನ ಹೆಸರು ಅಮಂಡಾ. ನಾನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದ ಈ ಆಪ್ ಅನ್ನು ನೀವು ಆನಂದಿಸುತ್ತಿದ್ದರೆ, ದಯವಿಟ್ಟು ನನ್ನ ದೇಣಿಗೆ ಆಪ್ ಅನ್ನು ಖರೀದಿಸುವುದನ್ನು ಪರಿಗಣಿಸಿ. ದೇಣಿಗೆಯ ಆಪ್ ಏನನ್ನೂ ಮಾಡುವುದಿಲ್ಲ, ಆದರೆ ನಿಮ್ಮ ಕೊಡುಗೆಯು ನನ್ನ ಉಚಿತ, ಜಾಹೀರಾತುಗಳಿಲ್ಲದ ಆ್ಯಪ್‌ಗಳನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಲು ಕಳೆದ ಸಮಯವನ್ನು ಮೆಚ್ಚುತ್ತದೆ ಎಂದು ತೋರಿಸುತ್ತದೆ. ಧನ್ಯವಾದಗಳು!</string>
+ </resources>

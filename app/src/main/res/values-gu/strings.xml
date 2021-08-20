@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">બધા ખેલાડીઓ કાઢી નાખો</string> 
+    <string name="action_delete">કાઢી નાખો</string> 
+    <string name="action_donate">વિકાસકર્તાને દાન આપો</string> 
+    <string name="action_edit">ફેરફાર કરવો</string> 
+    <string name="action_reset_scores">સ્કોર્સ ફરીથી સેટ કરો</string> 
+    <string name="action_save">સાચવવું</string> 
+    <string name="action_upgrade">સુધારવું</string> 
+    <string name="app_name">સ્કોરકીપર</string> 
+    <string name="button_donate">ગૂગલ પ્લે પર તેનો પ્રયાસ કરો</string> 
+    <string name="donate_greeting">નમસ્તે!</string> 
+    <string name="donate_title">દાન કરવું</string> 
+    <string name="edit_player_current_score">વર્તમાન સ્કોર</string> 
+    <string name="editor_activity_title_add_score">સ્કોર ઉમેરો</string> 
+    <string name="editor_activity_title_edit_name">નામ સંપાદિત કરો</string> 
+    <string name="hint_player_name">નામ</string> 
+    <string name="image_group_icon">જૂથ ચિહ્ન</string> 
+    <string name="image_player_icon">પ્લેયર આયકન</string> 
+    <string name="large_heart">મોટા હૃદય</string> 
+    <string name="large_number_error_toast">ભૂલ: સ્કોર ખૂબ મોટો છે</string> 
+    <string name="large">મોટી</string> 
+    <string name="main_default_name">ખેલાડી</string> 
+    <string name="medium_heart">મધ્યમ હૃદય</string> 
+    <string name="medium">મધ્યમ</string> 
+    <string name="player_name_label">ખેલાડીનું નામ</string> 
+    <string name="small_heart">નાના હૃદય</string> 
+    <string name="Small">નાનું</string> 
+    <string name="donate_message">મારું નામ અમાન્દા છે.
+ જો તમે આ એપ્લિકેશનનો આનંદ માણી રહ્યા છો, તો કૃપા કરીને મારો દાન એપ્લિકેશન ખરીદવાનો વિચાર કરો. દાન એપ્લિકેશન કંઈપણ કરતું નથી, પરંતુ તમારું દાન મને બતાવશે કે મારો સમય મફત વિકાસશીલ ખર્ચ કરે છે, નો-જાહેરાત એપ્લિકેશન્સની પ્રશંસા થાય છે.
+ આભાર!</string> 
+ </resources>

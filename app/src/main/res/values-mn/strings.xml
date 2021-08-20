@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Бүх тоглогчдыг устгах</string> 
+    <string name="action_delete">Эдгээх</string> 
+    <string name="action_donate">Хөгжүүлэгчдэд хандив өгөх</string> 
+    <string name="action_edit">Хянан засварлах / хэвлэлд бэлтгэх</string> 
+    <string name="action_reset_scores">Оноог дахин тохируулах</string> 
+    <string name="action_save">Аврах</string> 
+    <string name="action_upgrade">Оролцах</string> 
+    <string name="app_name">Дацаа ажилчин</string> 
+    <string name="button_donate">Үүнийг Google Play дээр туршиж үзээрэй</string> 
+    <string name="donate_greeting">Сайн уу?</string> 
+    <string name="donate_title">Бэлэглэх</string> 
+    <string name="edit_player_current_score">Одоогийн байршил</string> 
+    <string name="editor_activity_title_add_score">Оно нэмэх</string> 
+    <string name="editor_activity_title_edit_name">Дуучлах нэр</string> 
+    <string name="hint_player_name">Нэр</string> 
+    <string name="image_group_icon">Боруул бүл</string> 
+    <string name="image_player_icon">Тоглогч даавуу тоглоом</string> 
+    <string name="large_heart">том зүрх</string> 
+    <string name="large_number_error_toast">Алдаа: оноо хэт том байна</string> 
+    <string name="large">Том</string> 
+    <string name="main_default_name">Тоглогч</string> 
+    <string name="medium_heart">дундаж ба дунд</string> 
+    <string name="medium">Дунд</string> 
+    <string name="player_name_label">Тоглогчийн нэр</string> 
+    <string name="small_heart">жижиг нүд</string> 
+    <string name="Small">Жижиг</string> 
+    <string name="donate_message">Миний нэр Аманда.
+ Хэрэв та энэ апп-ыг авч байгаа бол миний хандивын апп-ыг худалдаж авахдаа юу ч хийхгүй байх нь юу ч хийхгүй, гэхдээ таны хандивыг үнэгүй зарцуулах нь надад цаг хугацаа зарцуулахгүй, харин зар сурталчилгааны апп-ыг олж мэдсэн.
+ ! Баяртай</string> 
+ </resources>

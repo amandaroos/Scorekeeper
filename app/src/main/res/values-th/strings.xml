@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">ลบผู้เล่นทั้งหมด</string> 
+    <string name="action_delete">ลบ</string> 
+    <string name="action_donate">บริจาคให้กับนักพัฒนา</string> 
+    <string name="action_edit">แก้ไข</string> 
+    <string name="action_reset_scores">รีเซ็ตคะแนน</string> 
+    <string name="action_save">บันทึก</string> 
+    <string name="action_upgrade">อัพเกรด</string> 
+    <string name="app_name">ผู้ทำคะแนน</string> 
+    <string name="button_donate">ลองใช้บน Google Play</string> 
+    <string name="donate_greeting">สวัสดี!</string> 
+    <string name="donate_title">บริจาค</string> 
+    <string name="edit_player_current_score">คะแนนปัจจุบัน</string> 
+    <string name="editor_activity_title_add_score">เพิ่มคะแนน</string> 
+    <string name="editor_activity_title_edit_name">แก้ไขชื่อ</string> 
+    <string name="hint_player_name">ชื่อ</string> 
+    <string name="image_group_icon">ไอคอนกลุ่ม</string> 
+    <string name="image_player_icon">ไอคอนผู้เล่น</string> 
+    <string name="large_heart">หัวใจใหญ่</string> 
+    <string name="large_number_error_toast">ข้อผิดพลาด: คะแนนมีขนาดใหญ่เกินไป</string> 
+    <string name="large">ใหญ่</string> 
+    <string name="main_default_name">ผู้เล่น</string> 
+    <string name="medium_heart">หัวใจกลาง</string> 
+    <string name="medium">ปานกลาง</string> 
+    <string name="player_name_label">ชื่อผู้เล่น</string> 
+    <string name="small_heart">หัวใจเล็ก ๆ</string> 
+    <string name="Small">เล็ก</string> 
+    <string name="donate_message">ชื่อของฉันคืออแมนดา
+ หากคุณกำลังเพลิดเพลินกับแอพนี้ฉันพัฒนาโปรดพิจารณาซื้อแอปบริจาคของฉันแอปบริจาคไม่ทำอะไรเลย แต่การบริจาคของคุณจะแสดงให้ฉันเห็นว่าเวลาของฉันที่ใช้ในการพัฒนาแอพฟรีที่ไม่มีโฆษณาจะได้รับการชื่นชม
+ ขอบคุณ!</string> 
+ </resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">सभी खिलाड़ियों को हटाएं</string> 
+    <string name="action_delete">हटाएं</string> 
+    <string name="action_donate">डेवलपर को दान करें</string> 
+    <string name="action_edit">संपादित करें</string> 
+    <string name="action_reset_scores">स्कोर रीसेट करें</string> 
+    <string name="action_save">सहेजें</string> 
+    <string name="action_upgrade">अपग्रेड</string> 
+    <string name="app_name">स्कोरकपर</string> 
+    <string name="button_donate">इसे Google Play पर आज़माएं</string> 
+    <string name="donate_greeting">नमस्कार!</string> 
+    <string name="donate_title">दान करना</string> 
+    <string name="edit_player_current_score">वर्तमान स्कोर</string> 
+    <string name="editor_activity_title_add_score">स्कोर जोड़ें</string> 
+    <string name="editor_activity_title_edit_name">नाम संपादित करें</string> 
+    <string name="hint_player_name">नाम</string> 
+    <string name="image_group_icon">समूह आइकन</string> 
+    <string name="image_player_icon">खिलाड़ी आइकन</string> 
+    <string name="large_heart">बड़ा दिल</string> 
+    <string name="large_number_error_toast">त्रुटि: स्कोर बहुत बड़ा है</string> 
+    <string name="large">बड़ा</string> 
+    <string name="main_default_name">खिलाड़ी</string> 
+    <string name="medium_heart">मध्यम हृदय</string> 
+    <string name="medium">मध्यम</string> 
+    <string name="player_name_label">खिलाडि का नाम</string> 
+    <string name="small_heart">छोटा दिल</string> 
+    <string name="Small">छोटा</string> 
+    <string name="donate_message">मेरा नाम अमांडा है।
+ यदि आप इस ऐप का आनंद ले रहे हैं, तो कृपया मेरे दान ऐप को खरीदने पर विचार करें। दान ऐप कुछ भी नहीं करता है, लेकिन आपका दान मुझे दिखाएगा कि मेरा समय मुक्त विकास करने में बिताया गया है, नो-विज्ञापन ऐप्स की सराहना की जाती है।
+ धन्यवाद!</string> 
+ </resources>

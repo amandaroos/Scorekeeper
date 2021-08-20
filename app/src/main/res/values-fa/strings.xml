@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">حذف همه بازیکنان</string> 
+    <string name="action_delete">حذف</string> 
+    <string name="action_donate">اهدا به توسعه دهنده</string> 
+    <string name="action_edit">ویرایش کردن</string> 
+    <string name="action_reset_scores">نمرات بازنشانی</string> 
+    <string name="action_save">صرفه جویی</string> 
+    <string name="action_upgrade">ارتقاء</string> 
+    <string name="app_name">نمره</string> 
+    <string name="button_donate">آن را در Google Play امتحان کنید</string> 
+    <string name="donate_greeting">سلام!</string> 
+    <string name="donate_title">اهدا کردن</string> 
+    <string name="edit_player_current_score">نمره فعلی</string> 
+    <string name="editor_activity_title_add_score">نمره را اضافه کنید</string> 
+    <string name="editor_activity_title_edit_name">ویرایش نام</string> 
+    <string name="hint_player_name">نام</string> 
+    <string name="image_group_icon">نماد گروه</string> 
+    <string name="image_player_icon">نماد بازیکن</string> 
+    <string name="large_heart">قلب بزرگ</string> 
+    <string name="large_number_error_toast">خطا: نمره بیش از حد بزرگ است</string> 
+    <string name="large">بزرگ</string> 
+    <string name="main_default_name">بازیکن</string> 
+    <string name="medium_heart">قلب متوسط</string> 
+    <string name="medium">متوسط</string> 
+    <string name="player_name_label">نام بازیکن</string> 
+    <string name="small_heart">قلب کوچک</string> 
+    <string name="Small">کم اهمیت</string> 
+    <string name="donate_message">نام من آماندا است
+ اگر از این برنامه لذت ببرید، لطفا خرید برنامه کمک مالی من را در نظر بگیرید. برنامه کمک مالی هیچ کاری انجام نمی دهد، اما کمک مالی شما به من نشان می دهد که زمان من صرف توسعه رایگان، برنامه های بدون تبلیغات قدردانی می شود.
+ با تشکر!</string> 
+ </resources>

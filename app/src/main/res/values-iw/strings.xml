@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">מחק את כל השחקנים</string> 
+    <string name="action_delete">לִמְחוֹק</string> 
+    <string name="action_donate">לתרום למפתחים</string> 
+    <string name="action_edit">לַעֲרוֹך</string> 
+    <string name="action_reset_scores">ציוני איפוס</string> 
+    <string name="action_save">להציל</string> 
+    <string name="action_upgrade">שדרוג</string> 
+    <string name="app_name">צוחק</string> 
+    <string name="button_donate">נסה את זה ב- Google Play</string> 
+    <string name="donate_greeting">שלום!</string> 
+    <string name="donate_title">לִתְרוֹם</string> 
+    <string name="edit_player_current_score">ציון נוכחי</string> 
+    <string name="editor_activity_title_add_score">הוסף ציון</string> 
+    <string name="editor_activity_title_edit_name">ערוך שם</string> 
+    <string name="hint_player_name">שֵׁם</string> 
+    <string name="image_group_icon">סמל הקבוצה</string> 
+    <string name="image_player_icon">אייקון שחקן</string> 
+    <string name="large_heart">לב גדול</string> 
+    <string name="large_number_error_toast">שגיאה: ציון גדול מדי</string> 
+    <string name="large">גָדוֹל</string> 
+    <string name="main_default_name">שחקן</string> 
+    <string name="medium_heart">לב בינוני</string> 
+    <string name="medium">בינוני</string> 
+    <string name="player_name_label">שם שחקן</string> 
+    <string name="small_heart">לב קטן</string> 
+    <string name="Small">קָטָן</string> 
+    <string name="donate_message">שמי הוא אמנדה.
+ אם אתה נהנה App זה פיתחתי, בבקשה לשקול רכישת התרומה שלי App.The התרומה לא עושה שום דבר, אבל התרומה שלך יראה לי כי הזמן שלי בילה פיתוח חינם, לא מודעות Apps מוערך.
+ תודה!</string> 
+ </resources>

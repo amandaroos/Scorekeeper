@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">모든 플레이어를 삭제하십시오</string> 
+    <string name="action_delete">삭제</string> 
+    <string name="action_donate">개발자에게 기부하십시오</string> 
+    <string name="action_edit">편집하다</string> 
+    <string name="action_reset_scores">점수를 초기화하십시오</string> 
+    <string name="action_save">구하다</string> 
+    <string name="action_upgrade">업그레이드</string> 
+    <string name="app_name">스코어 키퍼</string> 
+    <string name="button_donate">Google Play에서 시도해보십시오</string> 
+    <string name="donate_greeting">여보세요!</string> 
+    <string name="donate_title">기부하십시오</string> 
+    <string name="edit_player_current_score">현재 점수</string> 
+    <string name="editor_activity_title_add_score">점수를 추가하십시오</string> 
+    <string name="editor_activity_title_edit_name">이름 편집</string> 
+    <string name="hint_player_name">이름</string> 
+    <string name="image_group_icon">그룹 아이콘</string> 
+    <string name="image_player_icon">플레이어 아이콘</string> 
+    <string name="large_heart">큰 마음</string> 
+    <string name="large_number_error_toast">오류 : 점수가 너무 큽니다</string> 
+    <string name="large">크기가 큰</string> 
+    <string name="main_default_name">플레이어</string> 
+    <string name="medium_heart">중간 심장</string> 
+    <string name="medium">중간</string> 
+    <string name="player_name_label">선수 이름</string> 
+    <string name="small_heart">작은 마음</string> 
+    <string name="Small">작은</string> 
+    <string name="donate_message">제 이름은 아만다입니다. 내가 개발한 이 앱이 마음에 드시면 내 기부 앱 구매를 고려하십시오. 기부 앱은 아무 것도 하지 않지만, 당신의 기부는 내가 무료로 광고 없는 앱을 개발하는 데 보낸 시간이 감사하다는 것을 보여줄 것입니다. 감사!</string>
+ </resources>

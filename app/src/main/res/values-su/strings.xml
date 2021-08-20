@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Hapus sadaya pamaén</string> 
+    <string name="action_delete">Mupus</string> 
+    <string name="action_donate">Sumbang kanggo pamekar</string> 
+    <string name="action_edit">Edit</string> 
+    <string name="action_reset_scores">Skor ngareset</string> 
+    <string name="action_save">Ngahémat</string> 
+    <string name="action_upgrade">Nerihkeun</string> 
+    <string name="app_name">Soda</string> 
+    <string name="button_donate">Coba dina Google Play</string> 
+    <string name="donate_greeting">Halo!</string> 
+    <string name="donate_title">Nulungan</string> 
+    <string name="edit_player_current_score">Skor ayeuna</string> 
+    <string name="editor_activity_title_add_score">Tambihkeun Skor</string> 
+    <string name="editor_activity_title_edit_name">Édit nami</string> 
+    <string name="hint_player_name">Nami</string> 
+    <string name="image_group_icon">Ikon grup</string> 
+    <string name="image_player_icon">Ikon pamuter</string> 
+    <string name="large_heart">jantung badag</string> 
+    <string name="large_number_error_toast">Lepat: Skor ageung teuing</string> 
+    <string name="large">Gede</string> 
+    <string name="main_default_name">Pamuter</string> 
+    <string name="medium_heart">haténa sedeng</string> 
+    <string name="medium">Sedeng</string> 
+    <string name="player_name_label">Ngaran Pamudi</string> 
+    <string name="small_heart">jantung leutik</string> 
+    <string name="Small">Leutik</string> 
+    <string name="donate_message">Nami abdi Amanda.
+ Upami anjeun resep aplikasi ieu anu kuring dimekarkeun, punten memimbangkeun mésér sumbangan panyaturan kartu aplisi.The henteu ngalakukeun nanaon, tapi conasi anjeun bakal nunjukkeun ka waktos kuring anu dijualakeun.
+ Hatur nuhun!</string> 
+ </resources>

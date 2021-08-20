@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Chotsani osewera onse</string> 
+    <string name="action_delete">Chotsa</string> 
+    <string name="action_donate">Perekani zopanga</string> 
+    <string name="action_edit">Konza masentensi</string> 
+    <string name="action_reset_scores">Kubwezeretsanso Zambiri</string> 
+    <string name="action_save">Sunga</string> 
+    <string name="action_upgrade">Makwelero</string> 
+    <string name="app_name">Wogulitsa</string> 
+    <string name="button_donate">Yesani pa Google Play</string> 
+    <string name="donate_greeting">Moni!</string> 
+    <string name="donate_title">Peleka</string> 
+    <string name="edit_player_current_score">MALANGIZO OTHANDIZA</string> 
+    <string name="editor_activity_title_add_score">Onjezerani</string> 
+    <string name="editor_activity_title_edit_name">Sinthani Dzina</string> 
+    <string name="hint_player_name">Dzina</string> 
+    <string name="image_group_icon">Chizindikiro cha gulu</string> 
+    <string name="image_player_icon">Chizindikiro cha Player</string> 
+    <string name="large_heart">mtima waukulu</string> 
+    <string name="large_number_error_toast">Vuto: Score ndi yayikulu kwambiri</string> 
+    <string name="large">Chachikulu</string> 
+    <string name="main_default_name">Wosewera</string> 
+    <string name="medium_heart">Mitima yapakatikati</string> 
+    <string name="medium">Wapakati</string> 
+    <string name="player_name_label">Dzina la Player</string> 
+    <string name="small_heart">Mtima Wocheperako</string> 
+    <string name="Small">Ochepa</string> 
+    <string name="donate_message">Dzina langa ndi Amanda.
+ Ngati mukusangalala ndi pulogalamuyi, chonde onani kugula pulogalamu yanga yopereka.
+ Zikomo!</string> 
+ </resources>

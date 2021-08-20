@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">ਸਾਰੇ ਖਿਡਾਰੀ ਮਿਟਾਓ</string> 
+    <string name="action_delete">ਮਿਟਾਓ</string> 
+    <string name="action_donate">ਡਿਵੈਲਪਰ ਨੂੰ ਦਾਨ ਕਰੋ</string> 
+    <string name="action_edit">ਸੋਧ</string> 
+    <string name="action_reset_scores">ਸਕੋਰ ਰੀਸੈਟ</string> 
+    <string name="action_save">ਸੇਵ</string> 
+    <string name="action_upgrade">ਅਪਗ੍ਰੇਡ ਕਰਨਾ</string> 
+    <string name="app_name">ਸਕੋਰਕੀਪਰ</string> 
+    <string name="button_donate">ਇਸ ਨੂੰ ਗੂਗਲ ਪਲੇ ਤੇ ਅਜ਼ਮਾਓ</string> 
+    <string name="donate_greeting">ਸਤ ਸ੍ਰੀ ਅਕਾਲ!</string> 
+    <string name="donate_title">ਦਾਨ</string> 
+    <string name="edit_player_current_score">ਮੌਜੂਦਾ ਸਕੋਰ</string> 
+    <string name="editor_activity_title_add_score">ਸਕੋਰ ਸ਼ਾਮਲ ਕਰੋ</string> 
+    <string name="editor_activity_title_edit_name">ਸੋਧ ਨਾਮ</string> 
+    <string name="hint_player_name">ਨਾਮ</string> 
+    <string name="image_group_icon">ਸਮੂਹ ਆਈਕਾਨ</string> 
+    <string name="image_player_icon">ਪਲੇਅਰ ਆਈਕਾਨ</string> 
+    <string name="large_heart">ਵੱਡਾ ਦਿਲ</string> 
+    <string name="large_number_error_toast">ਗਲਤੀ: ਸਕੋਰ ਬਹੁਤ ਵੱਡਾ ਹੈ</string> 
+    <string name="large">ਵੱਡਾ</string> 
+    <string name="main_default_name">ਖਿਡਾਰੀ</string> 
+    <string name="medium_heart">ਮੱਧਮ ਦਿਲ</string> 
+    <string name="medium">ਮਾਧਿਅਮ</string> 
+    <string name="player_name_label">ਖਿਡਾਰੀ ਦਾ ਨਾਮ</string> 
+    <string name="small_heart">ਛੋਟਾ ਦਿਲ</string> 
+    <string name="Small">ਛੋਟਾ</string> 
+    <string name="donate_message">ਮੇਰਾ ਨਾਮ ਅਮਾਂਡਾ ਹੈ.
+ ਜੇ ਤੁਸੀਂ ਇਸ ਐਪ ਦਾ ਅਨੰਦ ਲੈ ਰਹੇ ਹੋ, ਤਾਂ ਕਿਰਪਾ ਕਰਕੇ ਮੇਰੇ ਦਾਨ ਐਪ ਨੂੰ ਖਰੀਦਣ ਤੇ ਵਿਚਾਰ ਕਰੋ. ਡੋਨੇਸ਼ਨ ਐਪ ਕੁਝ ਵੀ ਨਹੀਂ ਕਰ ਰਿਹਾ ਹੈ, ਪਰ ਤੁਹਾਡਾ ਦਾਨ ਮੈਨੂੰ ਦਿਖਾਏਗਾ ਕਿ ਮੇਰਾ ਦਾਨ ਕੀ ਕਰਨ ਵਿਚ ਬਿਤਾਏਗਾ, ਕੋਈ ਵੀ ਵਿਗਿਆਪਨ ਐਪਸ ਦੀ ਕਦਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ.
+ ਧੰਨਵਾਦ!</string> 
+ </resources>

@@ -28,6 +28,7 @@
         android:hint="@string/hint_player_name"
         android:imeOptions="flagNoExtractUi"
         android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
         android:textColor="@color/colorText" />
 
 </LinearLayout>

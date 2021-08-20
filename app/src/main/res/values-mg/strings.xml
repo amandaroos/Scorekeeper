@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Fafao ny mpilalao rehetra</string> 
+    <string name="action_delete">Mamafa</string> 
+    <string name="action_donate">Manome vola amin\'ny mpamorona</string> 
+    <string name="action_edit">Ovay</string> 
+    <string name="action_reset_scores">Reset Scores</string> 
+    <string name="action_save">afa-tsy</string> 
+    <string name="action_upgrade">hanatsarana</string> 
+    <string name="app_name">Scorekeeper</string> 
+    <string name="button_donate">Andramo ao amin\'ny Google Play</string> 
+    <string name="donate_greeting">Salama!</string> 
+    <string name="donate_title">Manomeza</string> 
+    <string name="edit_player_current_score">Isa ankehitriny</string> 
+    <string name="editor_activity_title_add_score">Ampio ny isa</string> 
+    <string name="editor_activity_title_edit_name">Hanova anarana</string> 
+    <string name="hint_player_name">Anarana</string> 
+    <string name="image_group_icon">Kisary vondrona</string> 
+    <string name="image_player_icon">Kisary mpilalao</string> 
+    <string name="large_heart">fo lehibe</string> 
+    <string name="large_number_error_toast">Hadisoana: lehibe loatra ny isa</string> 
+    <string name="large">ankamaroan\'ireo</string> 
+    <string name="main_default_name">Player</string> 
+    <string name="medium_heart">Fo Medium</string> 
+    <string name="medium">SALASALANY</string> 
+    <string name="player_name_label">Anaran\'ny mpilalao</string> 
+    <string name="small_heart">fo kely</string> 
+    <string name="Small">KELY</string> 
+    <string name="donate_message">Amanda no anarako.
+ Raha mankafy ity fampiharana ity aho dia azafady mba hevero fa hividy ny fidiram-bolako.Ny fampiharana fanomezana dia tsy manao na inona na inona, fa ny fanomezanao dia hampahafinaritra ahy fa ankasitrahana ny fotoananao.
+ Misaotra!</string> 
+ </resources>

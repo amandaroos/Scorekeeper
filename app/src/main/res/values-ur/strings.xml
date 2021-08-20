@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">تمام کھلاڑیوں کو حذف کریں</string> 
+    <string name="action_delete">حذف کریں</string> 
+    <string name="action_donate">ڈویلپر کے لئے عطیہ</string> 
+    <string name="action_edit">ترمیم</string> 
+    <string name="action_reset_scores">اسکور دوبارہ ترتیب دیں</string> 
+    <string name="action_save">بچت</string> 
+    <string name="action_upgrade">اپ گریڈ</string> 
+    <string name="app_name">اسکورپر</string> 
+    <string name="button_donate">Google Play پر کوشش کریں</string> 
+    <string name="donate_greeting">ہیلو!</string> 
+    <string name="donate_title">عطیہ</string> 
+    <string name="edit_player_current_score">موجودہ سکور</string> 
+    <string name="editor_activity_title_add_score">سکور شامل کریں</string> 
+    <string name="editor_activity_title_edit_name">نام میں ترمیم کریں</string> 
+    <string name="hint_player_name">نام</string> 
+    <string name="image_group_icon">گروپ آئکن</string> 
+    <string name="image_player_icon">پلیئر آئکن</string> 
+    <string name="large_heart">بڑے دل</string> 
+    <string name="large_number_error_toast">خرابی: اسکور بہت بڑا ہے</string> 
+    <string name="large">بڑے</string> 
+    <string name="main_default_name">پلیئر</string> 
+    <string name="medium_heart">درمیانی دل</string> 
+    <string name="medium">درمیانی</string> 
+    <string name="player_name_label">کھلاڑی کا نام</string> 
+    <string name="small_heart">چھوٹے دل</string> 
+    <string name="Small">چھوٹے</string> 
+    <string name="donate_message">میرا نام آمندا ہے.
+ اگر آپ اس اپلی کیشن سے لطف اندوز ہو رہے ہیں تو، براہ کرم میرے عطیہ ایپ کی خریداری پر غور کریں. عطیہ ایپ کچھ بھی نہیں کرتا، لیکن آپ کا عطیہ مجھے دکھایا جائے گا کہ میرا وقت آزادانہ ترقی، کوئی اشتھارات اطلاقات کی تعریف کی جاتی ہے.
+ شکریہ!</string> 
+ </resources>

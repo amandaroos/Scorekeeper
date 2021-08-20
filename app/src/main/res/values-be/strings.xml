@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Выдаліць усе гульцы</string> 
+    <string name="action_delete">Выдаляць</string> 
+    <string name="action_donate">Ахвяруйце распрацоўніку</string> 
+    <string name="action_edit">Рэдагаваць</string> 
+    <string name="action_reset_scores">Скід ацэнкі</string> 
+    <string name="action_save">Ратаваць</string> 
+    <string name="action_upgrade">Абмен</string> 
+    <string name="app_name">Шлюстер</string> 
+    <string name="button_donate">Паспрабуйце на Google Play</string> 
+    <string name="donate_greeting">Добры дзень!</string> 
+    <string name="donate_title">Ахвяраваць</string> 
+    <string name="edit_player_current_score">Бягучы рахунак</string> 
+    <string name="editor_activity_title_add_score">Дадаць бал</string> 
+    <string name="editor_activity_title_edit_name">Рэдагаваць імя</string> 
+    <string name="hint_player_name">Імя</string> 
+    <string name="image_group_icon">Значок групы</string> 
+    <string name="image_player_icon">Значок гульца</string> 
+    <string name="large_heart">вялікае сэрца</string> 
+    <string name="large_number_error_toast">Памылка: адзнака занадта вялікі</string> 
+    <string name="large">Вялікі</string> 
+    <string name="main_default_name">Ігрок</string> 
+    <string name="medium_heart">сярэдні сэрцы</string> 
+    <string name="medium">Сярэдзіна</string> 
+    <string name="player_name_label">Імя гульца</string> 
+    <string name="small_heart">невялікае сэрца</string> 
+    <string name="Small">Маленькі</string> 
+    <string name="donate_message">Мяне клічуць Аманда.
+ Калі вы атрымліваеце асалоду ад гэтым дадаткам я распрацаваў, калі ласка, разгледзець пытанне аб куплі майго донарства app.The донарства прыкладанне нічога не робіць, але ваша ахвяраванне пакажа мне, што мой час правёў распрацоўку свабодных, без рэкламы прыкладання ацэнены.
+ Дзякуй!</string> 
+ </resources>

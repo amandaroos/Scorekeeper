@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">سڀني رانديگرن کي ختم ڪريو</string> 
+    <string name="action_delete">صفحو ڪلڪ ڪريو</string> 
+    <string name="action_donate">ڊولپر کي عطيو ڏيو</string> 
+    <string name="action_edit">ايڊڙيو ٿي</string> 
+    <string name="action_reset_scores">ري سيٽ ڪيو</string> 
+    <string name="action_save">سڪرو</string> 
+    <string name="action_upgrade">اپ گريڊ</string> 
+    <string name="app_name">اسڪوريڪپر</string> 
+    <string name="button_donate">ان کي گوگل جي راند تي آزمايو</string> 
+    <string name="donate_greeting">هيلو!</string> 
+    <string name="donate_title">عطيو ڏيو</string> 
+    <string name="edit_player_current_score">موجوده اسڪور</string> 
+    <string name="editor_activity_title_add_score">اسڪور شامل ڪريو</string> 
+    <string name="editor_activity_title_edit_name">پنايا</string> 
+    <string name="hint_player_name">نالو</string> 
+    <string name="image_group_icon">گروپ جو پروگرام</string> 
+    <string name="image_player_icon">پليئر آئڪن</string> 
+    <string name="large_heart">وڏي دل</string> 
+    <string name="large_number_error_toast">نقص: سکور تمام وڏو آهي</string> 
+    <string name="large">وڏو</string> 
+    <string name="main_default_name">پليئر</string> 
+    <string name="medium_heart">وچاري چا</string> 
+    <string name="medium">وچب</string> 
+    <string name="player_name_label">رانديگر جو نالو</string> 
+    <string name="small_heart">ننڍو تحفو</string> 
+    <string name="Small">نن small و</string> 
+    <string name="donate_message">منهنجو نالو امينڊا آهي.
+ جيڪڏهن توهان هن ايپ مان لطف اندوز ٿي رهيا آهيو ته آئون ترقي ڪري رهيو آهيان، مهرباني ڪري منهنجي عطيا واري ايپ کي خريد ڪرڻ تي غور ڪريو، پر توهان جو عطيو ڏيڻ وارو ايپس ڏا be و نه ڪندو.
+ مهرباني!</string> 
+ </resources>

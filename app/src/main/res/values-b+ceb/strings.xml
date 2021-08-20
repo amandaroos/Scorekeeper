@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Pagwagtang sa tanan nga mga magdudula</string> 
+    <string name="action_delete">Mobiya</string> 
+    <string name="action_donate">Pag-donate sa Developer</string> 
+    <string name="action_edit">Hikayon aron ipatik</string> 
+    <string name="action_reset_scores">I-reset ang mga puntos</string> 
+    <string name="action_save">Magtigom</string> 
+    <string name="action_upgrade">Pag-upgrade</string> 
+    <string name="app_name">Iskela</string> 
+    <string name="button_donate">Sulayi kini sa Google Play</string> 
+    <string name="donate_greeting">Kumusta!</string> 
+    <string name="donate_title">Mohatag</string> 
+    <string name="edit_player_current_score">Karon nga Score</string> 
+    <string name="editor_activity_title_add_score">Idugang puntos</string> 
+    <string name="editor_activity_title_edit_name">Pag-edit Ngalan</string> 
+    <string name="hint_player_name">Ngalan</string> 
+    <string name="image_group_icon">Icon sa grupo</string> 
+    <string name="image_player_icon">Icon sa player</string> 
+    <string name="large_heart">dako nga kasingkasing</string> 
+    <string name="large_number_error_toast">Sayup: Daghan kaayo ang puntos</string> 
+    <string name="large">Dako</string> 
+    <string name="main_default_name">Magdudula</string> 
+    <string name="medium_heart">medium nga kasingkasing</string> 
+    <string name="medium">Tungatunga</string> 
+    <string name="player_name_label">Ngalan sa player</string> 
+    <string name="small_heart">Gagmay nga kasingkasing</string> 
+    <string name="Small">Gamay</string> 
+    <string name="donate_message">Ang akong ngalan mao si Amanda.
+ Kung nalipay ka sa kini nga app nga akong naugmad, palihug hunahunaa ang pagpalit sa akong donasyon nga app.Ang donasyon app wala magbuhat bisan unsa, apan ang imong donasyon magpakita kanako nga ang akong oras migahin sa pag-uswag nga libre, gipabilhan ang akong oras sa pag-uswag.
+ Salamat!</string> 
+ </resources>

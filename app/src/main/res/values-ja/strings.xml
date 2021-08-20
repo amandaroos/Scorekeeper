@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">すべてのプレイヤーを削除します</string> 
+    <string name="action_delete">消去</string> 
+    <string name="action_donate">開発者に寄付します</string> 
+    <string name="action_edit">編集</string> 
+    <string name="action_reset_scores">スコアをリセットします</string> 
+    <string name="action_save">保存する</string> 
+    <string name="action_upgrade">アップグレード</string> 
+    <string name="app_name">スコアキーパー</string> 
+    <string name="button_donate">Google Playで試してみてください</string> 
+    <string name="donate_greeting">こんにちは！</string> 
+    <string name="donate_title">寄付</string> 
+    <string name="edit_player_current_score">現在のスコア</string> 
+    <string name="editor_activity_title_add_score">スコアを追加します</string> 
+    <string name="editor_activity_title_edit_name">編集名前を編集します</string> 
+    <string name="hint_player_name">名前</string> 
+    <string name="image_group_icon">グループアイコン</string> 
+    <string name="image_player_icon">プレイヤーアイコン</string> 
+    <string name="large_heart">大心</string> 
+    <string name="large_number_error_toast">エラー：スコアが大きすぎます</string> 
+    <string name="large">大きい</string> 
+    <string name="main_default_name">プレーヤー</string> 
+    <string name="medium_heart">中心</string> 
+    <string name="medium">中くらい</string> 
+    <string name="player_name_label">プレーヤの名前</string> 
+    <string name="small_heart">小さな心</string> 
+    <string name="Small">小さな</string> 
+    <string name="donate_message">私の名前はアマンダです。
+ 私が開発したこのアプリを楽しんでいる場合は、私の寄付アプリを購入することを検討してください。
+ ありがとう！</string> 
+ </resources>

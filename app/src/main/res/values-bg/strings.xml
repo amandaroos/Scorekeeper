@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Изтрийте всички играчи</string> 
+    <string name="action_delete">Изтрий</string> 
+    <string name="action_donate">Дарете на разработчика</string> 
+    <string name="action_edit">редактиране</string> 
+    <string name="action_reset_scores">Рестартирайте резултатите</string> 
+    <string name="action_save">Save.</string> 
+    <string name="action_upgrade">Подобряване на</string> 
+    <string name="app_name">Оценка</string> 
+    <string name="button_donate">Опитайте го в Google Play</string> 
+    <string name="donate_greeting">Здравейте!</string> 
+    <string name="donate_title">Дарение</string> 
+    <string name="edit_player_current_score">Текущ резултат</string> 
+    <string name="editor_activity_title_add_score">Добави резултата</string> 
+    <string name="editor_activity_title_edit_name">Редактиране на име</string> 
+    <string name="hint_player_name">Име</string> 
+    <string name="image_group_icon">Група икона</string> 
+    <string name="image_player_icon">Икона на играча</string> 
+    <string name="large_heart">Голямо сърце</string> 
+    <string name="large_number_error_toast">Грешка: Резултатът е твърде голям</string> 
+    <string name="large">Голям</string> 
+    <string name="main_default_name">Играч</string> 
+    <string name="medium_heart">средно сърце</string> 
+    <string name="medium">Средна</string> 
+    <string name="player_name_label">Име на играча.</string> 
+    <string name="small_heart">Малка сърца</string> 
+    <string name="Small">Малък</string> 
+    <string name="donate_message">Казвам се Аманда.
+ Ако се наслаждавате на това приложение, което разработих, моля, помислете за закупуване на моето дарение.
+ Благодаря!</string> 
+ </resources>

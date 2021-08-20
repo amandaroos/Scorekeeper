@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Видалити всіх гравців</string> 
+    <string name="action_delete">Видаляти</string> 
+    <string name="action_donate">Пожертвувати розробника</string> 
+    <string name="action_edit">Редагувати</string> 
+    <string name="action_reset_scores">Скидання балів</string> 
+    <string name="action_save">Рятувати</string> 
+    <string name="action_upgrade">Оновлення</string> 
+    <string name="app_name">Очок</string> 
+    <string name="button_donate">Спробуйте у Google Play</string> 
+    <string name="donate_greeting">Привіт!</string> 
+    <string name="donate_title">Пожертвувати</string> 
+    <string name="edit_player_current_score">Поточний рахунок</string> 
+    <string name="editor_activity_title_add_score">Додати оцінку</string> 
+    <string name="editor_activity_title_edit_name">Редагувати ім\'я</string> 
+    <string name="hint_player_name">Назва</string> 
+    <string name="image_group_icon">Груповий значок</string> 
+    <string name="image_player_icon">Піктограма гравця</string> 
+    <string name="large_heart">велике серце</string> 
+    <string name="large_number_error_toast">Помилка: Оцінка занадто велика</string> 
+    <string name="large">Великий</string> 
+    <string name="main_default_name">Гравець</string> 
+    <string name="medium_heart">середовище</string> 
+    <string name="medium">Середовище</string> 
+    <string name="player_name_label">Ім\'я гравця</string> 
+    <string name="small_heart">маленьке серце</string> 
+    <string name="Small">Малий</string> 
+    <string name="donate_message">Мене звуть Аманда.
+ Якщо ви насолоджуєтеся цією програмою, я розробив, будь ласка, подумайте про придбання мого додатка пожертвування. Додаток пожертвувань не робить нічого, але ваша пожертва покаже мені, що мій час, витрачений на розвиток безкоштовних, цінні програми оцінюються.
+ Спасибі!</string> 
+ </resources>

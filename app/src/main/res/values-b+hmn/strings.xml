@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Rho tawm txhua tus neeg ua si</string> 
+    <string name="action_delete">Rho</string> 
+    <string name="action_donate">Pub rau tus tsim tawm</string> 
+    <string name="action_edit">Kuaj ntawv</string> 
+    <string name="action_reset_scores">Rov Pib Cov qhab nia</string> 
+    <string name="action_save">Cawm</string> 
+    <string name="action_upgrade">Ntxiv ua ke</string> 
+    <string name="app_name">Tau qhab nia</string> 
+    <string name="button_donate">Sim nws ntawm Google Ua Si</string> 
+    <string name="donate_greeting">Nyob zoo!</string> 
+    <string name="donate_title">Pub dawb</string> 
+    <string name="edit_player_current_score">Cov qhab nia tau tam sim no</string> 
+    <string name="editor_activity_title_add_score">Ntxiv Cov qhab nia</string> 
+    <string name="editor_activity_title_edit_name">Kho lub npe</string> 
+    <string name="hint_player_name">Lub npe</string> 
+    <string name="image_group_icon">Pab Pawg Icon</string> 
+    <string name="image_player_icon">Neeg uas ua ntawv icon</string> 
+    <string name="large_heart">Lub siab loj</string> 
+    <string name="large_number_error_toast">Yuam kev: qhab nia yog loj heev</string> 
+    <string name="large">Loj</string> 
+    <string name="main_default_name">Tus ua si</string> 
+    <string name="medium_heart">Nruab nrab plawv</string> 
+    <string name="medium">Nruab nrab</string> 
+    <string name="player_name_label">Player Npe</string> 
+    <string name="small_heart">Lub plawv me me</string> 
+    <string name="Small">Me</string> 
+    <string name="donate_message">Kuv lub npe yog Amanda.
+ Yog tias koj txaus siab rau cov app no Kuv tau tsim, thov txiav txim siab yuav khoom kuv app tsis ua dab tsi, tab sis koj lub sijhawm siv nyiaj yuav ua dab tsi, tab sis koj lub sijhawm siv los txhim kho cov apps dawb, tsis muaj kev txaus siab.
+ Tsaug!</string> 
+ </resources>

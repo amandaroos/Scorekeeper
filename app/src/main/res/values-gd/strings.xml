@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Thoir às na cluicheadairean uile</string> 
+    <string name="action_delete">Cuir às do</string> 
+    <string name="action_donate">Thoir seachad do leasaiche</string> 
+    <string name="action_edit">Deasaich</string> 
+    <string name="action_reset_scores">Ath-shuidheachadh sgòran</string> 
+    <string name="action_save">Sàbhail</string> 
+    <string name="action_upgrade">Ùrachadh</string> 
+    <string name="app_name">Cuidhteas neach-ciùird</string> 
+    <string name="button_donate">Feuch e air Google Play</string> 
+    <string name="donate_greeting">Halò!</string> 
+    <string name="donate_title">Thoir seachad</string> 
+    <string name="edit_player_current_score">Sgòr gnàthach</string> 
+    <string name="editor_activity_title_add_score">Cuir sgòr ris</string> 
+    <string name="editor_activity_title_edit_name">Deasaich ainm</string> 
+    <string name="hint_player_name">Ainm</string> 
+    <string name="image_group_icon">Ìomhaigh na buidhne</string> 
+    <string name="image_player_icon">Ìomhaigh cluicheadair</string> 
+    <string name="large_heart">cridhe mòr</string> 
+    <string name="large_number_error_toast">Mearachd: Tha sgòr ro mhòr</string> 
+    <string name="large">Mòr</string> 
+    <string name="main_default_name">Cluicheadair</string> 
+    <string name="medium_heart">cridhe meadhanach</string> 
+    <string name="medium">Meadhanach</string> 
+    <string name="player_name_label">Ainm cluicheadair</string> 
+    <string name="small_heart">cridhe beag</string> 
+    <string name="Small">Beag</string> 
+    <string name="donate_message">Is e amanda m \'ainm.
+ Ma tha an aplacaid seo a \'còrdadh rium a leasachadh, smaoinich air a\' chlàr tabhartais agam a cheannach. Ach seallaidh an t-ùine sin a bhith a \'leasachadh aplacaid an-asgaidh, chan eil mi a\' cur luach air an ùine agam.
+ Mòran taing!</string> 
+ </resources>

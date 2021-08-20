@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Delete նջել բոլոր խաղացողներին</string> 
+    <string name="action_delete">Ջնջել</string> 
+    <string name="action_donate">Նվիրաբերեք ծրագրավորողին</string> 
+    <string name="action_edit">Խմբագրել</string> 
+    <string name="action_reset_scores">Վերականգնել միավորները</string> 
+    <string name="action_save">Խնայել</string> 
+    <string name="action_upgrade">Արդիականացում</string> 
+    <string name="app_name">Գնահատող</string> 
+    <string name="button_donate">Փորձեք այն Google Play- ում</string> 
+    <string name="donate_greeting">Բարեւ!</string> 
+    <string name="donate_title">Նվիրաբերել</string> 
+    <string name="edit_player_current_score">Ընթացիկ գնահատական</string> 
+    <string name="editor_activity_title_add_score">Ավելացնել միավոր</string> 
+    <string name="editor_activity_title_edit_name">Խմբագրել անունը</string> 
+    <string name="hint_player_name">Անուն</string> 
+    <string name="image_group_icon">Խմբի պատկերակ</string> 
+    <string name="image_player_icon">Խաղացողի պատկերակ</string> 
+    <string name="large_heart">Խոշոր սիրտ</string> 
+    <string name="large_number_error_toast">Սխալ. Միավորը չափազանց մեծ է</string> 
+    <string name="large">Մեծ</string> 
+    <string name="main_default_name">Խաղացող</string> 
+    <string name="medium_heart">Միջին սիրտ</string> 
+    <string name="medium">Միջին</string> 
+    <string name="player_name_label">Խաղացողի անունը</string> 
+    <string name="small_heart">Փոքր սիրտ</string> 
+    <string name="Small">Փոքր</string> 
+    <string name="donate_message">Իմ անունը Amanda է:
+ Եթե դուք վայելում եք այս հավելվածը, որը ես զարգացա, խնդրում եմ հաշվի առեք իմ նվիրատվության ծրագիրը:
+ Շնորհակալություն</string> 
+ </resources>

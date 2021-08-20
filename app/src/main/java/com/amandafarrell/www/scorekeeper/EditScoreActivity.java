@@ -1,15 +1,13 @@
 package com.amandafarrell.www.scorekeeper;
 
+import android.app.LoaderManager;
 import android.content.ContentValues;
 import android.content.CursorLoader;
 import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.LoaderManager;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,9 +16,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.amandafarrell.www.scorekeeper.data.PlayerContract.PlayerEntry;
+import androidx.appcompat.app.AppCompatActivity;
 
-import org.w3c.dom.Text;
+import com.amandafarrell.www.scorekeeper.data.PlayerContract.PlayerEntry;
 
 /**
  * Allows user to edit the player's score
@@ -87,7 +85,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
         String scoreString = mScoreEditText.getText().toString().trim();
 
         //Get player's current score
-        try{
+        try {
             int currentScore = Integer.parseInt(mCurrentScore.getText().toString().trim());
 
             // Create a new map of values, where column name is the key,
@@ -110,8 +108,7 @@ public class EditScoreActivity extends AppCompatActivity implements LoaderManage
 
             //pass the content resolver the updated player information
             int rowsAffected = getContentResolver().update(mCurrentPlayerUri, values, null, null);
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             Toast.makeText(this, R.string.large_number_error_toast, Toast.LENGTH_LONG).show();
 
             mScoreEditText.setText("");

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">සියලුම ක්රීඩකයින් මකන්න</string> 
+    <string name="action_delete">මකන්න</string> 
+    <string name="action_donate">සංවර්ධකයාට පරිත්යාග කරන්න</string> 
+    <string name="action_edit">සංස්කරණය කරන්න</string> 
+    <string name="action_reset_scores">ලකුණු නැවත සකසන්න</string> 
+    <string name="action_save">සුරකින්න</string> 
+    <string name="action_upgrade">උත්ශ්රේණි කිරීම</string> 
+    <string name="app_name">ලකුණු මායිම</string> 
+    <string name="button_donate">ගූගල් ප්ලේ හි එය උත්සාහ කරන්න</string> 
+    <string name="donate_greeting">හෙලෝ!</string> 
+    <string name="donate_title">පරිත්යාග කරන්න</string> 
+    <string name="edit_player_current_score">වත්මන් ලකුණු</string> 
+    <string name="editor_activity_title_add_score">ලකුණු එකතු කරන්න</string> 
+    <string name="editor_activity_title_edit_name">නම සංස්කරණය කරන්න</string> 
+    <string name="hint_player_name">නම</string> 
+    <string name="image_group_icon">කණ්ඩායම් නිරූපකය</string> 
+    <string name="image_player_icon">ක්රීඩක නිරූපකය</string> 
+    <string name="large_heart">විශාල හදවතක්</string> 
+    <string name="large_number_error_toast">දෝෂය: ලකුණු ඉතා විශාලයි</string> 
+    <string name="large">මහා</string> 
+    <string name="main_default_name">ක්රීඩකයා</string> 
+    <string name="medium_heart">මධ්යම හදවත</string> 
+    <string name="medium">මධ්යම</string> 
+    <string name="player_name_label">ක්රීඩකයාගේ නම</string> 
+    <string name="small_heart">කුඩා හදවත</string> 
+    <string name="Small">කුඩා</string> 
+    <string name="donate_message">මගේ නම අමන්දා.
+ ඔබ මෙම යෙදුම භුක්ති විඳින්නේ නම්, කරුණාකර මගේ පරිත්යාග යෙදුම මිලදී ගන්න. පරිත්යාග ඇප් එක කිසිවක් නොකරයි, නමුත් ඔබේ පරිත්යාගය මගේ පරිත්යාගය මට පෙන්වනු ඇත, නමුත් නොමිලේ, වෙළඳ දැන්වීම් යෙදුම් සංවර්ධනය කිරීම අගය කරන බව ඔබේ පරිත්යාගය මට පෙන්වයි.
+ ස්තූතියි!</string> 
+ </resources>

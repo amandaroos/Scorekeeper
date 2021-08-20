@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Eliminar todos os xogadores</string> 
+    <string name="action_delete">Eliminar.</string> 
+    <string name="action_donate">Doar ao desarrollador</string> 
+    <string name="action_edit">Editar.</string> 
+    <string name="action_reset_scores">Restablecer as puntuacións</string> 
+    <string name="action_save">SAVE.</string> 
+    <string name="action_upgrade">Actualización</string> 
+    <string name="app_name">SCOREKEKEKEEKEKEEKEGE.</string> 
+    <string name="button_donate">Proba en Google Play</string> 
+    <string name="donate_greeting">Ola!</string> 
+    <string name="donate_title">Donate.</string> 
+    <string name="edit_player_current_score">Puntuación actual</string> 
+    <string name="editor_activity_title_add_score">Engadir puntuación</string> 
+    <string name="editor_activity_title_edit_name">Editar nome</string> 
+    <string name="hint_player_name">Nome</string> 
+    <string name="image_group_icon">Icona de grupo</string> 
+    <string name="image_player_icon">Icona do xogador</string> 
+    <string name="large_heart">Grande corazón</string> 
+    <string name="large_number_error_toast">Erro: a puntuación é demasiado grande</string> 
+    <string name="large">Grande</string> 
+    <string name="main_default_name">Xogador</string> 
+    <string name="medium_heart">corazón medio.</string> 
+    <string name="medium">Medio</string> 
+    <string name="player_name_label">Nome do xogador.</string> 
+    <string name="small_heart">Corazón pequeno</string> 
+    <string name="Small">Pequena</string> 
+    <string name="donate_message">O meu nome é Amanda.
+ Se está a gozar desta aplicación que eu desenvolvín, por favor, considere a compra da miña aplicación de doazón App. A aplicación de doazón non fai nada, pero a súa doazón me mostrará que o meu tempo dedicado ao desenvolvemento de aplicacións sen anuncios é apreciado.
+ Grazas!</string> 
+ </resources>

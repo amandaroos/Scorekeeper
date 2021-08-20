@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Wiskje alle spilers</string> 
+    <string name="action_delete">Ferwiderje</string> 
+    <string name="action_donate">Donearje oan ûntwikkelder</string> 
+    <string name="action_edit">Redigearje</string> 
+    <string name="action_reset_scores">Skoaren weromsette</string> 
+    <string name="action_save">Rêde</string> 
+    <string name="action_upgrade">Opwurdearje</string> 
+    <string name="app_name">Scaarkeekeamer</string> 
+    <string name="button_donate">Besykje it op Google Play</string> 
+    <string name="donate_greeting">Hoi!</string> 
+    <string name="donate_title">Donearje</string> 
+    <string name="edit_player_current_score">Aktuele skoare</string> 
+    <string name="editor_activity_title_add_score">Foegje skoare ta</string> 
+    <string name="editor_activity_title_edit_name">NAME bewurkje</string> 
+    <string name="hint_player_name">Namme</string> 
+    <string name="image_group_icon">Groep ikoan</string> 
+    <string name="image_player_icon">Spieleripaat</string> 
+    <string name="large_heart">grut hert</string> 
+    <string name="large_number_error_toast">ERROR: Skoare is te grut</string> 
+    <string name="large">Grut</string> 
+    <string name="main_default_name">Spiler</string> 
+    <string name="medium_heart">medium hert</string> 
+    <string name="medium">Medium</string> 
+    <string name="player_name_label">Spilersnamme</string> 
+    <string name="small_heart">lyts hert</string> 
+    <string name="Small">Lyts</string> 
+    <string name="donate_message">Myn namme is Amanda.</string> 
+ </resources>

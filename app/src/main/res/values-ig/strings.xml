@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Hichapụ ndị egwuregwu niile</string> 
+    <string name="action_delete">Ihichapụ</string> 
+    <string name="action_donate">Nye onyinye na onye nrụpụta</string> 
+    <string name="action_edit">Idekwa</string> 
+    <string name="action_reset_scores">Travet Scores</string> 
+    <string name="action_save">Zoputa</string> 
+    <string name="action_upgrade">Kwalie</string> 
+    <string name="app_name">Akara uku</string> 
+    <string name="button_donate">Gbalịa ya na Google Play</string> 
+    <string name="donate_greeting">Nnọọ!</string> 
+    <string name="donate_title">Inye</string> 
+    <string name="edit_player_current_score">Akara ugbu a</string> 
+    <string name="editor_activity_title_add_score">Tinye akara</string> 
+    <string name="editor_activity_title_edit_name">Dezie aha</string> 
+    <string name="hint_player_name">Aha</string> 
+    <string name="image_group_icon">Akara ngosi otu</string> 
+    <string name="image_player_icon">Akara ngosi ọkpụkpọ</string> 
+    <string name="large_heart">Nnukwu Obi</string> 
+    <string name="large_number_error_toast">Njehie: akara buru oke ibu</string> 
+    <string name="large">Keibu</string> 
+    <string name="main_default_name">Onye ejije nwoke</string> 
+    <string name="medium_heart">obi m</string> 
+    <string name="medium">Keusoro</string> 
+    <string name="player_name_label">Aha onye ọkpụkpọ</string> 
+    <string name="small_heart">obere obi</string> 
+    <string name="Small">Nke ntakiri</string> 
+    <string name="donate_message">Aha m bụ Amanda.
+ Ọ bụrụ na ị na-anụ ụtọ ngwa a, biko tụlee ịzụta ngwa ọrụ m, mana oge onyinye gị ga-egosi m na oge m na-eme ka a na-azụta ngwa n\'efu.
+ Daalụ!</string> 
+ </resources>

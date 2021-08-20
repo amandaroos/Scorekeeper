@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">सर्व खेळाडू हटवा</string> 
+    <string name="action_delete">हटवा</string> 
+    <string name="action_donate">विकासकास दान करा</string> 
+    <string name="action_edit">सुधारणे</string> 
+    <string name="action_reset_scores">रीसेट स्कोअर</string> 
+    <string name="action_save">जतन करा</string> 
+    <string name="action_upgrade">श्रेणीसुधारित करा</string> 
+    <string name="app_name">स्कोअरकीर</string> 
+    <string name="button_donate">Google Play वर प्रयत्न करा</string> 
+    <string name="donate_greeting">नमस्कार!</string> 
+    <string name="donate_title">दान</string> 
+    <string name="edit_player_current_score">वर्तमान स्कोअर</string> 
+    <string name="editor_activity_title_add_score">स्कोअर जोडा</string> 
+    <string name="editor_activity_title_edit_name">नाव संपादित करा</string> 
+    <string name="hint_player_name">नाव</string> 
+    <string name="image_group_icon">गट चिन्ह</string> 
+    <string name="image_player_icon">खेळाडू चिन्ह</string> 
+    <string name="large_heart">मोठे हृदय</string> 
+    <string name="large_number_error_toast">त्रुटी: स्कोअर खूप मोठा आहे</string> 
+    <string name="large">मोठे</string> 
+    <string name="main_default_name">खेळाडू</string> 
+    <string name="medium_heart">मध्यम हृदय</string> 
+    <string name="medium">मध्यम</string> 
+    <string name="player_name_label">खेळाडूचे नाव</string> 
+    <string name="small_heart">लहान हृदय</string> 
+    <string name="Small">लहान</string> 
+    <string name="donate_message">माझे नाव अमांडा आहे.
+ जर आपण या अॅपचा आनंद घेत असाल तर मी विकसित केलेला आहे, कृपया माझे देणगी अॅप खरेदी करण्याचा विचार करा. देणगी अॅप काहीही करत नाही, परंतु आपले दान मला दाखवतील की माझा वेळ विनामूल्य विकसित करण्यात आला आहे, नाही-जाहिरात अॅप्सचे कौतुक केले जाते.
+ धन्यवाद!</string> 
+ </resources>

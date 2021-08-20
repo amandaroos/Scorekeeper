@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Sguassà tutti i ghjucatori</string> 
+    <string name="action_delete">Sguassà</string> 
+    <string name="action_donate">Donate à u sviluppatore</string> 
+    <string name="action_edit">Edità</string> 
+    <string name="action_reset_scores">Resettate puntuazioni</string> 
+    <string name="action_save">Salvata</string> 
+    <string name="action_upgrade">Upturazione</string> 
+    <string name="app_name">Puntanu</string> 
+    <string name="button_donate">Pruvate nantu à u ghjocu di Google</string> 
+    <string name="donate_greeting">Bonghjornu!</string> 
+    <string name="donate_title">Donate</string> 
+    <string name="edit_player_current_score">Puntuazione attuale</string> 
+    <string name="editor_activity_title_add_score">Aghjunghje puntuazione</string> 
+    <string name="editor_activity_title_edit_name">Edit nome</string> 
+    <string name="hint_player_name">Nome</string> 
+    <string name="image_group_icon">Icona di Gruppu</string> 
+    <string name="image_player_icon">Icona di ghjucatore</string> 
+    <string name="large_heart">cori grande</string> 
+    <string name="large_number_error_toast">Errore: U puntuazione hè troppu grande</string> 
+    <string name="large">Grande</string> 
+    <string name="main_default_name">Ghjucadore</string> 
+    <string name="medium_heart">Cori di mediu</string> 
+    <string name="medium">MEDIUM</string> 
+    <string name="player_name_label">Nome di ghjucatore</string> 
+    <string name="small_heart">picculu core</string> 
+    <string name="Small">Picculu</string> 
+    <string name="donate_message">Mi chjamu Amanda.
+ Se ti piace di sta app aghju sviluppatu, fate purizirà a mo donazione, fate a donazione, ma a vostra donazione mi mustrarà chì u mo tempu passatu l\'app di sviluppu gratuitu.
+ Grazie!</string> 
+ </resources>

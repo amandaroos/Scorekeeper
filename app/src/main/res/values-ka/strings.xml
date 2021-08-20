@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">ყველა მოთამაშის წაშლა</string> 
+    <string name="action_delete">წაშლება</string> 
+    <string name="action_donate">შემოწირულობა დეველოპერი</string> 
+    <string name="action_edit">რედაქტირება</string> 
+    <string name="action_reset_scores">აღადგინეთ ქულები</string> 
+    <string name="action_save">Გადარჩენა</string> 
+    <string name="action_upgrade">დევნა</string> 
+    <string name="app_name">Scorekeeper</string> 
+    <string name="button_donate">სცადეთ Google Play- ზე</string> 
+    <string name="donate_greeting">გამარჯობა!</string> 
+    <string name="donate_title">ჩუქება</string> 
+    <string name="edit_player_current_score">მიმდინარე ანგარიში</string> 
+    <string name="editor_activity_title_add_score">დაამატეთ ანგარიში</string> 
+    <string name="editor_activity_title_edit_name">რედაქტირება სახელი</string> 
+    <string name="hint_player_name">სახელი</string> 
+    <string name="image_group_icon">ჯგუფი ხატულა</string> 
+    <string name="image_player_icon">მოთამაშე ხატულა</string> 
+    <string name="large_heart">დიდი გული</string> 
+    <string name="large_number_error_toast">შეცდომა: ქულა ძალიან დიდია</string> 
+    <string name="large">დიდი</string> 
+    <string name="main_default_name">მოთამაშე ქალი</string> 
+    <string name="medium_heart">საშუალო გული</string> 
+    <string name="medium">საშუალო</string> 
+    <string name="player_name_label">Მოთამაშის სახელი</string> 
+    <string name="small_heart">პატარა გული</string> 
+    <string name="Small">Პატარა</string> 
+    <string name="donate_message">ჩემი სახელია ამანდა.
+ თუ თქვენ სარგებლობენ ამ აპლიკაცია, გთხოვთ, გაითვალისწინოთ ჩემი შემოწირულობის აპლიკაცია
+ მადლობა!</string> 
+ </resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">அனைத்து வீரர்களையும் நீக்கவும்</string> 
+    <string name="action_delete">அழி</string> 
+    <string name="action_donate">டெவலப்பர் நன்கொடையாக</string> 
+    <string name="action_edit">தொகு</string> 
+    <string name="action_reset_scores">மதிப்பெண்களை மீட்டமை</string> 
+    <string name="action_save">சேமிக்கவும்</string> 
+    <string name="action_upgrade">மேம்படுத்தல்</string> 
+    <string name="app_name">ஸ்கிரெக்ரேப்பர்</string> 
+    <string name="button_donate">Google Play இல் முயற்சிக்கவும்</string> 
+    <string name="donate_greeting">வணக்கம்!</string> 
+    <string name="donate_title">நன்கொடை</string> 
+    <string name="edit_player_current_score">தற்போதைய ஸ்கோர்</string> 
+    <string name="editor_activity_title_add_score">ஸ்கோர் சேர்க்கவும்</string> 
+    <string name="editor_activity_title_edit_name">பெயர் திருத்தவும்</string> 
+    <string name="hint_player_name">பெயர்</string> 
+    <string name="image_group_icon">குழு ஐகான்</string> 
+    <string name="image_player_icon">பிளேயர் ஐகான்</string> 
+    <string name="large_heart">பெரிய இதயம்</string> 
+    <string name="large_number_error_toast">பிழை: ஸ்கோர் மிகப்பெரியது</string> 
+    <string name="large">பெரிய</string> 
+    <string name="main_default_name">ஆட்டக்காரர்</string> 
+    <string name="medium_heart">நடுத்தர இதயம்</string> 
+    <string name="medium">நடுத்தரம்</string> 
+    <string name="player_name_label">வீரர் பெயர்</string> 
+    <string name="small_heart">சிறிய இதயம்</string> 
+    <string name="Small">சிறிய</string> 
+    <string name="donate_message">என் பெயர் அமண்டா.
+ இந்த பயன்பாட்டை நான் உருவாக்கியிருந்தால், என் நன்கொடை பயன்பாட்டை வாங்கும் கருத்தில் கொள்ளவும். நன்கொடை பயன்பாடும் எதையும் செய்யாது.
+ நன்றி!</string> 
+ </resources>

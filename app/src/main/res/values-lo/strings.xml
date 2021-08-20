@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">ລົບຜູ້ຫຼິ້ນທຸກຄົນ</string> 
+    <string name="action_delete">ລົບ</string> 
+    <string name="action_donate">ບໍລິຈາກໃຫ້ນັກພັດທະນາ</string> 
+    <string name="action_edit">ແກ້ໄຂ</string> 
+    <string name="action_reset_scores">ປັບຄະແນນຄືນໃຫມ່</string> 
+    <string name="action_save">ປະຢັດ</string> 
+    <string name="action_upgrade">ຍົກລະດັບ</string> 
+    <string name="app_name">ຜູ້ຊາຕາ</string> 
+    <string name="button_donate">ທົດລອງໃຊ້ໃນ Google Play</string> 
+    <string name="donate_greeting">ສະບາຍດີ!</string> 
+    <string name="donate_title">ບໍລິຈາກ</string> 
+    <string name="edit_player_current_score">ຄະແນນປະຈຸບັນ</string> 
+    <string name="editor_activity_title_add_score">ເພີ່ມຄະແນນ</string> 
+    <string name="editor_activity_title_edit_name">ແກ້ໄຂຊື່</string> 
+    <string name="hint_player_name">ຊື່</string> 
+    <string name="image_group_icon">icon ກຸ່ມ</string> 
+    <string name="image_player_icon">icon ຜູ້ນ</string> 
+    <string name="large_heart">ຫົວໃຈໃຫຍ່</string> 
+    <string name="large_number_error_toast">ຄວາມຜິດພາດ: ຄະແນນແມ່ນໃຫຍ່ເກີນໄປ</string> 
+    <string name="large">ປຸ້ມ</string> 
+    <string name="main_default_name">ຜູ້ຫຼິ້ນ</string> 
+    <string name="medium_heart">ຫົວໃຈກາງ</string> 
+    <string name="medium">ກາງ</string> 
+    <string name="player_name_label">ຊື່ຜູ້ນ</string> 
+    <string name="small_heart">ຫົວໃຈນ້ອຍ</string> 
+    <string name="Small">ຂະຫນາດນ້ອຍ</string> 
+    <string name="donate_message">ຂ້ອຍຊື່ Amanda.
+ ຖ້າທ່ານມີຄວາມສຸກກັບແອັບນີ້ທີ່ຂ້ອຍພັດທະນາ, ກະລຸນາພິຈາລະນາຊື້ແອັບ app ບໍລິການຂອງຂ້ອຍ.
+ ຂອບໃຈ!</string> 
+ </resources>

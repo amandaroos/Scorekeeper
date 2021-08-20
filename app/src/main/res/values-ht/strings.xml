@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Efase tout jwè yo</string> 
+    <string name="action_delete">Efreye</string> 
+    <string name="action_donate">Fè don pou pwomotè</string> 
+    <string name="action_edit">Redije</string> 
+    <string name="action_reset_scores">Reset nòt</string> 
+    <string name="action_save">Sove</string> 
+    <string name="action_upgrade">Ajou</string> 
+    <string name="app_name">Nèg</string> 
+    <string name="button_donate">Eseye li sou Google Jwe</string> 
+    <string name="donate_greeting">Bonjou!</string> 
+    <string name="donate_title">Bay</string> 
+    <string name="edit_player_current_score">Nòt aktyèl la</string> 
+    <string name="editor_activity_title_add_score">Ajoute nòt</string> 
+    <string name="editor_activity_title_edit_name">Edit non</string> 
+    <string name="hint_player_name">Non</string> 
+    <string name="image_group_icon">Gwoup Icône</string> 
+    <string name="image_player_icon">Icon jwè</string> 
+    <string name="large_heart">gwo kè</string> 
+    <string name="large_number_error_toast">Erè: nòt twò gwo</string> 
+    <string name="large">Laj</string> 
+    <string name="main_default_name">Jwè</string> 
+    <string name="medium_heart">mwayen kè</string> 
+    <string name="medium">Mwayen</string> 
+    <string name="player_name_label">Non jwè</string> 
+    <string name="small_heart">ti kè</string> 
+    <string name="Small">Piti</string> 
+    <string name="donate_message">Non mwen se Amanda.
+ Si w ap jwi app sa a mwen devlope, tanpri konsidere achte Donasyon app.The app don mwen pa fè anyen, men don ou pral montre m \'ke tan mwen te pase devlope gratis, pa gen okenn-Ajoute apps apresye.
+ Mèsi!</string> 
+ </resources>

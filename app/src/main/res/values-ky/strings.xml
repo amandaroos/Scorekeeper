@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Бардык оюнчуларды жок кылыңыз</string> 
+    <string name="action_delete">Жок кылуу</string> 
+    <string name="action_donate">Иштеп чыгуучуга кайрымдуулук</string> 
+    <string name="action_edit">Түзөтүү</string> 
+    <string name="action_reset_scores">Упайларды баштапкы абалга келтирүү</string> 
+    <string name="action_save">Сактоо</string> 
+    <string name="action_upgrade">Жаңыртуу</string> 
+    <string name="app_name">Упай</string> 
+    <string name="button_donate">Google Play\'ден байкап көрүңүз</string> 
+    <string name="donate_greeting">Салам!</string> 
+    <string name="donate_title">Кайрымдуулук</string> 
+    <string name="edit_player_current_score">Учурдагы упай</string> 
+    <string name="editor_activity_title_add_score">Упай кошуу</string> 
+    <string name="editor_activity_title_edit_name">Түзөтүү аты</string> 
+    <string name="hint_player_name">Аты</string> 
+    <string name="image_group_icon">Group Icon</string> 
+    <string name="image_player_icon">Player Icon</string> 
+    <string name="large_heart">чоң жүрөк</string> 
+    <string name="large_number_error_toast">Ката: упай өтө чоң</string> 
+    <string name="large">Чоң</string> 
+    <string name="main_default_name">Оюнчу</string> 
+    <string name="medium_heart">Орточо жүрөк</string> 
+    <string name="medium">Орто</string> 
+    <string name="player_name_label">Оюнчунун аты</string> 
+    <string name="small_heart">кичинекей жүрөк</string> 
+    <string name="Small">Кичинекей</string> 
+    <string name="donate_message">Менин атым Аманда.
+ Эгерде сиз бул колдонмону жактырсам, мен кайрымдуулук колдонмосун сатып алууну ойлонуп көрүңүз.
+ Рахмат!</string> 
+ </resources>

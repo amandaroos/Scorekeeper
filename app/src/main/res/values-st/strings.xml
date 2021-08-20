@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Tlosa libapali tsohle</string> 
+    <string name="action_delete">Tlosa</string> 
+    <string name="action_donate">Fana ka Moqapi</string> 
+    <string name="action_edit">Edita</string> 
+    <string name="action_reset_scores">Seta lintlha</string> 
+    <string name="action_save">Boloka</string> 
+    <string name="action_upgrade">Ntlafatsa</string> 
+    <string name="app_name">ScorePeper</string> 
+    <string name="button_donate">E leke ho Google Play</string> 
+    <string name="donate_greeting">Lumela!</string> 
+    <string name="donate_title">Donate</string> 
+    <string name="edit_player_current_score">Lintlha tsa hajoale</string> 
+    <string name="editor_activity_title_add_score">Kenya lintlha</string> 
+    <string name="editor_activity_title_edit_name">Hlophisa lebitso</string> 
+    <string name="hint_player_name">Lebitso</string> 
+    <string name="image_group_icon">Sepheo sa Sehlopha</string> 
+    <string name="image_player_icon">Setšoantšo sa sebapali</string> 
+    <string name="large_heart">pelo e kholo</string> 
+    <string name="large_number_error_toast">Phoso: Score e kholo haholo</string> 
+    <string name="large">Kholo</string> 
+    <string name="main_default_name">Sebapali</string> 
+    <string name="medium_heart">pelo e mahareng</string> 
+    <string name="medium">Mekhabiso</string> 
+    <string name="player_name_label">Lebitso la Player</string> 
+    <string name="small_heart">pelo e nyane</string> 
+    <string name="Small">Nyane</string> 
+    <string name="donate_message">Lebitso la ka ke amanda.
+ Haeba u natefeloa ke sesebelisoa sena seo ke se entseng, ka kopo nahana ka ho reka sesebelisoa sa ka sa monehelo. Sesebelisoa sa hau sa monehelo se tla mpontša, empa ketso ea hau e sebelisoang ho ba le lisebelisoa tse sebelisitsoeng ho lokoloha, ha li ananeloe.
+ Kea leboha!</string> 
+ </resources>

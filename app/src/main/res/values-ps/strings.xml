@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">ټول لوبغاړي حذف کړئ</string> 
+    <string name="action_delete">حذف کول</string> 
+    <string name="action_donate">پرمختیا کونکي ته مرسته وکړئ</string> 
+    <string name="action_edit">سمون</string> 
+    <string name="action_reset_scores">نمرې</string> 
+    <string name="action_save">خوندي کړئ</string> 
+    <string name="action_upgrade">تازه کول</string> 
+    <string name="app_name">اسکورګر</string> 
+    <string name="button_donate">په ګوګل پلی کې دا هڅه وکړئ</string> 
+    <string name="donate_greeting">سلام!</string> 
+    <string name="donate_title">مرسته وکړه</string> 
+    <string name="edit_player_current_score">اوسني نمره</string> 
+    <string name="editor_activity_title_add_score">نمره اضافه کړئ</string> 
+    <string name="editor_activity_title_edit_name">نوم</string> 
+    <string name="hint_player_name">نوم</string> 
+    <string name="image_group_icon">د ډلې آیکون</string> 
+    <string name="image_player_icon">د لوبغاړي آیکون</string> 
+    <string name="large_heart">لوی زړه</string> 
+    <string name="large_number_error_toast">تېروتنه: نمره ډیره لویه ده</string> 
+    <string name="large">لوی</string> 
+    <string name="main_default_name">غږوونکی</string> 
+    <string name="medium_heart">متوسط زړه</string> 
+    <string name="medium">متوسط</string> 
+    <string name="player_name_label">د پلیر نوم</string> 
+    <string name="small_heart">وړه زړه</string> 
+    <string name="Small">کوچنی</string> 
+    <string name="donate_message">زما نوم امندا دی.
+ که تاسو د دې اپلیکیشن څخه خوند اخلئ، نو زه یې وده کړې، مهرباني وکړئ د مرستې اپلیکیشن پیرود باندې غور وکړئ. ستاسو مرسته ماته ښیې، د هیڅ اعلان ایپس تعریف شوی.
+ مننه!</string> 
+ </resources>

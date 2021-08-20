@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Mukua nga kaitakaro katoa</string> 
+    <string name="action_delete">Muku</string> 
+    <string name="action_donate">Koha ki te Kaiwhakawhanake</string> 
+    <string name="action_edit">Whakatikatika</string> 
+    <string name="action_reset_scores">Tautuhi Tautuhi</string> 
+    <string name="action_save">Whakaora</string> 
+    <string name="action_upgrade">Whakahou</string> 
+    <string name="app_name">Kaitukino</string> 
+    <string name="button_donate">Whakamātauria ki runga i te Google Play</string> 
+    <string name="donate_greeting">Kia ora</string> 
+    <string name="donate_title">Hoatu koha</string> 
+    <string name="edit_player_current_score">Te whiu o naianei</string> 
+    <string name="editor_activity_title_add_score">Tāpiri tohu</string> 
+    <string name="editor_activity_title_edit_name">Whakatika Ingoa</string> 
+    <string name="hint_player_name">Ingoa</string> 
+    <string name="image_group_icon">Ata Ata</string> 
+    <string name="image_player_icon">Ata Ataata</string> 
+    <string name="large_heart">Te ngakau nui</string> 
+    <string name="large_number_error_toast">ERROR: He nui rawa te tatauranga</string> 
+    <string name="large">Nui</string> 
+    <string name="main_default_name">Kaitākaro</string> 
+    <string name="medium_heart">ngakau ngakau</string> 
+    <string name="medium">Kauwaka</string> 
+    <string name="player_name_label">Ingoa kaitākaro</string> 
+    <string name="small_heart">Te ngakau iti</string> 
+    <string name="Small">Iti</string> 
+    <string name="donate_message">Ko Amanda toku ingoa.
+ Mena kei te koa koe i tenei taupānga i whakawhanakehia e au, whakaarohia te hoko i taku takoha.Ko te tono takoha, engari ko to koha e whakaatu ana i taku waa koreutu, e manakohia ana taku waa.
+ Mihi mai!</string> 
+ </resources>

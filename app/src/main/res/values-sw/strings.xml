@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Futa wachezaji wote</string> 
+    <string name="action_delete">Futa</string> 
+    <string name="action_donate">Kutoa kwa msanidi programu</string> 
+    <string name="action_edit">Hariri</string> 
+    <string name="action_reset_scores">Rekebisha alama</string> 
+    <string name="action_save">Hifadhi</string> 
+    <string name="action_upgrade">Upgrade.</string> 
+    <string name="app_name">SCORKEPER.</string> 
+    <string name="button_donate">Jaribu kwenye Google Play.</string> 
+    <string name="donate_greeting">Hello!</string> 
+    <string name="donate_title">Msaada</string> 
+    <string name="edit_player_current_score">Alama ya sasa.</string> 
+    <string name="editor_activity_title_add_score">Ongeza alama</string> 
+    <string name="editor_activity_title_edit_name">Badilisha jina</string> 
+    <string name="hint_player_name">Jina.</string> 
+    <string name="image_group_icon">Icon ya Kikundi.</string> 
+    <string name="image_player_icon">Mchezaji icon.</string> 
+    <string name="large_heart">Moyo mkubwa</string> 
+    <string name="large_number_error_toast">Hitilafu: alama ni kubwa mno.</string> 
+    <string name="large">Kubwa</string> 
+    <string name="main_default_name">Mchezaji</string> 
+    <string name="medium_heart">Moyo wa kati</string> 
+    <string name="medium">Kati</string> 
+    <string name="player_name_label">Jina la mchezaji</string> 
+    <string name="small_heart">Moyo mdogo</string> 
+    <string name="Small">Ndogo</string> 
+    <string name="donate_message">Jina langu ni Amanda.
+ Ikiwa unafurahia programu hii niliyoiendeleza, tafadhali fikiria ununuzi wa programu yangu ya mchango. Programu ya mchango haifanyi chochote, lakini mchango wako utanionyeshea kwamba wakati wangu uliotumika kuendeleza programu za bure, zisizo za matangazo zinathaminiwa.
+ Asante!</string> 
+ </resources>

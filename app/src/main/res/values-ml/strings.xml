@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">എല്ലാ കളിക്കാരെയും ഇല്ലാതാക്കുക</string> 
+    <string name="action_delete">ഇല്ലാതാക്കുക</string> 
+    <string name="action_donate">ഡവലപ്പറിലേക്ക് സംഭാവന ചെയ്യുക</string> 
+    <string name="action_edit">തിരുത്തുക</string> 
+    <string name="action_reset_scores">സ്കോറുകൾ പുന et സജ്ജമാക്കുക</string> 
+    <string name="action_save">രക്ഷിക്കും</string> 
+    <string name="action_upgrade">നവീകരിക്കുക</string> 
+    <string name="app_name">St KREOKER</string> 
+    <string name="button_donate">Google Play- ൽ ഇത് പരീക്ഷിക്കുക</string> 
+    <string name="donate_greeting">ഹലോ!</string> 
+    <string name="donate_title">സംഭാവനചെയ്യുക</string> 
+    <string name="edit_player_current_score">നിലവിലെ സ്കോർ</string> 
+    <string name="editor_activity_title_add_score">സ്കോർ ചേർക്കുക</string> 
+    <string name="editor_activity_title_edit_name">പേര് എഡിറ്റുചെയ്യുക</string> 
+    <string name="hint_player_name">പേര്</string> 
+    <string name="image_group_icon">ഗ്രൂപ്പ് ഐക്കൺ</string> 
+    <string name="image_player_icon">പ്ലെയർ ഐക്കൺ</string> 
+    <string name="large_heart">വലിയ ഹൃദയം</string> 
+    <string name="large_number_error_toast">പിശക്: സ്കോർ വളരെ വലുതാണ്</string> 
+    <string name="large">വലിയ</string> 
+    <string name="main_default_name">കളിക്കാരി</string> 
+    <string name="medium_heart">ഇടത്തരം ഹൃദയം</string> 
+    <string name="medium">മധസ്ഥാനം</string> 
+    <string name="player_name_label">കളിക്കാരന്റെ പേര്</string> 
+    <string name="small_heart">ചെറിയ ഹൃദയം</string> 
+    <string name="Small">ചെറിയ</string> 
+    <string name="donate_message">എന്റെ പേര് അമണ്ട.
+ ഞാൻ വികസിപ്പിച്ച ഈ അപ്ലിക്കേഷൻ നിങ്ങൾ ആസ്വദിക്കുകയാണെങ്കിൽ, ദയവായി എന്റെ സംഭാവന അപ്ലിക്കേഷൻ വാങ്ങുന്നത് പരിഗണിക്കുക. സംഭാവന അപ്ലിക്കേഷൻ ഒന്നും ചെയ്യുന്നില്ല, പക്ഷേ നിങ്ങളുടെ സംഭാവന എനിക്ക് കാണിച്ചുതരാം, സ്വതന്ത്രമായി വികസിപ്പിക്കുന്നത് എന്റെ സമയം വിലമതിക്കുന്നു, പരസ്യ അപ്ലിക്കേഷനുകൾ വിലമതിക്കപ്പെടുന്നില്ല.
+ നന്ദി!</string> 
+ </resources>

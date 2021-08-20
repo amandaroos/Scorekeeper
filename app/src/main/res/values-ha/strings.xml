@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Share duk \'yan wasa</string> 
+    <string name="action_delete">Share</string> 
+    <string name="action_donate">Ba da gudummawa don haɓakawa</string> 
+    <string name="action_edit">Shirya</string> 
+    <string name="action_reset_scores">Sake saita maki</string> 
+    <string name="action_save">Ceta</string> 
+    <string name="action_upgrade">Haɓakawa</string> 
+    <string name="app_name">Ma\'aikata</string> 
+    <string name="button_donate">Gwada shi akan Google Play</string> 
+    <string name="donate_greeting">Sannu!</string> 
+    <string name="donate_title">Ba da kyauta</string> 
+    <string name="edit_player_current_score">Karo na yanzu</string> 
+    <string name="editor_activity_title_add_score">Kara maki</string> 
+    <string name="editor_activity_title_edit_name">Shirya suna</string> 
+    <string name="hint_player_name">Suna</string> 
+    <string name="image_group_icon">Iconungiyar Kungiyar</string> 
+    <string name="image_player_icon">Icon Player</string> 
+    <string name="large_heart">Babban zuciya</string> 
+    <string name="large_number_error_toast">Kuskure: Score ya yi yawa</string> 
+    <string name="large">M</string> 
+    <string name="main_default_name">Ɗan wasa</string> 
+    <string name="medium_heart">matsakaici zuciya</string> 
+    <string name="medium">Matsakaici</string> 
+    <string name="player_name_label">Sunan Player</string> 
+    <string name="small_heart">karamin zuciya</string> 
+    <string name="Small">Ƙanƙane</string> 
+    <string name="donate_message">Sunana Amanda.
+ Idan kuna jin daɗin wannan app ɗin na ci gaba, don Allah a yi la\'akari da sayen kayan kyauta.
+ Na gode!</string> 
+ </resources>

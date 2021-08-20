@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Eyða öllum leikmönnum</string> 
+    <string name="action_delete">Eyða</string> 
+    <string name="action_donate">Gefa til framkvæmdaraðila</string> 
+    <string name="action_edit">Breyta</string> 
+    <string name="action_reset_scores">Endurstilla stig</string> 
+    <string name="action_save">Vista</string> 
+    <string name="action_upgrade">Uppfærsla.</string> 
+    <string name="app_name">Scoresser.</string> 
+    <string name="button_donate">Prófaðu það á Google Play</string> 
+    <string name="donate_greeting">Halló!</string> 
+    <string name="donate_title">Donate.</string> 
+    <string name="edit_player_current_score">Núverandi stig</string> 
+    <string name="editor_activity_title_add_score">Bæta við stig</string> 
+    <string name="editor_activity_title_edit_name">Breyta nafni</string> 
+    <string name="hint_player_name">Nafn</string> 
+    <string name="image_group_icon">Group táknið</string> 
+    <string name="image_player_icon">Leikmaður táknið</string> 
+    <string name="large_heart">Stórt hjarta</string> 
+    <string name="large_number_error_toast">Villa: Skora er of stór</string> 
+    <string name="large">Stórt</string> 
+    <string name="main_default_name">Leikmaður</string> 
+    <string name="medium_heart">miðlungs hjarta</string> 
+    <string name="medium">Miðlungs</string> 
+    <string name="player_name_label">Leikmaður nafns</string> 
+    <string name="small_heart">Lítil hjarta</string> 
+    <string name="Small">Lítil</string> 
+    <string name="donate_message">Mitt nafn er Amanda.
+ Ef þú ert að njóta þessa app sem ég þróaði, vinsamlegast skoðaðu að kaupa framlagsforritið mitt. Donation app gerir ekki neitt, en framlag þitt mun sýna mér að tíminn minn var að þróa ókeypis, engar auglýsingar forrit eru vel þegnar.
+ Takk!</string> 
+ </resources>

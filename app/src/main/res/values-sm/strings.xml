@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Aveese uma taaalo</string> 
+    <string name="action_delete">Tape</string> 
+    <string name="action_donate">Tuuina atu i le tagata atiae</string> 
+    <string name="action_edit">Faʻatonutonu</string> 
+    <string name="action_reset_scores">Toe setiina togi</string> 
+    <string name="action_save">Sefe</string> 
+    <string name="action_upgrade">Faaleleia</string> 
+    <string name="app_name">Sikoa</string> 
+    <string name="button_donate">Taumafai i le Google Taalo</string> 
+    <string name="donate_greeting">Talofa!</string> 
+    <string name="donate_title">Lafo mai</string> 
+    <string name="edit_player_current_score">O le taimi nei sikoa</string> 
+    <string name="editor_activity_title_add_score">Faaopopo togi</string> 
+    <string name="editor_activity_title_edit_name">EDIT igoa</string> 
+    <string name="hint_player_name">Igoa</string> 
+    <string name="image_group_icon">Vaega o Gaono</string> 
+    <string name="image_player_icon">Tagata taalo ikon</string> 
+    <string name="large_heart">loto tele</string> 
+    <string name="large_number_error_toast">Sese: Faʻailoga e lapoʻa tele</string> 
+    <string name="large">Lapoa</string> 
+    <string name="main_default_name">Tagata taalo</string> 
+    <string name="medium_heart">alavai fatu</string> 
+    <string name="medium">Feololo</string> 
+    <string name="player_name_label">Igoa ole tagata taalo</string> 
+    <string name="small_heart">laititi le loto</string> 
+    <string name="Small">Laiti</string> 
+    <string name="donate_message">O loʻu igoa o Amanda.
+ Afai o loʻo e fiafia i lenei app sa ou atinaʻeina, faʻamolemole mafaufau o loʻo faʻatau mai lau faʻamatalaga o lau mea
+ Faʻafetai!</string> 
+ </resources>

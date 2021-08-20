@@ -1,17 +1,17 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion '29.0.3'
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
         applicationId "com.amandafarrell.www.scorekeeper"
         minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 10
-        versionName "Scorekeeper 3.0"
+        targetSdkVersion 30
+        versionCode 11
+        versionName "Scorekeeper 4.0"
         vectorDrawables.useSupportLibrary = true
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -23,10 +23,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    testImplementation 'junit:junit:4.12'
-    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    //androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        //exclude group: 'com.android.support', module: 'support-annotations'
+    //})
+    //implementation 'com.android.support:appcompat-v7:29.0.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    testImplementation 'junit:junit:4.+'
+    //implementation 'com.android.support:design:29.0.0'
 }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Удалить всех игроков</string> 
+    <string name="action_delete">Удалить</string> 
+    <string name="action_donate">Пожертвуйте разработчику</string> 
+    <string name="action_edit">Редактировать</string> 
+    <string name="action_reset_scores">Сброс баллов</string> 
+    <string name="action_save">Сохранить</string> 
+    <string name="action_upgrade">Обновление</string> 
+    <string name="app_name">Гюрмин</string> 
+    <string name="button_donate">Попробуйте в Google Play</string> 
+    <string name="donate_greeting">Привет!</string> 
+    <string name="donate_title">Пожертвовать</string> 
+    <string name="edit_player_current_score">Текущий счет</string> 
+    <string name="editor_activity_title_add_score">Добавить счет</string> 
+    <string name="editor_activity_title_edit_name">Редактировать название</string> 
+    <string name="hint_player_name">Имя</string> 
+    <string name="image_group_icon">Значок группы</string> 
+    <string name="image_player_icon">Значок игрока</string> 
+    <string name="large_heart">большое сердце</string> 
+    <string name="large_number_error_toast">Ошибка: Оценка слишком велика</string> 
+    <string name="large">Большой</string> 
+    <string name="main_default_name">Игрок</string> 
+    <string name="medium_heart">Среднее сердце</string> 
+    <string name="medium">Середина</string> 
+    <string name="player_name_label">Имя игрока</string> 
+    <string name="small_heart">маленькое сердце</string> 
+    <string name="Small">Небольшой</string> 
+    <string name="donate_message">Меня зовут Аманда.
+ Если вы наслаждаетесь этим приложением, я разработал, пожалуйста, рассмотрите возможность покупки моего приложения пожертвований. Приложение пожертвовании ничего не делает, но ваше пожертвование покажет мне, что мое время, потраченное на развитие бесплатных, NO-ADS Apps ценится.
+ Спасибо!</string> 
+ </resources>

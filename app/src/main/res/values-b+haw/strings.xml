@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Hoʻopau i nā mea pāʻani āpau</string> 
+    <string name="action_delete">Hoʻopue</string> 
+    <string name="action_donate">Hāʻawi i ka mea hoʻomohala</string> 
+    <string name="action_edit">Hoʻoponopono</string> 
+    <string name="action_reset_scores">Hoʻonohonoho hou i nā helu</string> 
+    <string name="action_save">Lauku</string> 
+    <string name="action_upgrade">Hōʻano</string> 
+    <string name="app_name">ScorekeEeEeERER</string> 
+    <string name="button_donate">E ho\'āʻo iā ia ma Google Play</string> 
+    <string name="donate_greeting">Aloha!</string> 
+    <string name="donate_title">Hāʻawi</string> 
+    <string name="edit_player_current_score">Wahi a ka helu o kēia manawa</string> 
+    <string name="editor_activity_title_add_score">Hoʻohui i ka helu</string> 
+    <string name="editor_activity_title_edit_name">Inoa inoa</string> 
+    <string name="hint_player_name">Inoa</string> 
+    <string name="image_group_icon">Iakona</string> 
+    <string name="image_player_icon">Ikona Plani</string> 
+    <string name="large_heart">puʻuwai nui</string> 
+    <string name="large_number_error_toast">Hapa: Nui loa ka helu</string> 
+    <string name="large">Nui</string> 
+    <string name="main_default_name">Meaʻa</string> 
+    <string name="medium_heart">puʻuwai manaʻo</string> 
+    <string name="medium">Kūpono</string> 
+    <string name="player_name_label">Kauoha inoa</string> 
+    <string name="small_heart">liʻiliʻi puʻuwai liʻiliʻi</string> 
+    <string name="Small">Liʻiliʻi</string> 
+    <string name="donate_message">ʻO koʻu inoa inoaʻo Amanda.
+ Ināʻoe e hauʻoli nei i kēia taupānga i hoʻomohalaʻia, e noʻonoʻo e kūʻai aku i kaʻu palapala noi.Tur e hana iaʻu e hoʻomohala nei i nā mea hana manuahi
+ Mahalo!</string> 
+ </resources>

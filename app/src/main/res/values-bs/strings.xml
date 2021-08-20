@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Izbrišite sve igrače</string> 
+    <string name="action_delete">Izbrisati</string> 
+    <string name="action_donate">Donirajte programeru</string> 
+    <string name="action_edit">Urediti</string> 
+    <string name="action_reset_scores">Resetiranje rezultata</string> 
+    <string name="action_save">Sačuvati</string> 
+    <string name="action_upgrade">Nadogradnja</string> 
+    <string name="app_name">Scangeeper</string> 
+    <string name="button_donate">Probajte na Google Playu</string> 
+    <string name="donate_greeting">Zdravo!</string> 
+    <string name="donate_title">Donirati</string> 
+    <string name="edit_player_current_score">Trenutni rezultat</string> 
+    <string name="editor_activity_title_add_score">Dodajte rezultat</string> 
+    <string name="editor_activity_title_edit_name">Ime uredi</string> 
+    <string name="hint_player_name">Ime</string> 
+    <string name="image_group_icon">Ikona grupe</string> 
+    <string name="image_player_icon">Ikona igrača</string> 
+    <string name="large_heart">veliko srce</string> 
+    <string name="large_number_error_toast">GREŠKA: Rezultat je prevelik</string> 
+    <string name="large">Veliko</string> 
+    <string name="main_default_name">Igrač</string> 
+    <string name="medium_heart">srednje srce</string> 
+    <string name="medium">Srednji</string> 
+    <string name="player_name_label">Ime igrača</string> 
+    <string name="small_heart">Malo srce</string> 
+    <string name="Small">Mali</string> 
+    <string name="donate_message">Moje ime je Amanda.
+ Ako uživate u ovoj aplikaciji, razmotrimo kupovinu moje donacije. Aplikacija za donaciju ne radi ništa, ali vaša donacija će mi pokazati da je moje vrijeme provedeno u razvoju besplatnih, bez ikakvih aplikacija.
+ Hvala!</string> 
+ </resources>

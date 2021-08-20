@@ -9,8 +9,6 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.ActionMode;
 import android.view.Menu;
@@ -21,7 +19,10 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.amandafarrell.www.scorekeeper.data.PlayerContract;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -271,6 +272,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             case R.id.action_donate:
                 Intent intent = new Intent(MainActivity.this, DonateActivity.class);
                 startActivity(intent);
+                return true;
             case R.id.action_upgrade:
                 try {
                     startActivity(new Intent(Intent.ACTION_VIEW,
@@ -279,6 +281,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     startActivity(new Intent(Intent.ACTION_VIEW,
                             Uri.parse(getString(R.string.play_store_browser_link_upgrade))));
                 }
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

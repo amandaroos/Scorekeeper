@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Barcha o\'yinchilarni o\'chirish</string> 
+    <string name="action_delete">O\'chirmoq</string> 
+    <string name="action_donate">Ishlab chiqaruvchiga xayr-ehson qiling</string> 
+    <string name="action_edit">Tahrir qilmoq</string> 
+    <string name="action_reset_scores">Standartlarni tiklash</string> 
+    <string name="action_save">Tejash</string> 
+    <string name="action_upgrade">Yangilamoq</string> 
+    <string name="app_name">Kitik egasi</string> 
+    <string name="button_donate">Google Play-da sinab ko\'ring</string> 
+    <string name="donate_greeting">Salom!</string> 
+    <string name="donate_title">Xayr-ehson qilmoq</string> 
+    <string name="edit_player_current_score">Hozirgi ball</string> 
+    <string name="editor_activity_title_add_score">Hisob qo\'shing</string> 
+    <string name="editor_activity_title_edit_name">Ismni tahrirlash</string> 
+    <string name="hint_player_name">Ism</string> 
+    <string name="image_group_icon">Guruh belgisi</string> 
+    <string name="image_player_icon">Pleer belgisi</string> 
+    <string name="large_heart">katta yurak</string> 
+    <string name="large_number_error_toast">Xato: bal juda katta</string> 
+    <string name="large">Katta</string> 
+    <string name="main_default_name">O\'yinchi</string> 
+    <string name="medium_heart">O\'rta yurak</string> 
+    <string name="medium">O\'rta</string> 
+    <string name="player_name_label">O\'yinchi nomi</string> 
+    <string name="small_heart">kichik yurak</string> 
+    <string name="Small">Kichkina</string> 
+    <string name="donate_message">Mening ismim Amanda.
+ Agar siz ushbu ilovadan zavqlanayotgan bo\'lsangiz, iltimos, xayr-ehson qilish ilovasi hech narsa qilmayapti, ammo xayr-ehsoningiz mening vaqtim taraqqiyot erkinligini oshiradi, ammo hech qanday reklama dasturlari juda qadrlanadi.
+ Rahmat!</string> 
+ </resources>

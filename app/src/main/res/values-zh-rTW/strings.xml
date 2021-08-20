@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">刪除所有玩家</string> 
+    <string name="action_delete">刪除</string> 
+    <string name="action_donate">捐贈給開發人員</string> 
+    <string name="action_edit">編輯</string> 
+    <string name="action_reset_scores">重置分數</string> 
+    <string name="action_save">節省</string> 
+    <string name="action_upgrade">升級</string> 
+    <string name="app_name">記分員</string> 
+    <string name="button_donate">在Google Play上嘗試</string> 
+    <string name="donate_greeting">你好！</string> 
+    <string name="donate_title">捐</string> 
+    <string name="edit_player_current_score">目前的分數</string> 
+    <string name="editor_activity_title_add_score">添加分數</string> 
+    <string name="editor_activity_title_edit_name">編輯名稱</string> 
+    <string name="hint_player_name">名稱</string> 
+    <string name="image_group_icon">組圖標</string> 
+    <string name="image_player_icon">玩家圖標</string> 
+    <string name="large_heart">大心臟</string> 
+    <string name="large_number_error_toast">錯誤：得分太大了</string> 
+    <string name="large">大的</string> 
+    <string name="main_default_name">播放器</string> 
+    <string name="medium_heart">中心</string> 
+    <string name="medium">中等的</string> 
+    <string name="player_name_label">參賽者姓名</string> 
+    <string name="small_heart">小心</string> 
+    <string name="Small">小的</string> 
+    <string name="donate_message">我的名字是阿曼達。
+ 如果您正在享受我開發的這個應用程序，請考慮購買我的捐款應用程序。捐贈應用程序沒有做任何事情，但您的捐款將顯示我的時間在自由開發的時間，無廣告應用程序被欣賞。
+ 謝謝！</string> 
+ </resources>

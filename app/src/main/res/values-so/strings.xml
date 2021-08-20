@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Tirtir dhammaan ciyaartoydu</string> 
+    <string name="action_delete">Tirtirid</string> 
+    <string name="action_donate">Ku tabaruc horumarinta</string> 
+    <string name="action_edit">Soo diyaarin</string> 
+    <string name="action_reset_scores">Dib-u-dejinta dhibcaha</string> 
+    <string name="action_save">Badbaadin</string> 
+    <string name="action_upgrade">Casrin</string> 
+    <string name="app_name">Dayuurad</string> 
+    <string name="button_donate">Iskuday ku saabsan ciyaarta Google</string> 
+    <string name="donate_greeting">Salaan!</string> 
+    <string name="donate_title">Ku tabarrucid</string> 
+    <string name="edit_player_current_score">Dhibcaha hadda jira</string> 
+    <string name="editor_activity_title_add_score">Ku dar dhibcaha</string> 
+    <string name="editor_activity_title_edit_name">Edit magaca</string> 
+    <string name="hint_player_name">Magac</string> 
+    <string name="image_group_icon">Icon kooxda</string> 
+    <string name="image_player_icon">Astaanta ciyaaryahanka</string> 
+    <string name="large_heart">Qalbi weyn</string> 
+    <string name="large_number_error_toast">Cilad: Dhibcaha waa mid aad u ballaaran</string> 
+    <string name="large">Weyn</string> 
+    <string name="main_default_name">Ciyaaryahan</string> 
+    <string name="medium_heart">wadne dhexdhexaad ah</string> 
+    <string name="medium">Heer dhexe ah</string> 
+    <string name="player_name_label">Cirka Magaca</string> 
+    <string name="small_heart">wadnaha yar</string> 
+    <string name="Small">Yar</string> 
+    <string name="donate_message">Magacaygu waa Amanda.
+ Haddii aad ku raaxeysatid barnaamijkan waxaan horumaray, fadlan ka fiirso iibsashada tabarucaheyga barnaamijkeyga wax ku-deeqegu waxba ma sameeyo, laakiin tabarucaada ayaa i tusi doona in waqtigeyga lagu kharash gareeyo, barnaamijyada xayeysiinta ah.
+ Mahadsanid!</string> 
+ </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">លុបអ្នកលេងទាំងអស់</string> 
+    <string name="action_delete">របៅបេលរសច</string> 
+    <string name="action_donate">បរិច្ចាគដល់អ្នកអភិវឌ្ឍន៍</string> 
+    <string name="action_edit">បិនិត្យ</string> 
+    <string name="action_reset_scores">កំណត់ពិន្ទុឡើងវិញ</string> 
+    <string name="action_save">សរេង្គាហ</string> 
+    <string name="action_upgrade">ធេវីសកម្មទឹក</string> 
+    <string name="app_name">បុរសលោកយោល</string> 
+    <string name="button_donate">សាកល្បងវានៅលើ Google Play</string> 
+    <string name="donate_greeting">សួស្តី!</string> 
+    <string name="donate_title">បរិច្ចាក</string> 
+    <string name="edit_player_current_score">ពិន្ទុបច្ចុប្បន្ន</string> 
+    <string name="editor_activity_title_add_score">បន្ថែមពិន្ទុ</string> 
+    <string name="editor_activity_title_edit_name">កែសម្រួលឈ្មោះ</string> 
+    <string name="hint_player_name">ឈ្ផោហ</string> 
+    <string name="image_group_icon">រូបតំណាងក្រុម</string> 
+    <string name="image_player_icon">រូបតំណាងអ្នកលេង</string> 
+    <string name="large_heart">បេះដូងធំ</string> 
+    <string name="large_number_error_toast">កំហុស: ពិន្ទុគឺធំពេក</string> 
+    <string name="large">ធម</string> 
+    <string name="main_default_name">អ្នកលេងរសី</string> 
+    <string name="medium_heart">បេះដូងមធ្យម</string> 
+    <string name="medium">នៃមច្ឈកតិ</string> 
+    <string name="player_name_label">ឈ្មោះអ្នកលេង</string> 
+    <string name="small_heart">បេះដូងតូច</string> 
+    <string name="Small">តូច</string> 
+    <string name="donate_message">ខ្ញុំឈ្មោះអាម៉នដា។ ប្រសិនបើអ្នកកំពុងរីករាយជាមួយកម្មវិធីនេះដែលខ្ញុំបានបង្កើតសូមពិចារណាទិញកម្មវិធីបរិច្ចាគរបស់ខ្ញុំ។ កម្មវិធីបរិច្ចាគមិនធ្វើអ្វីទេប៉ុន្តែការបរិច្ចាគរបស់អ្នកនឹងបង្ហាញខ្ញុំថាពេលវេលារបស់ខ្ញុំដែលបានចំណាយក្នុងការបង្កើតកម្មវិធីឥតគិតថ្លៃគ្មានពាណិជ្ជកម្មត្រូវបានកោតសរសើរ។ សូមអរគុណ!</string>
+ </resources>

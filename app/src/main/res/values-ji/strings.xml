@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">ויסמעקן אַלע פּלייַערס</string> 
+    <string name="action_delete">ויסמעקן</string> 
+    <string name="action_donate">שענקען פֿאַר דעוועלאָפּער</string> 
+    <string name="action_edit">ויסרעדאַגירן</string> 
+    <string name="action_reset_scores">באַשטעטיק סקאָרז</string> 
+    <string name="action_save">שפּאָרן</string> 
+    <string name="action_upgrade">Upgrade</string> 
+    <string name="app_name">סקאָרקער</string> 
+    <string name="button_donate">פרובירט עס אויף Google שפּיל</string> 
+    <string name="donate_greeting">אַ גוט יאָר!</string> 
+    <string name="donate_title">מאַקרעוו זייַן</string> 
+    <string name="edit_player_current_score">קראַנט כעזשבן</string> 
+    <string name="editor_activity_title_add_score">לייג כעזשבן</string> 
+    <string name="editor_activity_title_edit_name">רעדאַגירן נאמען</string> 
+    <string name="hint_player_name">נאָמען</string> 
+    <string name="image_group_icon">גרופע בילדל</string> 
+    <string name="image_player_icon">שפּילער בילדל</string> 
+    <string name="large_heart">גרויס האַרץ</string> 
+    <string name="large_number_error_toast">טעות: כעזשבן איז צו גרויס</string> 
+    <string name="large">גרויס</string> 
+    <string name="main_default_name">שפּילער</string> 
+    <string name="medium_heart">מיטל האַרץ</string> 
+    <string name="medium">מיטל</string> 
+    <string name="player_name_label">שפּילער נאָמען</string> 
+    <string name="small_heart">קליין הארץ</string> 
+    <string name="Small">קליין</string> 
+    <string name="donate_message">מיין נאָמען איז אַמאַנדאַ.</string> 
+ </resources>

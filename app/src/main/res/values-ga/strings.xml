@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Scrios na himreoirí go léir</string> 
+    <string name="action_delete">Scrios amach</string> 
+    <string name="action_donate">Síntiúis don Fhorbróir</string> 
+    <string name="action_edit">Eagarthóireacht a dhéanamh ar</string> 
+    <string name="action_reset_scores">Scóir athshocraithe</string> 
+    <string name="action_save">Sáraigh</string> 
+    <string name="action_upgrade">Uasghrádú a dhéanamh air</string> 
+    <string name="app_name">Scórálaí</string> 
+    <string name="button_donate">Bain triail as ar Google Play</string> 
+    <string name="donate_greeting">Dia dhuit!</string> 
+    <string name="donate_title">Síntiúis</string> 
+    <string name="edit_player_current_score">Scór reatha</string> 
+    <string name="editor_activity_title_add_score">Cuir scór leis</string> 
+    <string name="editor_activity_title_edit_name">Eagraigh ainm</string> 
+    <string name="hint_player_name">Ainm a thabhairt ar</string> 
+    <string name="image_group_icon">Icon grúpa</string> 
+    <string name="image_player_icon">Deilbhín imreoirí</string> 
+    <string name="large_heart">croí mór</string> 
+    <string name="large_number_error_toast">EARRÁID: Tá an scór rómhór</string> 
+    <string name="large">Fairsing</string> 
+    <string name="main_default_name">Ceoltóir</string> 
+    <string name="medium_heart">croílár</string> 
+    <string name="medium">Mheán</string> 
+    <string name="player_name_label">Ainm an Imreora</string> 
+    <string name="small_heart">croí beag</string> 
+    <string name="Small">Mion-</string> 
+    <string name="donate_message">Is é mo ainm Amanda.
+ Má tá tú ag baint taitnimh as an aip seo a d\'fhorbair mé, déan machnamh a dhéanamh ar mo app a cheannach.
+ Go raibh maith agat!</string> 
+ </resources>

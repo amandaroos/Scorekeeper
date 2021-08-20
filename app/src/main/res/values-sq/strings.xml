@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Fshini të gjithë lojtarët</string> 
+    <string name="action_delete">Fshij</string> 
+    <string name="action_donate">Dhuroni për zhvilluesin</string> 
+    <string name="action_edit">Redaktoj</string> 
+    <string name="action_reset_scores">Rivendos rezultatet</string> 
+    <string name="action_save">Shpëtoj</string> 
+    <string name="action_upgrade">Përmirësoj</string> 
+    <string name="app_name">Rezultat</string> 
+    <string name="button_donate">Provoni në Google Play</string> 
+    <string name="donate_greeting">Përshëndetje!</string> 
+    <string name="donate_title">Dhuroj</string> 
+    <string name="edit_player_current_score">Rezultati aktual</string> 
+    <string name="editor_activity_title_add_score">Shto rezultat</string> 
+    <string name="editor_activity_title_edit_name">Edit Emri</string> 
+    <string name="hint_player_name">Emër</string> 
+    <string name="image_group_icon">Group icon</string> 
+    <string name="image_player_icon">Ikonë e lojtarit</string> 
+    <string name="large_heart">zemra e madhe</string> 
+    <string name="large_number_error_toast">Gabim: rezultati është shumë i madh</string> 
+    <string name="large">I madh</string> 
+    <string name="main_default_name">Lojtar</string> 
+    <string name="medium_heart">zemra e mesme</string> 
+    <string name="medium">Medium</string> 
+    <string name="player_name_label">Emri i lojtarit</string> 
+    <string name="small_heart">zemra e vogël</string> 
+    <string name="Small">I vogël</string> 
+    <string name="donate_message">Emri im është Amanda.
+ Nëse jeni duke shijuar këtë aplikacion, ju lutem, ju lutem konsideroni blerjen e aplikacionit tim të donacionit. Aplikacioni i dhurimit nuk bën asgjë, por donacioni juaj do të më tregojë se koha ime e kaluar në zhvillimin e aplikacioneve të lira, nuk është vlerësuar.
+ Faleminderit!</string> 
+ </resources>

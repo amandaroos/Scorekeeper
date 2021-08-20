@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">అన్ని క్రీడాకారులను తొలగించండి</string> 
+    <string name="action_delete">తొలగింపు</string> 
+    <string name="action_donate">డెవలపర్కు దానం</string> 
+    <string name="action_edit">మార్చు</string> 
+    <string name="action_reset_scores">స్కోర్లను రీసెట్ చేయండి</string> 
+    <string name="action_save">సేవ్</string> 
+    <string name="action_upgrade">అప్గ్రేడ్</string> 
+    <string name="app_name">స్కోర్ స్కీపర్</string> 
+    <string name="button_donate">గూగుల్ ప్లేలో దీన్ని ప్రయత్నించండి</string> 
+    <string name="donate_greeting">హలో!</string> 
+    <string name="donate_title">దానం</string> 
+    <string name="edit_player_current_score">ప్రస్తుత స్కోరు</string> 
+    <string name="editor_activity_title_add_score">స్కోర్ను జోడించండి</string> 
+    <string name="editor_activity_title_edit_name">పేరును సవరించండి</string> 
+    <string name="hint_player_name">పేరు</string> 
+    <string name="image_group_icon">సమూహం చిహ్నం</string> 
+    <string name="image_player_icon">ప్లేయర్ ఐకాన్</string> 
+    <string name="large_heart">పెద్ద గుండె</string> 
+    <string name="large_number_error_toast">లోపం: స్కోరు చాలా పెద్దది</string> 
+    <string name="large">పెద్దది</string> 
+    <string name="main_default_name">ప్లేయర్</string> 
+    <string name="medium_heart">మీడియం గుండె</string> 
+    <string name="medium">మీడియం</string> 
+    <string name="player_name_label">ప్లేయర్ పేరు</string> 
+    <string name="small_heart">చిన్న గుండె</string> 
+    <string name="Small">చిన్నది</string> 
+    <string name="donate_message">నా పేరు అమండా.
+ మీరు అభివృద్ధి చేసిన ఈ అనువర్తనాన్ని మీరు ఆస్వాదించినట్లయితే, నా విరాళం అనువర్తనాన్ని కొనుగోలు చేయాలని పరిగణించండి. విరాళం అనువర్తనం ఏదైనా చేయదు, కానీ మీ విరాళం నాకు ఉచిత అభివృద్ధిని గడిపినట్లు నాకు చూపుతుంది, నో-ప్రకటనల అనువర్తనాలు ప్రశంసించబడవు.
+ ధన్యవాదాలు!</string> 
+ </resources>

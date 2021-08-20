@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Elimineu tots els jugadors</string> 
+    <string name="action_delete">Suprimir</string> 
+    <string name="action_donate">Doneu al desenvolupador</string> 
+    <string name="action_edit">Preprarar una edició</string> 
+    <string name="action_reset_scores">Restableix les puntuacions</string> 
+    <string name="action_save">Estalviar</string> 
+    <string name="action_upgrade">Actualitzar</string> 
+    <string name="app_name">Puntuació</string> 
+    <string name="button_donate">Prova-ho a Google Play</string> 
+    <string name="donate_greeting">Hola!</string> 
+    <string name="donate_title">Donar</string> 
+    <string name="edit_player_current_score">Puntuació actual</string> 
+    <string name="editor_activity_title_add_score">Afegir la puntuació</string> 
+    <string name="editor_activity_title_edit_name">Edita el nom</string> 
+    <string name="hint_player_name">Nom</string> 
+    <string name="image_group_icon">Icona de grup</string> 
+    <string name="image_player_icon">Icona del jugador</string> 
+    <string name="large_heart">gran cor</string> 
+    <string name="large_number_error_toast">Error: la puntuació és massa gran</string> 
+    <string name="large">Gran</string> 
+    <string name="main_default_name">Jugadora</string> 
+    <string name="medium_heart">Cor mitjà</string> 
+    <string name="medium">Mitjana</string> 
+    <string name="player_name_label">Nom del jugador</string> 
+    <string name="small_heart">cor petit</string> 
+    <string name="Small">Petit</string> 
+    <string name="donate_message">Em dic Amanda.
+ Si esteu gaudint d\'aquesta aplicació he desenvolupat, considereu que la compra de la meva aplicació de donació. L\'aplicació de donació no fa res, però la vostra donació em mostrarà que el meu temps dedicat a desenvolupar aplicacions sense anuncis gratuïts és apreciada.
+ Gràcies!</string> 
+ </resources>

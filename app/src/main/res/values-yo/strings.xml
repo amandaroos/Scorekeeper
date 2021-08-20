@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Pa gbogbo awọn ẹrọ orin</string> 
+    <string name="action_delete">Paarẹ</string> 
+    <string name="action_donate">Ṣetọrẹ si Olùgbéejáde</string> 
+    <string name="action_edit">Ṣatunṣe</string> 
+    <string name="action_reset_scores">Awọn iṣiro atunto</string> 
+    <string name="action_save">Fipamọ</string> 
+    <string name="action_upgrade">Igbesoke</string> 
+    <string name="app_name">Onimọ-ẹrọ</string> 
+    <string name="button_donate">Gbiyanju lori Google Play</string> 
+    <string name="donate_greeting">Pẹlẹ o!</string> 
+    <string name="donate_title">Ṣetọrẹ</string> 
+    <string name="edit_player_current_score">Dimegilio lọwọlọwọ</string> 
+    <string name="editor_activity_title_add_score">Ṣafikun Dimegilio</string> 
+    <string name="editor_activity_title_edit_name">Ṣatunṣe orukọ</string> 
+    <string name="hint_player_name">Orukọ</string> 
+    <string name="image_group_icon">Awọn aami ẹgbẹ</string> 
+    <string name="image_player_icon">Aami ẹrọ orin</string> 
+    <string name="large_heart">ọkan nla</string> 
+    <string name="large_number_error_toast">Aṣiṣe: Dimegilio jẹ tobi ju</string> 
+    <string name="large">Nla</string> 
+    <string name="main_default_name">Oṣere obinrin</string> 
+    <string name="medium_heart">ọkan alabọde</string> 
+    <string name="medium">Laarin</string> 
+    <string name="player_name_label">Orukọ player</string> 
+    <string name="small_heart">okan kekere</string> 
+    <string name="Small">Kekere</string> 
+    <string name="donate_message">Amanda mi ni orukọ.
+ Ti o ba n gbadun igbadun yii Mo ti dagbasoke, jọwọ ronu rira rira Ohun elo ọrẹ mi ko ṣe ohunkohun, ṣugbọn ẹbun rẹ yoo fihan mi pe awọn ohun elo A ṣe riri.
+ O ṣeun!</string> 
+ </resources>

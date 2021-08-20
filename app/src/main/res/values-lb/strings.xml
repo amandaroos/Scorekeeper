@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Läscht all Spiller</string> 
+    <string name="action_delete">Läschen</string> 
+    <string name="action_donate">Spende fir Entwéckler</string> 
+    <string name="action_edit">ÄnnT änneren</string> 
+    <string name="action_reset_scores">Reset Scores</string> 
+    <string name="action_save">Spuerwäit</string> 
+    <string name="action_upgrade">Upgrade</string> 
+    <string name="app_name">Scootereihwers</string> 
+    <string name="button_donate">Probéiert et op Google Play</string> 
+    <string name="donate_greeting">Hallo!</string> 
+    <string name="donate_title">Spenden</string> 
+    <string name="edit_player_current_score">Aktuelle Score</string> 
+    <string name="editor_activity_title_add_score">Füügt Score</string> 
+    <string name="editor_activity_title_edit_name">SPNEGE</string> 
+    <string name="hint_player_name">Numm vum Numm</string> 
+    <string name="image_group_icon">Group Ikon</string> 
+    <string name="image_player_icon">Spiller Ikon</string> 
+    <string name="large_heart">Groussherzogen Häerz</string> 
+    <string name="large_number_error_toast">Feeler: Score ass ze grouss</string> 
+    <string name="large">Grouss</string> 
+    <string name="main_default_name">Spiller</string> 
+    <string name="medium_heart">mëttelméisseg wéi</string> 
+    <string name="medium">Mëttelméisseg</string> 
+    <string name="player_name_label">Spillernumm</string> 
+    <string name="small_heart">klengt Häerz</string> 
+    <string name="Small">Klengen</string> 
+    <string name="donate_message">Mäin Numm ass Amanda.
+ Wann Dir dës App genéisst, wat ech entwéckelt hunn, betruechten meng Spendungs App Joris-App net alles wat Är Spendung weist, keng Zäit fir fräi ze entwéckelen ass gratis, keng-Annoncen. No-Annoncen.
+ Merci!</string> 
+ </resources>

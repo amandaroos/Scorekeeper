@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">ကစားသမားအားလုံးကိုဖျက်ပစ်ပါ</string> 
+    <string name="action_delete">ဖျက်</string> 
+    <string name="action_donate">developer မှလှူဒါန်းပါ</string> 
+    <string name="action_edit">ပုံနှိပ်ရန်ပြင်ဆင်ရေးသား</string> 
+    <string name="action_reset_scores">ရမှတ်များ reset</string> 
+    <string name="action_save">ကယ်ဆယ်</string> 
+    <string name="action_upgrade">အဆင့်မြှင့်တင်</string> 
+    <string name="app_name">ဆိုင်ပါ</string> 
+    <string name="button_donate">၎င်းကို Google Play တွင်စမ်းကြည့်ပါ</string> 
+    <string name="donate_greeting">ဟယ်လို!</string> 
+    <string name="donate_title">ပေးကမ်း</string> 
+    <string name="edit_player_current_score">လက်ရှိရမှတ်</string> 
+    <string name="editor_activity_title_add_score">ရမှတ်ကိုထည့်ပါ</string> 
+    <string name="editor_activity_title_edit_name">အမည်ကိုတည်းဖြတ်ပါ</string> 
+    <string name="hint_player_name">နံမယ်</string> 
+    <string name="image_group_icon">အုပ်စုလိုက်အိုင်ကွန်</string> 
+    <string name="image_player_icon">ကစားသမားအိုင်ကွန်</string> 
+    <string name="large_heart">နှလုံးသား</string> 
+    <string name="large_number_error_toast">ချို့ယွင်းချက် - ရမှတ်များလွန်းသည်</string> 
+    <string name="large">ကြီးကျယ်သော</string> 
+    <string name="main_default_name">ကစားသူ</string> 
+    <string name="medium_heart">အလယ်အလတ်နှလုံး</string> 
+    <string name="medium">အလယ်အလတ်</string> 
+    <string name="player_name_label">ကစားသမားအမည်</string> 
+    <string name="small_heart">နှလုံးသေးသေးလေး</string> 
+    <string name="Small">သေးငယ်သော</string> 
+    <string name="donate_message">ကျွန်တော့်နာမည်အမန်ဒါပါ
+ အကယ်. သင်သည်ဤအက်ပလီကေးရှင်းကိုကျွန်ုပ်ခံစားခဲ့ရပါကကျွန်ုပ်၏လှူဒါန်းမှုအက်ပ်ကို 0 ယ်ယူရန်စဉ်းစားပါ။
+ ကျေးဇူးတင်ပါတယ်</string> 
+ </resources>

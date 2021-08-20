@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">সব খেলোয়াড় মুছে দিন</string> 
+    <string name="action_delete">মুছে ফেলা</string> 
+    <string name="action_donate">বিকাশকারী দান করুন</string> 
+    <string name="action_edit">সম্পাদনা করুন</string> 
+    <string name="action_reset_scores">স্কোর রিসেট করুন</string> 
+    <string name="action_save">সংরক্ষণ</string> 
+    <string name="action_upgrade">আপগ্রেড</string> 
+    <string name="app_name">স্কোরকিপার</string> 
+    <string name="button_donate">গুগল প্লে এ এটি চেষ্টা করুন</string> 
+    <string name="donate_greeting">হ্যালো!</string> 
+    <string name="donate_title">দান করুন</string> 
+    <string name="edit_player_current_score">বর্তমান স্কোর</string> 
+    <string name="editor_activity_title_add_score">স্কোর যোগ করুন</string> 
+    <string name="editor_activity_title_edit_name">নাম সম্পাদনা কর</string> 
+    <string name="hint_player_name">নাম</string> 
+    <string name="image_group_icon">গ্রুপ আইকন</string> 
+    <string name="image_player_icon">প্লেয়ার আইকন</string> 
+    <string name="large_heart">বড় হৃদয়</string> 
+    <string name="large_number_error_toast">ত্রুটি: স্কোর খুব বড়</string> 
+    <string name="large">বড়</string> 
+    <string name="main_default_name">প্লেয়ার</string> 
+    <string name="medium_heart">মাঝারি হৃদয়</string> 
+    <string name="medium">মধ্যম</string> 
+    <string name="player_name_label">প্লেয়ার নাম</string> 
+    <string name="small_heart">ছোট হৃদয়</string> 
+    <string name="Small">ছোট</string> 
+    <string name="donate_message">আমার নাম আমেন্ডা.
+ আপনি যদি এই অ্যাপ্লিকেশনটি উপভোগ করেন তবে অনুগ্রহ করে আমার দান অ্যাপ্লিকেশনটি ক্রয় করার কথা বিবেচনা করুন। দান অ্যাপ্লিকেশনটি কিছু করে না, তবে আপনার দান আমাকে দেখাবে যে আমার সময়টি বিকাশের জন্য আমার সময় ব্যয় করা হয়েছে, কোনও বিজ্ঞাপন অ্যাপ্লিকেশানগুলি উপলব্ধি করা হয় না।
+ ধন্যবাদ!</string> 
+ </resources>

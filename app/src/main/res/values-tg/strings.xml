@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Ҳама бозингаронро нест кунед</string> 
+    <string name="action_delete">Нест</string> 
+    <string name="action_donate">Ба таҳиякунанда хайрия кунед</string> 
+    <string name="action_edit">Таҳрир кардан</string> 
+    <string name="action_reset_scores">Холҳо</string> 
+    <string name="action_save">Пул захира кардан</string> 
+    <string name="action_upgrade">Навсозӣ</string> 
+    <string name="app_name">Нишон медиҳад</string> 
+    <string name="button_donate">Онро дар Google Play санҷед</string> 
+    <string name="donate_greeting">Салом!</string> 
+    <string name="donate_title">Хайрия</string> 
+    <string name="edit_player_current_score">Ҳисобҳои ҷорӣ</string> 
+    <string name="editor_activity_title_add_score">Ҳисоб илова кунед</string> 
+    <string name="editor_activity_title_edit_name">НОМИ НОМИ</string> 
+    <string name="hint_player_name">Ном</string> 
+    <string name="image_group_icon">Нишони гурӯҳ</string> 
+    <string name="image_player_icon">Тасвири плеер</string> 
+    <string name="large_heart">дили калон</string> 
+    <string name="large_number_error_toast">Хатогӣ: Ҳисоб хеле калон аст</string> 
+    <string name="large">Калон</string> 
+    <string name="main_default_name">Бозингар</string> 
+    <string name="medium_heart">дили миёна</string> 
+    <string name="medium">Миёна</string> 
+    <string name="player_name_label">Номи бозигар</string> 
+    <string name="small_heart">дили хурд</string> 
+    <string name="Small">Хурд</string> 
+    <string name="donate_message">Номи ман Аманда аст.
+ Агар шумо аз ин барнома лаззат барам, ман ба назар гирифтаам, лутфан ба ман дар бораи харидани барномаи хайрхоҳона фикр кунед, аммо хайрияи шумо ба ман нишон намедиҳад, ки вақти ман барои таҳияи барномаҳои ройгон сарф карда мешавад.
+ Ташаккур!</string> 
+ </resources>

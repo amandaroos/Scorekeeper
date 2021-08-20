@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Dileu pob chwaraewr</string> 
+    <string name="action_delete">Dileu</string> 
+    <string name="action_donate">Rhodd i ddatblygwr</string> 
+    <string name="action_edit">Golygaf</string> 
+    <string name="action_reset_scores">Ailosod sgoriau</string> 
+    <string name="action_save">Hachubon</string> 
+    <string name="action_upgrade">Uwchraddiais</string> 
+    <string name="app_name">Sgoriwr</string> 
+    <string name="button_donate">Rhowch gynnig arni ar Google Play</string> 
+    <string name="donate_greeting">Helo!</string> 
+    <string name="donate_title">Ddoniaf</string> 
+    <string name="edit_player_current_score">Sgôr Cyfredol</string> 
+    <string name="editor_activity_title_add_score">Ychwaneger</string> 
+    <string name="editor_activity_title_edit_name">Golygu Enw</string> 
+    <string name="hint_player_name">Henwaist</string> 
+    <string name="image_group_icon">Eicon grŵp</string> 
+    <string name="image_player_icon">Icon Chwaraewr</string> 
+    <string name="large_heart">calon fawr</string> 
+    <string name="large_number_error_toast">Gwall: Mae sgôr yn rhy fawr</string> 
+    <string name="large">Mawr</string> 
+    <string name="main_default_name">Chwaraewr</string> 
+    <string name="medium_heart">Calon Canolig</string> 
+    <string name="medium">Cyfrwng</string> 
+    <string name="player_name_label">Enw\'r Chwaraewr</string> 
+    <string name="small_heart">calon fach</string> 
+    <string name="Small">Bychan</string> 
+    <string name="donate_message">Fy enw i yw Amanda.
+ Os ydych chi\'n mwynhau\'r ap hwn datblygais, ystyriwch brynu fy ap rhodd rhodd.
+ Diolch!</string> 
+ </resources>

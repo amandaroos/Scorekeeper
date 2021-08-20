@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Hemî lîstikvan jêbirin</string> 
+    <string name="action_delete">Lûleêkirin</string> 
+    <string name="action_donate">Donate to pêşdebiran</string> 
+    <string name="action_edit">Weşandin</string> 
+    <string name="action_reset_scores">Encamên Reset</string> 
+    <string name="action_save">Rizgarkirin</string> 
+    <string name="action_upgrade">Îro</string> 
+    <string name="app_name">Scorekeeper</string> 
+    <string name="button_donate">Wergerê lê zêde bike</string> 
+    <string name="donate_greeting">Slav!</string> 
+    <string name="donate_title">Bêşdan</string> 
+    <string name="edit_player_current_score">Encama niha</string> 
+    <string name="editor_activity_title_add_score">Encam zêde bikin</string> 
+    <string name="editor_activity_title_edit_name">Navê biguherînin</string> 
+    <string name="hint_player_name">Nav</string> 
+    <string name="image_group_icon">Icon icon</string> 
+    <string name="image_player_icon">Îkonê player</string> 
+    <string name="large_heart">Dilê mezin</string> 
+    <string name="large_number_error_toast">Erewtî: encam pir mezin e</string> 
+    <string name="large">Mezin</string> 
+    <string name="main_default_name">Lîstikvan</string> 
+    <string name="medium_heart">dilê medî</string> 
+    <string name="medium">Medya</string> 
+    <string name="player_name_label">Navê player</string> 
+    <string name="small_heart">dilê piçûk</string> 
+    <string name="Small">Biçûk</string> 
+    <string name="donate_message">Navê min Amanda ye.
+ Heke hûn vê sepana ku min pêşve xistine, ji kerema xwe serlêdana donation min tiştek neke, lê donê we ji min re destnîşan dike ku dema pêşkeftina belaş, sepanên bê-reklaman tê pejirandin.
+ Spas!</string> 
+ </resources>

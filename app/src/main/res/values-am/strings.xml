@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">ሁሉንም ተጫዋቾች ይሰርዙ</string> 
+    <string name="action_delete">ሰርዝ</string> 
+    <string name="action_donate">ለገንቢ ለገንዳ</string> 
+    <string name="action_edit">አርትዕ</string> 
+    <string name="action_reset_scores">ውጤቶችን ዳግም ያስጀምሩ</string> 
+    <string name="action_save">አስቀምጥ</string> 
+    <string name="action_upgrade">ማሻሻል</string> 
+    <string name="app_name">የመገምገም ነጥቦች</string> 
+    <string name="button_donate">በ Google Play ላይ ይሞክሩት</string> 
+    <string name="donate_greeting">ሰላም!</string> 
+    <string name="donate_title">ልገሳ</string> 
+    <string name="edit_player_current_score">የአሁኑ ውጤት</string> 
+    <string name="editor_activity_title_add_score">ውጤት ያክሉ</string> 
+    <string name="editor_activity_title_edit_name">ስም አርትዕ</string> 
+    <string name="hint_player_name">ስም</string> 
+    <string name="image_group_icon">የቡድን አዶ</string> 
+    <string name="image_player_icon">የተጫዋች አዶ</string> 
+    <string name="large_heart">ትልቅ ልብ</string> 
+    <string name="large_number_error_toast">ስህተት: ውጤት በጣም ትልቅ ነው</string> 
+    <string name="large">ትልቅ</string> 
+    <string name="main_default_name">ተጫዋች</string> 
+    <string name="medium_heart">መካከለኛ ልብ</string> 
+    <string name="medium">መካከለኛ</string> 
+    <string name="player_name_label">የተጫዋች ስም</string> 
+    <string name="small_heart">ትንሽ ልብ</string> 
+    <string name="Small">ትንሽ</string> 
+    <string name="donate_message">ስሜ አማንዳ ነው.
+ ይህንን መተግበሪያ የሚደሰቱ ከሆነ እባክዎን የልገሳዬን መተግበሪያ በመገዛት ላይ ከግምት ያስገቡ. የእገኔ መተግበሪያ ምንም ነገር አያደርግም, ነፃ የማያውቁ መተግበሪያዎች ያለኝን ጊዜ ያሳየኛል.
+ አመሰግናለሁ!</string> 
+ </resources>

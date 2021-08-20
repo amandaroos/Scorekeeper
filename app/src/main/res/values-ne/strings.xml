@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">सबै खेलाडीहरू मेटाउनुहोस्</string> 
+    <string name="action_delete">मेटाउन</string> 
+    <string name="action_donate">विकासकर्तामा दान गर्नुहोस्</string> 
+    <string name="action_edit">सम्पादन गर्नु</string> 
+    <string name="action_reset_scores">स्कोरहरू रिसेट गर्नुहोस्</string> 
+    <string name="action_save">बचाउनु</string> 
+    <string name="action_upgrade">अपग्रेड गर्नुहोस्</string> 
+    <string name="app_name">स्कोरकुलर</string> 
+    <string name="button_donate">Google खेल मा प्रयास गर्नुहोस्</string> 
+    <string name="donate_greeting">नमस्कार!</string> 
+    <string name="donate_title">दान दिनु</string> 
+    <string name="edit_player_current_score">वर्तमान स्कोर</string> 
+    <string name="editor_activity_title_add_score">स्कोर थप्नुहोस्</string> 
+    <string name="editor_activity_title_edit_name">नाम सम्पादन गर्नुहोस्</string> 
+    <string name="hint_player_name">नाम</string> 
+    <string name="image_group_icon">सामूहिक आइकन</string> 
+    <string name="image_player_icon">खेलाडी आइकन</string> 
+    <string name="large_heart">ठुलो हृदय</string> 
+    <string name="large_number_error_toast">त्रुटि: स्कोर धेरै ठूलो छ</string> 
+    <string name="large">ठूलो</string> 
+    <string name="main_default_name">खेलाडी</string> 
+    <string name="medium_heart">मध्यम मुटु</string> 
+    <string name="medium">माध्यम</string> 
+    <string name="player_name_label">खेलाडीको नाम</string> 
+    <string name="small_heart">सानो मुटु</string> 
+    <string name="Small">सानो</string> 
+    <string name="donate_message">मेरो नाम अमान्डा हो।</string> 
+ </resources>

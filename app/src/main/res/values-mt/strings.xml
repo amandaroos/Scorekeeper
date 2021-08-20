@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Ħassar il-plejers kollha</string> 
+    <string name="action_delete">Ħassar</string> 
+    <string name="action_donate">Jiddonaw lill-iżviluppatur</string> 
+    <string name="action_edit">EDIT</string> 
+    <string name="action_reset_scores">Reset punteġġi</string> 
+    <string name="action_save">Save.</string> 
+    <string name="action_upgrade">Upgrade</string> 
+    <string name="app_name">Scorkeeper</string> 
+    <string name="button_donate">Ipprova fuq Google Play</string> 
+    <string name="donate_greeting">Bongu!</string> 
+    <string name="donate_title">Donate.</string> 
+    <string name="edit_player_current_score">Punteġġ kurrenti</string> 
+    <string name="editor_activity_title_add_score">Żid Score</string> 
+    <string name="editor_activity_title_edit_name">Edit Name.</string> 
+    <string name="hint_player_name">Isem</string> 
+    <string name="image_group_icon">Grupp Icon.</string> 
+    <string name="image_player_icon">Player Icon.</string> 
+    <string name="large_heart">Qalb kbir</string> 
+    <string name="large_number_error_toast">Żball: Il-punteġġ huwa kbir wisq</string> 
+    <string name="large">Kbir</string> 
+    <string name="main_default_name">Player.</string> 
+    <string name="medium_heart">Qalb medju</string> 
+    <string name="medium">Medju</string> 
+    <string name="player_name_label">Isem tal-Player</string> 
+    <string name="small_heart">Qalb żgħir</string> 
+    <string name="Small">Żgħir</string> 
+    <string name="donate_message">Jisimni Amanda.
+ Jekk qed tgawdi dan l-app li żviluppajt, jekk jogħġbok ikkunsidra li tixtri l-app tad-donazzjoni tiegħi App
+ Grazzi!</string> 
+ </resources>

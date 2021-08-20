@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Bütün oyunçuları silmək</string> 
+    <string name="action_delete">Silmək</string> 
+    <string name="action_donate">Geliştiriciyə bağışlayın</string> 
+    <string name="action_edit">Redaktə etmək</string> 
+    <string name="action_reset_scores">Puanları yenidən qurun</string> 
+    <string name="action_save">Yadda saxla</string> 
+    <string name="action_upgrade">Təkmilləşdirmək</string> 
+    <string name="app_name">Hesabatçı</string> 
+    <string name="button_donate">Google Play-də sınayın</string> 
+    <string name="donate_greeting">Salam!</string> 
+    <string name="donate_title">Hədiyyə etmək</string> 
+    <string name="edit_player_current_score">Cari hesab</string> 
+    <string name="editor_activity_title_add_score">Hesab etmək</string> 
+    <string name="editor_activity_title_edit_name">Adı düzəldin</string> 
+    <string name="hint_player_name">Ad</string> 
+    <string name="image_group_icon">Qrup nişanı</string> 
+    <string name="image_player_icon">Oyun işarəsi</string> 
+    <string name="large_heart">böyük ürək</string> 
+    <string name="large_number_error_toast">Xəta: Hesab çox böyükdür</string> 
+    <string name="large">Böyük</string> 
+    <string name="main_default_name">Oyunçu</string> 
+    <string name="medium_heart">orta ürək</string> 
+    <string name="medium">Mühit</string> 
+    <string name="player_name_label">Oyunçu adı</string> 
+    <string name="small_heart">ürəksıxan</string> 
+    <string name="Small">Kiçik</string> 
+    <string name="donate_message">Adım Amanda.
+ Bu tətbiqdən zövq alırsınızsa, hədiyyə tətbiqimi almağı düşünün. Bağış tətbiqetməməyi düşünün
+ Ey!</string> 
+ </resources>

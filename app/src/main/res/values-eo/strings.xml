@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Forigu ĉiujn ludantojn</string> 
+    <string name="action_delete">Forigi</string> 
+    <string name="action_donate">Donacu al programisto</string> 
+    <string name="action_edit">Redakti</string> 
+    <string name="action_reset_scores">Restarigi poentarojn</string> 
+    <string name="action_save">Savi</string> 
+    <string name="action_upgrade">Altgradigon</string> 
+    <string name="app_name">SetunerKeeper</string> 
+    <string name="button_donate">Provu ĝin en Google Play</string> 
+    <string name="donate_greeting">Saluton!</string> 
+    <string name="donate_title">Doni</string> 
+    <string name="edit_player_current_score">Nuna poentaro</string> 
+    <string name="editor_activity_title_add_score">Aldoni poentaron</string> 
+    <string name="editor_activity_title_edit_name">Redakti nomon</string> 
+    <string name="hint_player_name">Nomo</string> 
+    <string name="image_group_icon">Grupo-ikono</string> 
+    <string name="image_player_icon">Ludanto-ikono</string> 
+    <string name="large_heart">Granda Koro</string> 
+    <string name="large_number_error_toast">Eraro: Poentaro estas tro granda</string> 
+    <string name="large">Granda</string> 
+    <string name="main_default_name">Ludanto</string> 
+    <string name="medium_heart">meza koro</string> 
+    <string name="medium">Meza</string> 
+    <string name="player_name_label">Ludanto Nomo</string> 
+    <string name="small_heart">Malgranda Koro</string> 
+    <string name="Small">Malgranda</string> 
+    <string name="donate_message">Mia nomo estas Amanda.
+ Se vi ĝuas ĉi tiun programon, mi disvolvis, bonvolu konsideri aĉeti mian donacan programon. La donaco-programo ne faras ion ajn, sed via donaco montros al mi, ke mia tempo pasiginte disvolviĝas senpage, ne-anoncoj estas estimataj.
+ Dankon!</string> 
+ </resources>

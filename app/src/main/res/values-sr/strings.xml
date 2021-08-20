@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?> 
+ <resources> 
+    <string name="action_delete_all_players">Избришите све играче</string> 
+    <string name="action_delete">Избрисати</string> 
+    <string name="action_donate">Донирајте програмеру</string> 
+    <string name="action_edit">Уредити</string> 
+    <string name="action_reset_scores">Ресетујте резултате</string> 
+    <string name="action_save">сачувати</string> 
+    <string name="action_upgrade">Надоградити</string> 
+    <string name="app_name">Репер</string> 
+    <string name="button_donate">Пробај на Гоогле Плаи</string> 
+    <string name="donate_greeting">Здраво!</string> 
+    <string name="donate_title">Донирати</string> 
+    <string name="edit_player_current_score">Тренутни резултат</string> 
+    <string name="editor_activity_title_add_score">Додавање резултата</string> 
+    <string name="editor_activity_title_edit_name">Уреди име</string> 
+    <string name="hint_player_name">Назив</string> 
+    <string name="image_group_icon">Икона групе</string> 
+    <string name="image_player_icon">Икона играча</string> 
+    <string name="large_heart">велико срце</string> 
+    <string name="large_number_error_toast">Грешка: Резултат је превелик</string> 
+    <string name="large">Велики</string> 
+    <string name="main_default_name">Играч</string> 
+    <string name="medium_heart">средње срце</string> 
+    <string name="medium">Средњи</string> 
+    <string name="player_name_label">Име играча</string> 
+    <string name="small_heart">мало срце</string> 
+    <string name="Small">Мали</string> 
+    <string name="donate_message">Моје име је Аманда.
+ Ако уживате у овој апликацији, развио сам се, размислите о куповини апликације за донацију. Апликација Донација не ради ништа, али ваша донација ће ми показати да се моје време проведено у развоју слободних, не цени се апликације за развој.
+ Хвала!</string> 
+ </resources>
