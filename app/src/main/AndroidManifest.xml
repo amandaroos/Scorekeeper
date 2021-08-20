@@ -18,10 +18,10 @@
         </activity>
         <activity
             android:name="com.amandafarrell.www.scorekeeper.EditScoreActivity"
-            android:parentActivityName="com.amandafarrell.www.scorekeeper.MainActivity"
-            android:windowSoftInputMode="stateVisible"
             android:label="@string/editor_activity_title_add_score"
-            android:theme="@style/EditTheme">
+            android:parentActivityName="com.amandafarrell.www.scorekeeper.MainActivity"
+            android:theme="@style/EditTheme"
+            android:windowSoftInputMode="stateVisible">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -29,10 +29,10 @@
         </activity>
         <activity
             android:name="com.amandafarrell.www.scorekeeper.EditNameActivity"
-            android:parentActivityName="com.amandafarrell.www.scorekeeper.MainActivity"
-            android:windowSoftInputMode="stateVisible"
             android:label="@string/editor_activity_title_edit_name"
-            android:theme="@style/EditTheme">
+            android:parentActivityName="com.amandafarrell.www.scorekeeper.MainActivity"
+            android:theme="@style/EditTheme"
+            android:windowSoftInputMode="stateVisible">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -47,6 +47,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <provider
             android:name="com.amandafarrell.www.scorekeeper.data.PlayerProvider"
             android:authorities="com.example.amanda.scorekeeper"
